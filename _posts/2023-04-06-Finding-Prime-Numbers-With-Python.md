@@ -6,17 +6,19 @@ tags: [Python, Primes]
 ---
 
 # Overview
-In this post I'm going to run through a function in Python that can quickly find all the Prime numbers below a given value.  For example, if I passed the function a value of 100, it would find all the prime numbers below 100.
+Let's create a function in Python that can quickly find all the Prime numbers below a given value.  For example, if we pass the function a value of 100, it would find all the prime numbers below 100.
 
 <br/>
 
 # Definition
 A prime is a number that can only be divided wholly by itself and 1. 
-- 7 is a prime number as no other numbers apart from 7 or 1 divide cleanly into it
+- 7 is a prime number as no other numbers apart from 1 or 7 divide cleanly into it
 - 8 is not a prime number as it can be divided by 1, 2, 4, and 8 without remainders
 
 
-Let's get into it!
+<br/>
+
+# Function Overview
 
 ---
 
