@@ -19,6 +19,27 @@ A prime is a number that can only be divided wholly by itself and 1.
 <br/>
 
 # Function Overview
+```ruby
+def primes_finder(n):
+    
+    # number range to be checked
+    number_range = set(range(2, n+1))
+
+    # empty list to append discovered primes to
+    primes_list = []
+
+    # iterate until list is empty
+    while number_range:
+        prime = number_range.pop()
+        primes_list.append(prime)
+        multiples = set(range(prime*2, n+1, prime))
+        number_range.difference_update(multiples)
+        
+    prime_count = len(primes_list)
+    largest_prime = max(primes_list)
+    
+    print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of which is {largest_prime}")
+```
 
 ---
 
@@ -178,6 +199,7 @@ def primes_finder(n):
         
     prime_count = len(primes_list)
     largest_prime = max(primes_list)
+    
     print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of which is {largest_prime}")
 ```
 
