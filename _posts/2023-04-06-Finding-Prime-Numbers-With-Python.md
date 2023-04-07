@@ -18,7 +18,7 @@ A prime is a number that can only be divided wholly by itself and 1.
 
 <br/>
 
-# Function Overview
+# Code Explanation
 ```ruby
 def primes_finder(n):
     
