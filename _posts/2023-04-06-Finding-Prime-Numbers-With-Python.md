@@ -54,7 +54,7 @@ n = 20
 primes_finder(n)
 ```
 
-We know that the smallest true prime number is 2. So we create a set containing each whole number from 2 to n using the range function. We state n+1 as the range function is not inclusive of the ending number.
+Next we create a set of all the numbers we want to search through in order to find the primes. We know that the smallest true prime number is 2, so we being our set at 2. Then we include each whole number from 2 to n using the range function. We write n+1 as the range function is not inclusive of the ending number.
 ```ruby
 # number range to be checked
 number_range = set(range(2, n+1))
@@ -63,15 +63,7 @@ print(number_range)
 >>> {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
 ```
 
-We know that the smallest true Prime number is 2, so we want to start by creating a list of numbers than need checking so every integer between 2 and what we set above as the upper bound which in this case was 20. We use n+1 as the range logic is not inclusive of the upper limit we set there
-
-Instead of using a list, we're going to use a set.  The reason for this is that sets have some special functions that will allow us to eliminate non-primes during our search.  You'll see what I mean soon...
-
-```ruby
-number_range = set(range(2, n+1))
-```
-
-Let's also create a place where we can store any primes we discover.  A list will be perfect for this job
+We also create a place to store the prime numbers we discover.
 
 ```ruby
 primes_list = []
