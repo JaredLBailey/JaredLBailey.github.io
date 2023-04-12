@@ -110,7 +110,7 @@ In this example, any number divisible by 2 is not a prime number. We find these 
 ```
 
 <br/>
-Now that we have additional non-prime numbers, we will use this information to reduce the number_range we are searching through.
+Now that we have a set of non-prime numbers, we will use this information to reduce the number_range we are searching through.
 ```
 number_range.difference_update(multiples)
 
