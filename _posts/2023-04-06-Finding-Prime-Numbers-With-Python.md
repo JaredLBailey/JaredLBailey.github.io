@@ -48,12 +48,14 @@ We start by naming our function primes_finder, and have that function take one a
 def primes_finder(n):
 ```
 
+<br/>
 For an example, we will set n to 20. In this example, we are going to find all prime numbers that are smaller than or equal to 20.
 ```ruby
 n = 20
 primes_finder(n)
 ```
 
+<br/>
 Next we create a set of all the numbers we want to search through in order to find the primes. We know that the smallest true prime number is 2, so we being our set at 2. Then we include each whole number from 2 to n using the range function. We write n+1 as the range function is not inclusive of the ending number.
 ```ruby
 # number range to be checked
@@ -63,18 +65,21 @@ print(number_range)
 >>> {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
 ```
 
+<br/>
 We also create a place to store the prime numbers we discover.
 
 ```ruby
 primes_list = []
 ```
 
+<br/>
 Next we create a while loop to find our prime numbers. The while loop runs as long as there are numbers to check in the number_range. In order to make sure this loop doesn't run forever, we will remove numbers from the number_range during each pass through the loop.
 ```ruby
 # iterate until list is empty
 while number_range:
 ```
 
+<br/>
 The first action inside the loop is to remove the lowest number (2) from the number range. We set the variable prime equal to this number (2).
 ```ruby
 prime = number_range.pop()
@@ -85,6 +90,7 @@ print(number_range)
 >>> {3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
 ```
 
+<br/>
 Next we add this number to our list of prime numbers.
 ```ruby
 primes_list.append(prime)
@@ -93,6 +99,7 @@ print(primes_list)
 >>> [2]
 ```
 
+<br/>
 Since we have our first prime number, we will use this number to find non-primes in our number range. In this example, any number divisible by 2 is not a prime number. We find these non-prime numbers with the range function. This function finds all whole numbers starting at 4, ending at 20, and counting by 2.
 ```ruby
  multiples = set(range(prime*2, n+1, prime))
@@ -101,6 +108,7 @@ Since we have our first prime number, we will use this number to find non-primes
  >>> {4,6,8,10,12,14,16,18,20}
 ```
 
+<br/>
 Now that we have additional non-prime numbers, we will use this information to reduce the number_range we are searching through.
 ```
 number_range.difference_update(multiples)
@@ -109,12 +117,14 @@ print(number_range)
 >>> {3,5,7,9,11,13,15,17,19}
 ```      
 
+<br/>
 We continue through the loop until there are no more numbers to check in the number_range. At this point, our prime_list will look like the following:
 ```         
 print(prime_list)
 >>> [2,3,5,7,11,13,17,19]
 ```
 
+<br/>
 We then count the prime numbers, and identify the largest one.
 ```         
 prime_count = len(primes_list)
@@ -126,6 +136,7 @@ print(largest_prime)
 >>> 19
 ```
 
+<br/>
 Finally we deliver an output message of the findings.
 ``` 
 print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of which is {largest_prime}")
