@@ -100,7 +100,8 @@ print(primes_list)
 ```
 
 <br/>
-Since we have our first prime number, we will use this number to find non-primes in our number range. In this example, any number divisible by 2 is not a prime number. We find these non-prime numbers with the range function. This function finds all whole numbers starting at 4, ending at 20, and counting by 2.
+Since we have our first prime number, we will use this number to find non-primes in our number range. This will shorten the number of times that we run through the while loop.
+In this example, any number divisible by 2 is not a prime number. We find these non-prime numbers with the range function. This function finds all whole numbers starting at 4, ending at 20, and counting by 2.
 ```ruby
  multiples = set(range(prime*2, n+1, prime))
  
