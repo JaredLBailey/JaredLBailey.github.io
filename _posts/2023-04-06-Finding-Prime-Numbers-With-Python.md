@@ -43,12 +43,14 @@ def primes_finder(n):
 
 ---
 
+### Name the Function
 We start by naming our function primes_finder, and have that function take one argument: n. n acts as the upper limit of the numbers we will search through.
 ```ruby
 def primes_finder(n):
 ```
 
 <br/>
+### Example Numbers
 For an example, we will set n to 20. In this example, we are going to find all prime numbers that are smaller than or equal to 20.
 ```ruby
 n = 20
