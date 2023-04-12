@@ -110,7 +110,7 @@ In this example, any number divisible by 2 is not a prime number. We find these 
 ```
 
 <br/>
-Now that we have a set of non-prime numbers, we will use this information to reduce the number_range we are searching through.
+Now that we have a set of non-prime numbers, we will use this information to reduce the number_range we are searching through. This concludes our first pass through the while loop.
 ```
 number_range.difference_update(multiples)
 
@@ -119,7 +119,7 @@ print(number_range)
 ```      
 
 <br/>
-We continue through the loop until there are no more numbers to check in the number_range. At this point, our prime_list will look like the following:
+We continue passing through the loop until there are no more numbers to check in the number_range. At this point, our prime_list will look like the following:
 ```         
 print(prime_list)
 >>> [2,3,5,7,11,13,17,19]
