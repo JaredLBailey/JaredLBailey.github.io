@@ -56,7 +56,7 @@ primes_finder(n)
 ```
 
 <br/>
-Next we create a set of all the numbers we want to search through in order to find the primes. We know that the smallest true prime number is 2, so we being our set at 2. Then we include each whole number from 2 to n using the range function. We write n+1 as the range function is not inclusive of the ending number.
+Next we create a set of all the numbers we want to search through in order to find the primes. We know that the smallest true prime number is 2, so we begin our set at 2. Then we include each whole number from 2 to n using the range function. We write n+1 as the range function is not inclusive of the ending number.
 ```ruby
 # number range to be checked
 number_range = set(range(2, n+1))
