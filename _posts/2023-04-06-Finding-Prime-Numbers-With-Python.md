@@ -69,6 +69,18 @@ We also create a place to store the prime numbers we discover.
 primes_list = []
 ```
 
+Next we create a while loop to find our prime numbers. The while loop runs as long as there numbers to check in the number_range.
+```ruby
+# iterate until list is empty
+while number_range:
+```
+
+
+
+
+
+
+
 We're going to end up using a while loop to iterate through our list and check for primes, but before we construct that I always it valuable to code up the logic and iterate manually first.  This means I can check that it is working correctly before I set it off to run through everything on it's own
 
 So, we have our set of numbers (called number_range to check all integers between 2 and 20. Let's extract the first number from that set that we want to check as to whether it's a prime. When we check the value we're going to check if it is a prime...if it is, we're going to add it to our list called primes_list...if it isn't a prime we don't want to keep it
