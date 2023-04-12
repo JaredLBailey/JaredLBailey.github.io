@@ -50,7 +50,7 @@ def primes_finder(n):
 ```
 
 <br/>
-### Example Numbers
+### Example Number
 For an example, we will set n to 20. In this example, we are going to find all prime numbers that are smaller than or equal to 20.
 ```ruby
 n = 20
@@ -58,6 +58,7 @@ primes_finder(n)
 ```
 
 <br/>
+### Numbers to Search for Primes
 Next we create a set of all the numbers we want to search through in order to find the primes. We know that the smallest true prime number is 2, so we begin our set at 2. Then we include each whole number from 2 to n using the range function. We write n+1 as the range function is not inclusive of the ending number.
 ```ruby
 # number range to be checked
@@ -68,6 +69,7 @@ print(number_range)
 ```
 
 <br/>
+### Keep Prime Numbers in a List
 We also create a place to store the prime numbers we discover.
 
 ```ruby
@@ -75,6 +77,7 @@ primes_list = []
 ```
 
 <br/>
+### Loop through the Search List
 Next we create a while loop to find our prime numbers. The while loop runs as long as there are numbers to check in the number_range. In order to make sure this loop doesn't run forever, we will remove numbers from the number_range during each pass through the loop.
 ```ruby
 # iterate until list is empty
@@ -82,6 +85,7 @@ while number_range:
 ```
 
 <br/>
+### Find and Store a Prime Number
 The first action inside the loop is to remove the lowest number (2) from the number range. We set the variable prime equal to this number (2).
 ```ruby
 prime = number_range.pop()
@@ -102,6 +106,7 @@ print(primes_list)
 ```
 
 <br/>
+### Remove Non-Primes from Numbers Being Searched
 Since we have our first prime number, we will use this number to find non-primes in our number range. This will shorten the number of times that we run through the while loop.
 In this example, any number divisible by 2 is not a prime number. We find these non-prime numbers with the range function. This function finds all whole numbers starting at 4, ending at 20, and counting by 2.
 ```ruby
@@ -121,6 +126,7 @@ print(number_range)
 ```      
 
 <br/>
+### Finish the Loop
 We continue passing through the loop until there are no more numbers to check in the number_range. At this point, our prime_list will look like the following:
 ```         
 print(prime_list)
@@ -128,6 +134,7 @@ print(prime_list)
 ```
 
 <br/>
+### Display the Results
 We then count the prime numbers, and identify the largest one.
 ```         
 prime_count = len(primes_list)
