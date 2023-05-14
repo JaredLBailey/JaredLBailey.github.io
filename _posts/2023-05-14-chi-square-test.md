@@ -27,10 +27,10 @@ ___
 
 A grocery store ran a mail campaign to promote their new Delivery Club. The Delivery Club costs $100 per year, with a maximum of 52 deliveries. The normal cost of grocery delivery is $10 per delivery.
 
-For the campaign promoting the Delivery Club, potential customers were put randomly into three groups.
-A. This group received a low quality, low cost mailer
-B. This group received a high quality, high cost mailer
-C. This group was a control group, receiving no mailer at all
+For the campaign promoting the Delivery Club, potential customers were put randomly into three groups:
+A. Received a low quality, low cost mailer
+B. Received a high quality, high cost mailer
+C. Control group, receiving no mailer at all
 
 Based on initial signups, the grocery store management team already knew that receiving a mailer was very effective for Delivery Club signups. The management team was interested to know if there is a significant difference in signups between group A (cheap mailer) and B (expensive mailer). This knowledge will affect decisions for future mail campaigns.
 
@@ -38,15 +38,12 @@ Based on initial signups, the grocery store management team already knew that re
 
 ### Actions <a name="overview-actions"></a>
 
-I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups.
-
-From the *campaign_data* table in the client database, we isolated customers that received "Mailer 1" (low cost) and "Mailer 2" (high cost) for this campaign, and excluded customers who were in the control group.
-
-We set out our hypotheses and Acceptance Criteria for the test, as follows:
-
-**Null Hypothesis:** There is no relationship between mailer type and signup rate. They are independent.
-**Alternate Hypothesis:** There is a relationship between mailer type and signup rate. They are not independent.
-**Acceptance Criteria:** 0.05
+1. I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups
+2. To prepare the data for the test, I removed the control group data
+3. I set hypotheses and acceptance criteria for the test
+    a. **Null Hypothesis:** There is no relationship between mailer type and signup rate. They are independent.
+    b. **Alternate Hypothesis:** There is a relationship between mailer type and signup rate. They are not independent.
+    c. **Acceptance Criteria:** 0.05
 
 As a requirement of the Chi-Square Test For Independence, we aggregated this data down to a 2x2 matrix for *signup_flag* by *mailer_type* and fed this into the algorithm (using the *scipy* library) to calculate the Chi-Square Statistic, p-value, Degrees of Freedom, and expected values
 
