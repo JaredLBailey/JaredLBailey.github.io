@@ -27,7 +27,7 @@ ___
 
 A grocery store ran a mail campaign to promote their new Delivery Club. The Delivery Club costs $100 per year, with a maximum of 52 deliveries. The normal cost of grocery delivery is $10 per delivery.
 
-For the campaign promoting the Delivery Club, potential customers were put randomly into three groups:
+Potential Delivery Club customers were put randomly into three groups for the campaign:
 <ol type="A">
 <li>Received a low quality, low cost mailer</li>
 <li>Received a high quality, high cost mailer</li>
