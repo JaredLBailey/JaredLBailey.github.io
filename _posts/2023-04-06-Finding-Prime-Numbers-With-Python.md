@@ -44,7 +44,7 @@ def primes_finder(n):
 ---
 
 ### Name the Function
-We start by naming our function primes_finder, and have that function take one argument: n. n acts as the upper limit of the numbers we will search through.
+First I name the function primes_finder, and have that function take one argument: n. n acts as the upper limit of the numbers that the function will search through.
 ```ruby
 def primes_finder(n):
 ```
