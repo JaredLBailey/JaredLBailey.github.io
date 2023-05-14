@@ -32,19 +32,13 @@ A. This group received a low quality, low cost mailer
 B. This group received a high quality, high cost mailer
 C. This group was a control group, receiving no mailer at all
 
-Based on initial signups, the grocery store management team already knew that receiving a mailer was very effective for Delivery Club signups. The management team was interested to know if there is a significant difference in sign ups between group A (cheap mailer) and B (expensive mailer). This knowledge will affect decisions for future mail campaigns.
+Based on initial signups, the grocery store management team already knew that receiving a mailer was very effective for Delivery Club signups. The management team was interested to know if there is a significant difference in signups between group A (cheap mailer) and B (expensive mailer). This knowledge will affect decisions for future mail campaigns.
 
-<br>
-<br>
+<br/>
+
 ### Actions <a name="overview-actions"></a>
 
-For this test, as it is focused on comparing the *rates* of two groups - we applied the Chi-Square Test For Independence.  Full details of this test can be found in the dedicated section below.
-
-**Note:** Another option when comparing "rates" is a test known as the *Z-Test For Proportions*.  While, we could absolutely use this test here, we have chosen the Chi-Square Test For Independence because:
-
-* The resulting test statistic for both tests will be the same
-* The Chi-Square Test can be represented using 2x2 tables of data - meaning it can be easier to explain to stakeholders
-* The Chi-Square Test can extend out to more than 2 groups - meaning the client can have one consistent approach to measuring signficance
+I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups.
 
 From the *campaign_data* table in the client database, we isolated customers that received "Mailer 1" (low cost) and "Mailer 2" (high cost) for this campaign, and excluded customers who were in the control group.
 
@@ -56,8 +50,7 @@ We set out our hypotheses and Acceptance Criteria for the test, as follows:
 
 As a requirement of the Chi-Square Test For Independence, we aggregated this data down to a 2x2 matrix for *signup_flag* by *mailer_type* and fed this into the algorithm (using the *scipy* library) to calculate the Chi-Square Statistic, p-value, Degrees of Freedom, and expected values
 
-<br>
-<br>
+<br/>
 
 ### Results & Discussion <a name="overview-results"></a>
 
