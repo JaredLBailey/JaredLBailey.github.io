@@ -40,9 +40,9 @@ Based on initial signups, the grocery store management team already knew that re
 
 ### Actions <a name="overview-actions"></a>
 
-    1. I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups
-    2. To prepare the data for the test, I removed the control group data
-    3. I set hypotheses and acceptance criteria for the test
+1. I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups
+2. To prepare the data for the test, I removed the control group data
+3. I set hypotheses and acceptance criteria for the test
     <ol type="a">
         <li>**Null Hypothesis:** There is no relationship between mailer type and signup rate. They are independent.</li>
         <li>**Alternate Hypothesis:** There is a relationship between mailer type and signup rate. They are not independent.</li>
