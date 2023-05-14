@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Assessing Campaign Performance Using Chi-Square Test For Independence
+title: Assessing Campaign Performance Using the Chi-Square Test for Independence
 image: "/posts/ab-testing-title-img.png"
 tags: [AB Testing, Hypothesis Testing, Chi-Square, Python]
 ---
 
-In this project we apply Chi-Square Test For Independence (a Hypothesis Test) to assess the performance of two types of mailers that were sent out to promote a new service! 
+In this project I apply the Chi-Square hypothesis test for independence to a mail campaign. I use the test output to assess the performance of two types of mailers that were sent out promoting a new service. 
 
 # Table of contents
 
@@ -15,8 +15,8 @@ In this project we apply Chi-Square Test For Independence (a Hypothesis Test) to
     - [Results & Discussion](#overview-results)
 - [01. Concept Overview](#concept-overview)
 - [02. Data Overview & Preparation](#data-overview)
-- [03. Applying Chi-Square Test For Independence](#chi-square-application)
-- [04. Analysing The Results](#chi-square-results)
+- [03. Applying Chi-Square Test for Independence](#chi-square-application)
+- [04. Analysing the Results](#chi-square-results)
 - [05. Discussion](#discussion)
 
 ___
@@ -121,7 +121,7 @@ Conventionally, we set our Acceptance Criteria to 0.05 - but this does not have 
 So to summarise, in a Hypothesis Test, we test the Null Hypothesis using a p-value and then decide it’s fate based on the Acceptance Criteria.
 
 <br>
-**Types Of Hypothesis Test**
+**Types of Hypothesis Test**
 
 There are many different types of Hypothesis Tests, each of which is appropriate for use in differing scenarios - depending on a) the type of data that you’re looking to test and b) the question that you’re asking of that data.
 
@@ -203,10 +203,10 @@ In the DataFrame we have:
 ___
 
 <br>
-# Applying Chi-Square Test For Independence <a name="chi-square-application"></a>
+# Applying Chi-Square Test for Independence <a name="chi-square-application"></a>
 
 <br>
-#### State Hypotheses & Acceptance Criteria For Test
+#### State Hypotheses & Acceptance Criteria for Test
 
 The very first thing we need to do in any form of Hypothesis Test is state our Null Hypothesis, our Alternate Hypothesis, and the Acceptance Criteria (more details on these in the section above)
 
@@ -277,7 +277,7 @@ We have a Chi-Square Statistic of **1.94** and a p-value of **0.16**.  The criti
 ___
 
 <br>
-# Analysing The Results <a name="chi-square-results"></a>
+# Analysing the Results <a name="chi-square-results"></a>
 
 At this point we have everything we need to understand the results of our Chi-Square test - and just from the results above we can see that, since our resulting p-value of **0.16** is *greater* than our Acceptance Criteria of 0.05 then we will _retain_ the Null Hypothesis and conclude that there is no significant difference between the signup rates of Mailer 1 and Mailer 2.
 
