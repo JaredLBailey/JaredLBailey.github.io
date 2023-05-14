@@ -41,7 +41,7 @@ Based on initial signups, the grocery store management team already knew that re
 ### Actions <a name="overview-actions"></a>
 
 <ol type="1">
-    <li>I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups</li>
+    <li>I chose the chi-squared hypothesis test to compare signup rates between the mailers, since I was comparing percentage outcomes between groups</li>
     <li>To prepare the data for the test, I removed the control group data</li>
     <li>I set hypotheses and acceptance criteria for the test</li>
         <ol type="a">
