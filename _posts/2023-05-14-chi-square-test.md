@@ -40,12 +40,14 @@ Based on initial signups, the grocery store management team already knew that re
 
 ### Actions <a name="overview-actions"></a>
 
-1. I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups
-2. To prepare the data for the test, I removed the control group data
-3. I set hypotheses and acceptance criteria for the test
-    a. **Null Hypothesis:** There is no relationship between mailer type and signup rate. They are independent.
-    b. **Alternate Hypothesis:** There is a relationship between mailer type and signup rate. They are not independent.
-    c. **Acceptance Criteria:** 0.05
+    1. I chose the chi-squared test to compare signup rates between the mailers, as I compared percentage outcomes between groups
+    2. To prepare the data for the test, I removed the control group data
+    3. I set hypotheses and acceptance criteria for the test
+    <ol type="a">
+        <li>**Null Hypothesis:** There is no relationship between mailer type and signup rate. They are independent.</li>
+        <li>**Alternate Hypothesis:** There is a relationship between mailer type and signup rate. They are not independent.</li>
+        <li>**Acceptance Criteria:** 0.05</li>
+    </ol>
 
 As a requirement of the Chi-Square Test For Independence, we aggregated this data down to a 2x2 matrix for *signup_flag* by *mailer_type* and fed this into the algorithm (using the *scipy* library) to calculate the Chi-Square Statistic, p-value, Degrees of Freedom, and expected values
 
