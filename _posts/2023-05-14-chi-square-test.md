@@ -48,8 +48,8 @@ Based on initial signups, the grocery store management team already knew that re
         <li>**Alternate Hypothesis:** There is a relationship between mailer type and signup rate. They are not independent.</li>
         <li>**Acceptance Criteria:** 0.05</li>
     </ol>
-
-As a requirement of the Chi-Square Test For Independence, we aggregated this data down to a 2x2 matrix for *signup_flag* by *mailer_type* and fed this into the algorithm (using the *scipy* library) to calculate the Chi-Square Statistic, p-value, Degrees of Freedom, and expected values
+4. I aggregated the data in a 2x2 matric: signup flag by mailer type
+5. Using python, I calculated the chi-square statistic, p-value, and expected values
 
 <br/>
 
