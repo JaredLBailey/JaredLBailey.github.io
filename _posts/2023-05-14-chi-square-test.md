@@ -64,9 +64,13 @@ Observed values for the sign-up rate of groups A and B:
 
 The chi-square test results in:
 
-* Chi-square statistic: <b>1.94</b>
+* Chi-square test statistic: <b>1.94</b>
 * p-value: <b>0.16</b>
-* Critical value: <b>3.84</b> for our specified Acceptance Criteria of 0.05
+* Critical value: <b>3.84</b> (for the specified Acceptance Criteria of 0.05)
+
+Since the test statistic is lower than the critical value (and our p-value is higher than the acceptance critirea), I did not reject the null hypothesis. I concluded that although their is a difference in signup rate between the 2 groups, there is not enough evidence to say that this difference is more than chance.
+
+Without this hypothesis test, the grocery store management team may have concluded that there is a relationship between mailer type and signup rate.
 
 Based upon these statistics, we retain the null hypothesis, and conclude that there is no relationship between mailer type and signup rate.
 
