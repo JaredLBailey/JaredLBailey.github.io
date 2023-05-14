@@ -45,9 +45,9 @@ Based on initial signups, the grocery store management team already knew that re
     <li>To prepare the data for the test, I removed the control group data</li>
     <li>I set hypotheses and acceptance criteria for the test</li>
         <ol type="a">
-            <li>*Null Hypothesis:* There is no relationship between mailer type and signup rate. They are independent.</li>
-            <li>*Alternate Hypothesis:* There is a relationship between mailer type and signup rate. They are not independent.</li>
-            <li>*Acceptance Criteria:* 0.05</li>
+            <li><b>Null Hypothesis</b>: There is no relationship between mailer type and signup rate. They are independent.</li>
+            <li><b>Alternate Hypothesis</b>: There is a relationship between mailer type and signup rate. They are not independent.</li>
+            <li><b>Acceptance Criteria</b>: 0.05</li>
         </ol>
     <li>I aggregated the data in a 2x2 matric: signup flag by mailer type</li>
     <li>Using python, I calculated the chi-square statistic, p-value, and expected values</li>
