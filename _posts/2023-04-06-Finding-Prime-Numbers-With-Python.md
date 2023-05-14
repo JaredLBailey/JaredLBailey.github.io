@@ -163,5 +163,5 @@ primes_finder(1000000)
 >>> There are 78498 prime numbers between 1 and 1000000, the largest of which is 999983
 ```
 
-</br>
+<br/>
 In a few short lines of code I created a tool for finding prime numbers with surprising speed and perfect accuracy.
