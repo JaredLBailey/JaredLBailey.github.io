@@ -59,8 +59,8 @@ Based on initial signups, the grocery store management team already knew that re
 
 Observed values for the sign-up rate of groups A and B:
 
-* Group A (low cost): <b>32.8%</b> signup rate
-* Group B (high cost): <b>37.8%</b> signup rate
+* Group A (low cost mailer): <b>32.8%</b> signup rate
+* Group B (high cost mailer): <b>37.8%</b> signup rate
 
 However, the Chi-Square Test gives us the following statistics:
 
