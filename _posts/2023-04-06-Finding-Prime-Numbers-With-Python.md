@@ -6,7 +6,7 @@ tags: [Python, Primes]
 ---
 
 # Overview
-Let's create a function in Python that can quickly find all the prime numbers below a given value.  For example, if we pass the function a value of 100, then the function would find all the prime numbers below 100.
+In this post I'll create a function in Python that can quickly find all the prime numbers below a given value.  For example, if I pass the function a value of 100, then the function would find all the prime numbers below 100.
 
 <br/>
 
