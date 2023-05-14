@@ -29,9 +29,9 @@ A grocery store ran a mail campaign to promote their new Delivery Club. The Deli
 
 Potential Delivery Club customers were put randomly into three groups for the campaign:
 <ol type="A">
-<li>Received a low quality, low cost mailer</li>
-<li>Received a high quality, high cost mailer</li>
-<li>Control group, receiving no mailer at all</li>
+    <li>Received a low quality, low cost mailer</li>
+    <li>Received a high quality, high cost mailer</li>
+    <li>Control group, receiving no mailer at all</li>
 </ol>
 
 Based on initial signups, the grocery store management team already knew that receiving a mailer was very effective for Delivery Club signups. The management team was interested to know if there is a significant difference in signups between group A (cheap mailer) and B (expensive mailer). This knowledge will affect decisions for future mail campaigns.
