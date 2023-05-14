@@ -7,7 +7,7 @@ tags: [AB Testing, Hypothesis Testing, Chi-Square, Python]
 
 In this project I apply the chi-square hypothesis test for independence to a grocery store mail campaign. For this campaign different versions of the mailer were sent to potential customers, allowing for comparison each mailer's effectiveness. I use the chi-square hypothesis test output to assess whether the sign up rates by mailer were significantly different from one another.
 
-# Table of contents
+# Table of Contents
 
 - [Project Overview](#overview-main)
     - [Context](#overview-context)
@@ -27,7 +27,7 @@ ___
 
 A grocery store ran a mail campaign to promote their new Delivery Club. The Delivery Club costs $100 per year, with a maximum of 52 deliveries. The normal cost of grocery delivery is $10 per delivery.
 
-Potential Delivery Club customers were put randomly into three groups for the campaign. Each group recieved a different mailer.
+Potential Delivery Club customers were put randomly into three groups for the campaign. Each group received a different mailer, with no mailer for the control group.
 <ol type="A">
     <li>A low quality, low cost mailer</li>
     <li>A high quality, high cost mailer</li>
