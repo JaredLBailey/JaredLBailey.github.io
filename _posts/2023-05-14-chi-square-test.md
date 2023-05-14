@@ -28,9 +28,11 @@ ___
 A grocery store ran a mail campaign to promote their new Delivery Club. The Delivery Club costs $100 per year, with a maximum of 52 deliveries. The normal cost of grocery delivery is $10 per delivery.
 
 For the campaign promoting the Delivery Club, potential customers were put randomly into three groups:
-A. Received a low quality, low cost mailer
-B. Received a high quality, high cost mailer
-C. Control group, receiving no mailer at all
+<ol type="A">
+<li>Received a low quality, low cost mailer</li>
+<li>Received a high quality, high cost mailer</li>
+<li>Control group, receiving no mailer at all</li>
+</ol>
 
 Based on initial signups, the grocery store management team already knew that receiving a mailer was very effective for Delivery Club signups. The management team was interested to know if there is a significant difference in signups between group A (cheap mailer) and B (expensive mailer). This knowledge will affect decisions for future mail campaigns.
 
