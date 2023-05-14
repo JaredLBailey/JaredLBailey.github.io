@@ -62,10 +62,10 @@ Observed values for the sign-up rate of groups A and B:
 * Group A (low cost mailer): <b>32.8%</b> signup rate
 * Group B (high cost mailer): <b>37.8%</b> signup rate
 
-However, the Chi-Square Test gives us the following statistics:
+The chi-square test results in:
 
-* Chi-Square Statistic: **1.94**
-* p-value: **0.16**
+* Chi-Square Statistic: <b>1.94</b>
+* p-value: <b>0.16</b>
 
 The Critical Value for our specified Acceptance Criteria of 0.05 is **3.84**
 
