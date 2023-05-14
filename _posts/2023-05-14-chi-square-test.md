@@ -9,15 +9,15 @@ In this project I apply the chi-square hypothesis test for independence to a gro
 
 # Table of contents
 
-- [00. Project Overview](#overview-main)
+- [Project Overview](#overview-main)
     - [Context](#overview-context)
     - [Actions](#overview-actions)
     - [Results & Discussion](#overview-results)
-- [01. Concept Overview](#concept-overview)
-- [02. Data Overview & Preparation](#data-overview)
-- [03. Applying Chi-Square Test for Independence](#chi-square-application)
-- [04. Analysing the Results](#chi-square-results)
-- [05. Discussion](#discussion)
+- [Concept Overview](#concept-overview)
+- [Data Overview & Preparation](#data-overview)
+- [Applying Chi-Square Test for Independence](#chi-square-application)
+- [Analysing the Results](#chi-square-results)
+- [Discussion](#discussion)
 
 ___
 
