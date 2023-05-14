@@ -66,7 +66,7 @@ The chi-square test results in:
 
 * Chi-square statistic: <b>1.94</b>
 * p-value: <b>0.16</b>
-* Critical value of <b>3.84</b> for our specified Acceptance Criteria of 0.05
+* Critical value: <b>3.84</b> for our specified Acceptance Criteria of 0.05
 
 Based upon these statistics, we retain the null hypothesis, and conclude that there is no relationship between mailer type and signup rate.
 
