@@ -49,7 +49,7 @@ Based on initial signups, the grocery store management team already knew that re
             <li><b>Alternate Hypothesis</b>: There is a relationship between mailer type and signup rate. They are not independent.</li>
             <li><b>Acceptance Criteria</b>: 0.05</li>
         </ol>
-    <li>I aggregated the data in a 2x2 matric: signup flag by mailer type</li>
+    <li>I aggregated the data in a 2x2 matrix: signup flag by mailer type</li>
     <li>Using python, I calculated the chi-square statistic, p-value, and expected values</li>
 </ol>
 
@@ -68,24 +68,13 @@ The chi-square test results in:
 * p-value: <b>0.16</b>
 * Critical value: <b>3.84</b> (for the specified Acceptance Criteria of 0.05)
 
-Since the test statistic is lower than the critical value (and our p-value is higher than the acceptance criteria), I did not reject the null hypothesis. I concluded that although there is a difference in signup rate between the 2 groups, there is not enough evidence to say that this difference is more than chance.
+Since the test statistic is lower than the critical value (and our p-value is higher than the acceptance criteria), I did not reject the null hypothesis. I concluded that although there is a difference in signup rate between the 2 mailer groups, there is not enough evidence to say that this difference is due to more than random chance.
 
-Without this hypothesis test, the grocery store management team may have incorrectly concluded that there is a relationship between mailer type and signup rate.
+Without this hypothesis test, the grocery store management team may have incorrectly concluded that there is a relationship between mailer type and signup rate. This conclusion could have resulted in spending more on future expensive mailers, but not necessarily gaining extra signups as a result.
 
+It is worth noting that the test results do not suggest that there is no relationship between mailer cost and sign up rate. The test results could be due to a small sample size. If more mailer data was collected and there still was a difference in signups, the hypothesis test may reach a different conclusion.
 
-
-Based upon these statistics, we retain the null hypothesis, and conclude that there is no relationship between mailer type and signup rate.
-
-In other words - while we saw that the higher cost Mailer 2 had a higher signup rate (37.8%) than the lower cost Mailer 1 (32.8%) it appears that this difference is not significant, at least at our Acceptance Criteria of 0.05.
-
-Without running this Hypothesis Test, the client may have concluded that they should always look to go with higher cost mailers - and from what we've seen in this test, that may not be a great decision.  It would result in them spending more, but not *necessarily* gaining any extra revenue as a result
-
-Our results here also do not say that there *definitely isn't a difference between the two mailers* - we are only advising that we should not make any rigid conclusions *at this point*.  
-
-Running more A/B Tests like this, gathering more data, and then re-running this test may provide us, and the client more insight!
-
-<br>
-<br>
+<br/>
 
 ___
 
