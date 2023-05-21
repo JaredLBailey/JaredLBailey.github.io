@@ -210,7 +210,7 @@ Code description:
     * Degrees of freedom
     * Expected values
 * Display chi-square statistic & p-value from the test
-* Calculate critical value based upon our acceptance criteria & the degrees Of freedom
+* Calculate critical value based upon our acceptance criteria & the degrees of freedom
 * Display critical value
 
 ```python
