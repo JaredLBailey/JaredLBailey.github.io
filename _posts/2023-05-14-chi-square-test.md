@@ -150,7 +150,7 @@ import pandas as pd
 from scipy.stats import chi2_contingency, chi2
 
 # import campaign data
-campaign_data = ...
+campaign_data = pd.read_csv(campaign_data.csv)
 
 # remove customers who were in the control group
 campaign_data = campaign_data.loc[campaign_data["mailer_type"] != "Control"]
