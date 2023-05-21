@@ -16,8 +16,8 @@ In this project I apply the chi-square hypothesis test for independence to a gro
 - [Concept Overview](#concept-overview)
 - [Data Overview & Preparation](#data-overview)
 - [Applying Chi-Square Test for Independence](#chi-square-application)
-- [Analysing the Results](#chi-square-results)
-- [Discussion](#discussion)
+- [Analyzing the Results](#chi-square-results)
+- [Business Result](#discussion)
 
 ___
 
