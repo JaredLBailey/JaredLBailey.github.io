@@ -99,7 +99,7 @@ There are many different scenarios we can run Hypothesis Tests on, and they all 
 
 The Null Hypothesis is the hypothesis that there is no statistically significant difference between groups A and B. This hypothesis assumes that any difference observed between the two groups is the result of random chance.
 
-For an A/B Test, the Null Hypothesis is the researcher's initial viewpoint. The researcher is seeking evidence to disprove (reject) the Null Hypothesis in favor of another hypothesis, or keep (not reject) the Null Hypothesis.
+In an A/B test, the Null Hypothesis is the researcher's initial viewpoint. The researcher is seeking evidence to disprove (reject) the Null Hypothesis in favor of another hypothesis, or keep (not reject) the Null Hypothesis.
 
 <br>
 #### The Alternate Hypothesis
@@ -111,7 +111,7 @@ In the event that the researcher rejects the Null Hypothesis, they do so in favo
 <br>
 #### p-value
 
-The p-value is the probability that if the A/B test was run many times, researchers would see results equal to or more extreme as what they observed in the current experiment.
+The p-value is the probability that if the A/B test was run many times, researchers would see results equal to or more extreme than what they observed in the current experiment.
 
 <br>
 #### The Acceptance Criteria
@@ -122,14 +122,18 @@ By convention the Acceptance Criteria is set at 0.05. If desired, it could be se
 
 <br>
 #### Bringing Topics Together
-In a Hypothesis Test researchers test the Null Hypothesis. They do so by collecting evidence, and using that evidence to determine a p-value. This p-value is measured against the Acceptance Criteria to determine whether to reject or fail to reject the Null Hypothesis. If the Null Hypothesis is rejected, it is done so in favor of the Alternative Hypothesis.
+In an A/B Test researchers test the Null Hypothesis. They do so by collecting evidence, and using that evidence to determine a p-value. This p-value is measured against the Acceptance Criteria to determine whether to reject or fail to reject the Null Hypothesis.
+
+If the p-value is less than or equal to the Acceptance Criteria, then researchers reject the Null Hypothesis in favor of the Alternative Hypothesis. In this case researchers determine that there is a statistically significant difference of the metric measured between groups A and B.
+
+If the p-value is greater than the Acceptance Criteria, then researchers fail to reject the Null Hypothesis. They determine that the difference in metric measurements between groups A and B is the result of random chance or low sample size.
 
 <br>
 #### Types of Hypothesis Test
 
-There are many different types of Hypothesis Tests, each of which is appropriate for use in differing scenarios - depending on a) the type of data that you’re looking to test and b) the question that you’re asking of that data.
+There are many different types of Hypothesis Tests. The type of test best suited for an experiment depends on they type of data being used and the question that the researcher asks.
 
-In the case of our task here, where we are looking to understand the difference in sign-up *rate* between two groups - we will utilise the Chi-Square Test For Independence.
+The mailer campaign measures the difference in signup rates between two groups, which makes the chi-square test for indepence an acceptable test choice.
 
 <br>
 ### Chi-Square Test For Independence
