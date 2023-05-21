@@ -7,7 +7,7 @@ tags: [Customer Loyalty, Machine Learning, Regression, Python]
 
 A grocery retailer hired a market research consultancy to append market level customer loyalty information to their database.  However, only around 50% of the grocery retailer's customer base could be tagged. I assisted tagging the other customers.
 
-# Table of contents
+# Table of Contents
 
 - [Project Overview](#overview-main)
     - [Context](#overview-context)
