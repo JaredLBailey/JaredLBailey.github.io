@@ -109,13 +109,20 @@ The other hypothesis in an A/B Test is called the Alternative Hypothesis. The Al
 In the event that the researcher rejects the Null Hypothesis, they do so in favor of the Alternative Hypothesis.
 
 <br>
+#### p-value
+
+The Acceptance Cri
+
+<br>
 #### The Acceptance Criteria
 
-In a Hypothesis Test, before we collect any data or run any numbers - we specify an Acceptance Criteria.  This is a p-value threshold at which we’ll decide to reject or support the null hypothesis.  It is essentially a line we draw in the sand saying "if I was to run this test many many times, what proportion of those times would I want to see different results come out, in order to feel comfortable, or confident that my results are not just some unusual occurrence"
+The Acceptance Criteria is a p-value threshold at which we'll decide whether to reject or not reject the Null Hypothesis. In order to remain impartial, researchers specify the Acceptance Criteria before they run an A/B Test. 
 
-Conventionally, we set our Acceptance Criteria to 0.05 - but this does not have to be the case.  If we need to be more confident that something did not occur through chance alone, we could lower this value down to something much smaller, meaning that we only come to the conclusion that the outcome was special or rare if it’s extremely rare.
+By convention the Acceptance Criteria is set at 0.05. If desired, it could be set at other levels such as 0.10 or 0.01.
 
-So to summarise, in a Hypothesis Test, we test the Null Hypothesis using a p-value and then decide it’s fate based on the Acceptance Criteria.
+<br>
+#### Bringing Topics Together
+In a Hypothesis Test researchers test the Null Hypothesis. They do so by collecting evidence, and using that evidence to determine a p-value. This p-value is measured against the Acceptance Criteria to determine whether to reject or fail to reject the Null Hypothesis. If the Null Hypothesis is rejected, it is done so in favor of the Alternative Hypothesis.
 
 <br>
 #### Types of Hypothesis Test
