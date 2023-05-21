@@ -111,7 +111,7 @@ In the event that the researcher rejects the Null Hypothesis, they do so in favo
 <br>
 #### p-value
 
-The Acceptance Cri
+The p-value is the probability that if the A/B test was run many times, researchers would see results equal to or more extreme as what they observed in the current experiment.
 
 <br>
 #### The Acceptance Criteria
