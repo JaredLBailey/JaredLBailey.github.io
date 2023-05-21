@@ -81,32 +81,25 @@ ___
 # Concept Overview  <a name="concept-overview"></a>
 
 <br>
-### A/B Testing
+### A/B Hypothesis Testing
 
-An A/B Test is a randomized experiment containing two groups, A and B. As part of the experiment, both groups receive different experiences while researchers measure participant responses. Researchers then look to understand each group's response to their experience, determining if the responses are different enough to be considered statistically significant.
+An A/B test is a randomized experiment containing two groups, A and B. As part of the experiment, both groups receive different experiences while researchers measure participant responses. Researchers then look to understand each group's response to their experience, determining if the responses are different enough to be considered statistically significant.
 
 Among many potential uses, companies use A/B Tests to select online ads, email subject lines for customer contact, and coupon offerings. These tests are an excellent way for a company to differentiate between potential options when making business decisions. 
 
 <br>
-### Hypothesis Testing
-
-A Hypothesis Test is used to assess the plausibility, or likelihood of an assumed viewpoint based on sample data - in other words, a it helps us assess whether a certain view we have about some data is likely to be true or not.
-
-There are many different scenarios we can run Hypothesis Tests on, and they all have slightly different techniques and formulas - however they all have some shared, fundamental steps & logic that underpin how they work.
-
-<br>
 #### The Null Hypothesis
 
-The Null Hypothesis is the hypothesis that there is no statistically significant difference between groups A and B. This hypothesis assumes that any difference observed between the two groups is the result of random chance.
+The null hypothesis is the hypothesis that there is no statistically significant difference between groups A and B. This hypothesis assumes that any difference observed between the two groups is the result of random chance.
 
-In an A/B test, the Null Hypothesis is the researcher's initial viewpoint. The researcher is seeking evidence to disprove (reject) the Null Hypothesis in favor of another hypothesis, or keep (not reject) the Null Hypothesis.
+In an A/B test, the null hypothesis is the researcher's initial viewpoint. The researcher is seeking evidence to disprove (reject) the null hypothesis in favor of another hypothesis, or keep (not reject) the null hypothesis.
 
 <br>
 #### The Alternate Hypothesis
 
-The other hypothesis in an A/B Test is called the Alternative Hypothesis. The Alternative Hypothesis states the opposite viewpoint of the Null Hypothesis: that the difference between groups A and B is statistically significant, and not a result of random chance.
+The other hypothesis in an A/B Test is called the alternative hypothesis. The alternative hypothesis states the opposite viewpoint of the null hypothesis: that the difference between groups A and B is statistically significant, and not a result of random chance.
 
-In the event that the researcher rejects the Null Hypothesis, they do so in favor of the Alternative Hypothesis.
+In the event that the researcher rejects the null hypothesis, they do so in favor of the alternative hypothesis.
 
 <br>
 #### p-value
@@ -116,29 +109,29 @@ The p-value is the probability that if the A/B test was run many times, research
 <br>
 #### The Acceptance Criteria
 
-The Acceptance Criteria is a p-value threshold at which we'll decide whether to reject or not reject the Null Hypothesis. In order to remain impartial, researchers specify the Acceptance Criteria before they run an A/B Test. 
+The acceptance criteria is a p-value threshold at which we'll decide whether to reject or not reject the null hypothesis. In order to remain impartial, researchers specify the acceptance criteria before they run an A/B Test. 
 
-By convention the Acceptance Criteria is set at 0.05. If desired, it could be set at other levels such as 0.10 or 0.01.
+By convention the acceptance criteria is set at 0.05. If desired, it could be set at other levels such as 0.10 or 0.01.
 
 <br>
 #### Bringing Topics Together
-In an A/B Test researchers test the Null Hypothesis. They do so by collecting evidence, and using that evidence to determine a p-value. This p-value is measured against the Acceptance Criteria to determine whether to reject or fail to reject the Null Hypothesis.
+In an A/B test researchers test the null hypothesis. They do so by collecting evidence, and using that evidence to determine a p-value. This p-value is compared against the acceptance criteria to determine whether to reject or fail to reject the null hypothesis.
 
-If the p-value is less than or equal to the Acceptance Criteria, then researchers reject the Null Hypothesis in favor of the Alternative Hypothesis. In this case researchers determine that there is a statistically significant difference of the metric measured between groups A and B.
+If the p-value is less than or equal to the acceptance criteria, then researchers reject the null hypothesis in favor of the alternative hypothesis. In this case researchers determine that there is a statistically significant difference of the metric measured between groups A and B.
 
-If the p-value is greater than the Acceptance Criteria, then researchers fail to reject the Null Hypothesis. They determine that the difference in metric measurements between groups A and B is the result of random chance or low sample size.
+If the p-value is greater than the acceptance criteria, then researchers fail to reject the Null Hypothesis. They determine that the difference in metric measurements between groups A and B is likely the result of random chance or low sample size.
 
 <br>
 #### Types of Hypothesis Test
 
-There are many different types of Hypothesis Tests. The type of test best suited for an experiment depends on they type of data being used and the question that the researcher asks.
+There are many different types of hypothesis tests. The type of test best suited for an experiment depends on they type of data being used and the question that the researcher asks.
 
 The mailer campaign measures the difference in signup rates between two groups, which makes the chi-square test for indepence an acceptable test choice.
 
 <br>
 ### Chi-Square Test For Independence
 
-The Chi-Square Test For Independence is a type of Hypothesis Test that assumes observed frequencies for categorical variables will match the expected frequencies.
+The chi-square test For independence is a type of hypothesis test that assumes observed frequencies for categorical variables will match the expected frequencies.
 
 The *assumption* is the Null Hypothesis, which as discussed above is always the viewpoint that the two groups will be equal.  With the Chi-Square Test For Independence we look to calculate a statistic which, based on the specified Acceptance Criteria will mean we either reject or support this initial assumption.
 
