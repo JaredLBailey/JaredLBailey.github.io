@@ -81,14 +81,14 @@ ___
 # Concept Overview  <a name="concept-overview"></a>
 
 <br>
-#### A/B Testing
+### A/B Testing
 
 An A/B Test can be described as a randomised experiment containing two groups, A & B, that receive different experiences. Within an A/B Test, we look to understand and measure the response of each group - and the information from this helps drive future business decisions.
 
 Application of A/B testing can range from testing different online ad strategies, different email subject lines when contacting customers, or testing the effect of mailing customers a coupon, vs a control group.  Companies like Amazon are running these tests in an almost never-ending cycle, testing new website features on randomised groups of customers...all with the aim of finding what works best so they can stay ahead of their competition.  Reportedly, Netflix will even test different images for the same movie or show, to different segments of their customer base to see if certain images pull more viewers in.
 
 <br>
-#### Hypothesis Testing
+### Hypothesis Testing
 
 A Hypothesis Test is used to assess the plausibility, or likelihood of an assumed viewpoint based on sample data - in other words, a it helps us assess whether a certain view we have about some data is likely to be true or not.
 
@@ -121,7 +121,7 @@ There are many different types of Hypothesis Tests, each of which is appropriate
 In the case of our task here, where we are looking to understand the difference in sign-up *rate* between two groups - we will utilise the Chi-Square Test For Independence.
 
 <br>
-#### Chi-Square Test For Independence
+### Chi-Square Test For Independence
 
 The Chi-Square Test For Independence is a type of Hypothesis Test that assumes observed frequencies for categorical variables will match the expected frequencies.
 
@@ -199,7 +199,7 @@ ___
 # Applying Chi-Square Test for Independence <a name="chi-square-application"></a>
 
 <br>
-#### State Hypotheses & Acceptance Criteria for Test
+### State Hypotheses & Acceptance Criteria for Test
 
 The very first thing we need to do in any form of Hypothesis Test is state our Null Hypothesis, our Alternate Hypothesis, and the Acceptance Criteria (more details on these in the section above)
 
@@ -215,7 +215,7 @@ acceptance_criteria = 0.05
 ```
 
 <br>
-#### Calculate Observed Frequencies & Expected Frequencies
+### Calculate Observed Frequencies & Expected Frequencies
 
 As mentioned in the section above, in a Chi-Square Test For Independence, the *observed frequencies* are the true values that we’ve seen, in other words the actual rates per group in the data itself.  The *expected frequencies* are what we would *expect* to see based on *all* of the data combined.
 
