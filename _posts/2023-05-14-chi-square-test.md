@@ -135,7 +135,7 @@ ___
 
 There exists a *campaign_data* table that shows which customers received each type of <b>Delivery Club</b> mailer, which customers were in the control group, and which customers joined the club as a result.
 
-I sought evidence that the Delivery Club signup rate for potential customers that received "Mailer 1" (low cost) was different to those who received "Mailer 2" (high cost). As such, I excluded potential customers in the control group.
+I sought evidence that the Delivery Club signup rate for potential customers that received <b>Mailer 1 (low cost)</b> was different to those who received <b>Mailer 2 (high cost)</b>. As such, I excluded potential customers in the control group.
 
 Description of Python code below:
 * Load Python libraries required to import the data and perform the chi-square test
