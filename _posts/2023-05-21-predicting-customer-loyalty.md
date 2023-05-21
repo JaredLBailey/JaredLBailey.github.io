@@ -5,7 +5,7 @@ image: "/posts/regression-title-img.png"
 tags: [Customer Loyalty, Machine Learning, Regression, Python]
 ---
 
-A grocery retailer hired a market research consultancy to append market level customer loyalty information to their database.  However, only around 50% of the grocery retailer's customer base could be labeled. I assisted in labeling the other customers.
+A grocery retailer hired a market research consultancy to append market level customer loyalty information to their database.  However, only around 50% of the grocery retailer's customer base could be labeled. I assisted labeling the other customers.
 
 # Table of contents
 
