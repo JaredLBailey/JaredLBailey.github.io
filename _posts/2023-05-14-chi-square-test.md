@@ -95,7 +95,7 @@ A Hypothesis Test is used to assess the plausibility, or likelihood of an assume
 There are many different scenarios we can run Hypothesis Tests on, and they all have slightly different techniques and formulas - however they all have some shared, fundamental steps & logic that underpin how they work.
 
 <br>
-**The Null Hypothesis**
+#### The Null Hypothesis
 
 In any Hypothesis Test, we start with the Null Hypothesis. The Null Hypothesis is where we state our initial viewpoint, and in statistics, and specifically Hypothesis Testing, our initial viewpoint is always that the result is purely by chance or that there is no relationship or association between two outcomes or groups
 
