@@ -83,9 +83,9 @@ ___
 <br>
 ### A/B Testing
 
-An A/B Test can be described as a randomised experiment containing two groups, A & B, that receive different experiences. Within an A/B Test, we look to understand and measure the response of each group - and the information from this helps drive future business decisions.
+An A/B Test is a randomized experiment containing two groups, A and B. As part of the experiment, both groups receive different experiences while researchers measure participant responses. Researchers then look to understand each group's response to their experience, determining if the responses are different enough to be considered statistically significant.
 
-Application of A/B testing can range from testing different online ad strategies, different email subject lines when contacting customers, or testing the effect of mailing customers a coupon, vs a control group.  Companies like Amazon are running these tests in an almost never-ending cycle, testing new website features on randomised groups of customers...all with the aim of finding what works best so they can stay ahead of their competition.  Reportedly, Netflix will even test different images for the same movie or show, to different segments of their customer base to see if certain images pull more viewers in.
+Among many potential uses, companies use A/B Tests to select online ads, email subject lines for customer contact, and coupon offerings. These tests are an excellent way for a company to differentiate between potential options when making business decisions. 
 
 <br>
 ### Hypothesis Testing
