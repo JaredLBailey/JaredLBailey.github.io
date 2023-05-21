@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Predicting Customer Loyalty Using ML
+title: Predicting Customer Loyalty Using Machine Learning
 image: "/posts/regression-title-img.png"
 tags: [Customer Loyalty, Machine Learning, Regression, Python]
 ---
 
-Our client, a grocery retailer, hired a market research consultancy to append market level customer loyalty information to the database.  However, only around 50% of the client's customer base could be tagged, thus the other half did not have this information present.  Let's use ML to solve this!
+A grocery retailer hired a market research consultancy to append market level customer loyalty information to their database.  However, only around 50% of the grocery retailer's customer base could be labeled. I assisted in labeling the other customers.
 
 # Table of contents
 
@@ -20,7 +20,7 @@ Our client, a grocery retailer, hired a market research consultancy to append ma
 - [03. Linear Regression](#linreg-title)
 - [04. Decision Tree](#regtree-title)
 - [05. Random Forest](#rf-title)
-- [06. Modelling Summary](#modelling-summary)
+- [06. Modeling Summary](#modelling-summary)
 - [07. Predicting Missing Loyalty Scores](#modelling-predictions)
 - [08. Growth & Next Steps](#growth-next-steps)
 
@@ -1084,7 +1084,7 @@ There are slight differences in the order or "importance" for the remaining vari
 
 ___
 <br>
-# Modelling Summary  <a name="modelling-summary"></a>
+# Modeling Summary  <a name="modelling-summary"></a>
 
 The most important outcome for this project was predictive accuracy, rather than explicitly understanding the drivers of prediction. Based upon this, we chose the model that performed the best when predicted on the test set - the Random Forest.
 
