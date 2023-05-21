@@ -9,20 +9,20 @@ A grocery retailer hired a market research consultancy to append market level cu
 
 # Table of contents
 
-- [00. Project Overview](#overview-main)
+- [Project Overview](#overview-main)
     - [Context](#overview-context)
     - [Actions](#overview-actions)
     - [Results](#overview-results)
     - [Growth/Next Steps](#overview-growth)
     - [Key Definition](#overview-definition)
-- [01. Data Overview](#data-overview)
-- [02. Modelling Overview](#modelling-overview)
-- [03. Linear Regression](#linreg-title)
-- [04. Decision Tree](#regtree-title)
-- [05. Random Forest](#rf-title)
-- [06. Modeling Summary](#modelling-summary)
-- [07. Predicting Missing Loyalty Scores](#modelling-predictions)
-- [08. Growth & Next Steps](#growth-next-steps)
+- [Data Overview](#data-overview)
+- [Modelling Overview](#modelling-overview)
+- [Linear Regression](#linreg-title)
+- [Decision Tree](#regtree-title)
+- [Random Forest](#rf-title)
+- [Modeling Summary](#modelling-summary)
+- [Predicting Missing Loyalty Scores](#modelling-predictions)
+- [Growth & Next Steps](#growth-next-steps)
 
 ___
 
