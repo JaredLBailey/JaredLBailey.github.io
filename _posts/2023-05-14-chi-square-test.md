@@ -284,17 +284,17 @@ else:
 
 ```
 <br>
-As we can see from the outputs of these print statements, we do indeed retain the null hypothesis.  We could not find enough evidence that the signup rates for Mailer 1 and Mailer 2 were different - and thus conclude that there was no significant difference.
 
 ___
 
 <br>
-# Discussion <a name="discussion"></a>
+# Business Result <a name="discussion"></a>
 
-While we saw that the higher cost Mailer 2 had a higher signup rate (37.8%) than the lower cost Mailer 1 (32.8%) it appears that this difference is not significant, at least at our Acceptance Criteria of 0.05.
+Although the higher cost Mailer 2 had a higher signup rate (37.8%) than the lower cost Mailer 1 (32.8%), the hypothesis test indicates that this difference is not statiscally significant.
 
-Without running this Hypothesis Test, the client may have concluded that they should always look to go with higher cost mailers - and from what we've seen in this test, that may not be a great decision.  It would result in them spending more, but not *necessarily* gaining any extra revenue as a result
+Without running the hypothesis test, the grocery store management team may have concluded that they should always print higher cost mailers. The test results indicate this may not be a great decision. Such a decision would result in greater spending, but not *necessarily* gaining extra revenue as a result.
 
-Our results here also do not say that there *definitely isn't a difference between the two mailers* - we are only advising that we should not make any rigid conclusions *at this point*.  
+### Worth Noting 
+The test results do not say that there definitely isn't a difference between the signup rates of the two mailers.
 
-Running more A/B Tests like this, gathering more data, and then re-running this test may provide us, and the client more insight!
+My advice from the A/B test is that there isn't evidence of a difference between the signup rates of the groups at this point. As we gather more data, the result of a future A/B test may change.
