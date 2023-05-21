@@ -5,7 +5,7 @@ image: "/posts/regression-title-img.png"
 tags: [Customer Loyalty, Machine Learning, Regression, Python]
 ---
 
-A grocery retailer hired a market research consultancy to append market level customer loyalty information to their database.  However, only around 50% of the grocery retailer's customer base could be labeled. I assisted labeling the other customers.
+A grocery retailer hired a market research consultancy to append market level customer loyalty information to their database.  However, only around 50% of the grocery retailer's customer base could be tagged. I assisted tagging the other customers.
 
 # Table of contents
 
@@ -30,11 +30,9 @@ ___
 
 ### Context <a name="overview-context"></a>
 
-Our client, a grocery retailer, hired a market research consultancy to append market level customer loyalty information to the database.  However, only around 50% of the client's customer base could be tagged, thus the other half did not have this information present.
+My aim is to accurately predict the *loyalty score* for customers not previously tagged. This will enable the grocery retailer in uderstanding customer loyalty for tracking, targeted marketed, and communication purposes.
 
-The overall aim of this work is to accurately predict the *loyalty score* for those customers who could not be tagged, enabling our client a clear understanding of true customer loyalty, regardless of total spend volume - and allowing for more accurate and relevant customer tracking, targeting, and comms.
-
-To achieve this, we looked to build out a predictive model that will find relationships between customer metrics and *loyalty score* for those customers who were tagged, and use this to predict the loyalty score metric for those who were not.
+To predict loyalty score, I built a model to find relationships between customer metrics and loyalty score for those customers who were tagged. I then used this model to predict loyalty score for those customers not initially tagged.
 <br>
 <br>
 ### Actions <a name="overview-actions"></a>
