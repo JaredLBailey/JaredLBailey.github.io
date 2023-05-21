@@ -133,15 +133,14 @@ ___
 <br>
 # Data Overview & Preparation  <a name="data-overview"></a>
 
-In the client database, we have a *campaign_data* table which shows us which customers received each type of "Delivery Club" mailer, which customers were in the control group, and which customers joined the club as a result.
+There exists a *campaign_data* table that shows which customers received each type of "Delivery Club" mailer, which customers were in the control group, and which customers joined the club as a result.
 
-For this task, we are looking to find evidence that the Delivery Club signup rate for customers that received "Mailer 1" (low cost) was different to those who received "Mailer 2" (high cost) and thus from the *campaign_data* table we will just extract customers in those two groups, and exclude customers who were in the control group.
+I sought evidence that the Delivery Club signup rate for potential customers that received "Mailer 1" (low cost) was different to those who received "Mailer 2" (high cost). As such, I excluded potential customers in the control group.
 
-In the code below, we:
-
-* Load in the Python libraries we require for importing the data and performing the chi-square test (using scipy)
+Description of Python code below:
+* Load Python libraries required to import the data and perform the chi-square test
 * Import the required data from the *campaign_data* table
-* Exclude customers in the control group, giving us a dataset with Mailer 1 & Mailer 2 customers only
+* Exclude customers in the control group, providing a dataset with only Mailer 1 and Mailer 2 potential customers
 
 <br>
 ```python
@@ -158,7 +157,7 @@ campaign_data = campaign_data.loc[campaign_data["mailer_type"] != "Control"]
 
 ```
 <br>
-A sample of this data (the first 10 rows) can be seen below:
+Data sample (first 10 rows):
 <br>
 <br>
 
@@ -177,8 +176,7 @@ A sample of this data (the first 10 rows) can be seen below:
 | 435 | delivery_club | Mailer2 | 0 |
 
 <br>
-In the DataFrame we have:
-
+Data frame columns:
 * customer_id
 * campaign name
 * mailer_type (either Mailer1 or Mailer2)
