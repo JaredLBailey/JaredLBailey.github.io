@@ -126,24 +126,7 @@ If the p-value is greater than the acceptance criteria, then researchers fail to
 
 There are many different types of hypothesis tests. The type of test best suited for an experiment depends on they type of data being used and the question that the researcher asks.
 
-The mailer campaign measures the difference in signup rates between two groups, which makes the chi-square test for indepence an acceptable test choice.
-
-<br>
-### Chi-Square Test For Independence
-
-The chi-square test For independence is a type of hypothesis test that assumes observed frequencies for categorical variables will match the expected frequencies.
-
-The *assumption* is the Null Hypothesis, which as discussed above is always the viewpoint that the two groups will be equal.  With the Chi-Square Test For Independence we look to calculate a statistic which, based on the specified Acceptance Criteria will mean we either reject or support this initial assumption.
-
-The *observed frequencies* are the true values that we’ve seen.
-
-The *expected frequencies* are essentially what we would *expect* to see based on all of the data.
-
-**Note:** Another option when comparing "rates" is a test known as the *Z-Test For Proportions*.  While, we could absolutely use this test here, we have chosen the Chi-Square Test For Independence because:
-
-* The resulting test statistic for both tests will be the same
-* The Chi-Square Test can be represented using 2x2 tables of data - meaning it can be easier to explain to stakeholders
-* The Chi-Square Test can extend out to more than 2 groups - meaning the business can have one consistent approach to measuring signficance
+The mailer campaign measures the difference in signup rates between two groups, which makes the chi-square test for independence an acceptable test choice.
 
 ___
 
