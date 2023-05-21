@@ -97,15 +97,19 @@ There are many different scenarios we can run Hypothesis Tests on, and they all 
 <br>
 #### The Null Hypothesis
 
-In any Hypothesis Test, we start with the Null Hypothesis. The Null Hypothesis is where we state our initial viewpoint, and in statistics, and specifically Hypothesis Testing, our initial viewpoint is always that the result is purely by chance or that there is no relationship or association between two outcomes or groups
+The Null Hypothesis is the hypothesis that there is no statistically significant difference between groups A and B. This hypothesis assumes that any difference observed between the two groups is the result of random chance.
+
+For an A/B Test, the Null Hypothesis is the researcher's initial viewpoint. The researcher is seeking evidence to disprove (reject) the Null Hypothesis in favor of another hypothesis, or keep (not reject) the Null Hypothesis.
 
 <br>
-**The Alternate Hypothesis**
+#### The Alternate Hypothesis
 
-The aim of the Hypothesis Test is to look for evidence to support or reject the Null Hypothesis.  If we reject the Null Hypothesis, that would mean we’d be supporting the Alternate Hypothesis.  The Alternate Hypothesis is essentially the opposite viewpoint to the Null Hypothesis - that the result is *not* by chance, or that there *is* a relationship between two outcomes or groups
+The other hypothesis in an A/B Test is called the Alternative Hypothesis. The Alternative Hypothesis states the opposite viewpoint of the Null Hypothesis: that the difference between groups A and B is statistically significant, and not a result of random chance.
+
+In the event that the researcher rejects the Null Hypothesis, they do so in favor of the Alternative Hypothesis.
 
 <br>
-**The Acceptance Criteria**
+#### The Acceptance Criteria
 
 In a Hypothesis Test, before we collect any data or run any numbers - we specify an Acceptance Criteria.  This is a p-value threshold at which we’ll decide to reject or support the null hypothesis.  It is essentially a line we draw in the sand saying "if I was to run this test many many times, what proportion of those times would I want to see different results come out, in order to feel comfortable, or confident that my results are not just some unusual occurrence"
 
@@ -114,7 +118,7 @@ Conventionally, we set our Acceptance Criteria to 0.05 - but this does not have 
 So to summarise, in a Hypothesis Test, we test the Null Hypothesis using a p-value and then decide it’s fate based on the Acceptance Criteria.
 
 <br>
-**Types of Hypothesis Test**
+#### Types of Hypothesis Test
 
 There are many different types of Hypothesis Tests, each of which is appropriate for use in differing scenarios - depending on a) the type of data that you’re looking to test and b) the question that you’re asking of that data.
 
