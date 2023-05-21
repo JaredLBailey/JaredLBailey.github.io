@@ -176,9 +176,9 @@ Data sample (first 10 rows):
 | 435 | delivery_club | Mailer2 | 0 |
 
 <br>
-Data frame columns:
-* customer_id
-* campaign name
+Data frame:
+* customer_id (unique ID)
+* campaign_name (all delivery_club)
 * mailer_type (either Mailer1 or Mailer2)
 * signup_flag (either 1 or 0)
 
