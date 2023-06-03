@@ -14,7 +14,6 @@ A grocery retailer hired a market research consultancy to append market level cu
     - [Actions](#overview-actions)
     - [Results](#overview-results)
     - [Growth/Next Steps](#overview-growth)
-    - [Key Definition](#overview-definition)
 - [Data Overview](#data-overview)
 - [Modelling Overview](#modelling-overview)
 - [Linear Regression](#linreg-title)
@@ -31,6 +30,10 @@ ___
 ### Context <a name="overview-context"></a>
 
 My aim was to accurately predict the loyalty score for customers not previously tagged. This will assist the grocery retailer in uderstanding customer loyalty for tracking, targeted marketed, and communication purposes.
+
+Loyalty score measures the percent of a customer's grocery money that is spent at my grocery retailer client. For example:
+* A customer has $15,000 this year for groceries, and spends all $15,000 with my client. This customer has a loyalty score of 1.
+* A customer has $10,000 this year for groceries, and spends $2,000 with my client. This customer has a loyalty score of 0.2.
 
 To predict loyalty score, I built several models to find relationships between customer metrics and loyalty score for those customers who were tagged. I then used these models to predict loyalty score for those customers not initially tagged.
 <br>
@@ -74,15 +77,6 @@ Despite great acuracy scores, other techniques and models could be explored such
 * Boosted models
 * Neural networks
 
-<br>
-<br>
-### Key Definition  <a name="overview-definition"></a>
-
-The *loyalty score* metric measures the % of grocery spend (market level) that each customer allocates to the client vs. all of the competitors.  
-
-Example 1: Customer X has a total grocery spend of $100 and all of this is spent with our client. Customer X has a *loyalty score* of 1.0
-
-Example 2: Customer Y has a total grocery spend of $200 but only 20% is spent with our client.  The remaining 80% is spend with competitors.  Customer Y has a *customer loyalty score* of 0.2
 <br>
 <br>
 ___
