@@ -78,6 +78,7 @@ Since the grocery retailer indicated that accuracy outranked explainability in r
 
 Despite great acuracy scores, other techniques and models could be explored such as:
 * Regularization
+* Interaction effects
 * Feature engineering
 * Collection of additional variables
 * Boosted models
@@ -185,10 +186,10 @@ from sklearn.metrics import r2_score
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.feature_selection import RFECV
 
-# import modelling data
-data_for_model = pickle.load(open("data/customer_loyalty_modelling.p", "rb"))
+# import modeling data
+data_for_model = pickle.load(open("data/customer_loyalty_modeling.p", "rb"))
 
-# drop uneccessary columns
+# drop unneccessary columns
 data_for_model.drop("customer_id", axis = 1, inplace = True)
 
 # shuffle data
@@ -198,17 +199,10 @@ data_for_model = shuffle(data_for_model, random_state = 42)
 <br>
 ### Data Preprocessing <a name="linreg-preprocessing"></a>
 
-For Linear Regression we have certain data preprocessing steps that need to be addressed, including:
-
-* Missing values in the data
-* The effect of outliers
-* Encoding categorical variables to numeric form
-* Multicollinearity & Feature Selection
-
 <br>
 ##### Missing Values
 
-The number of missing values in the data was extremely low, so instead of applying any imputation (i.e. mean, most common value) we will just remove those rows
+The number of missing values in the data was extremely low, so instead of applying any imputation (such as mean, or median) I removed rows.
 
 ```python
 
@@ -221,9 +215,7 @@ data_for_model.dropna(how = "any", inplace = True)
 <br>
 ##### Outliers
 
-The ability for a Linear Regression model to generalise well across *all* data can be hampered if there are outliers present.  There is no right or wrong way to deal with outliers, but it is always something worth very careful consideration - just because a value is high or low, does not necessarily mean it should not be there!
-
-In this code section, we use **.describe()** from Pandas to investigate the spread of values for each of our predictors.  The results of this can be seen in the table below.
+Linear regression generally performs better across data when outliers are removed. Below is a look at the output from python when I called the describe() method.
 
 <br>
 
@@ -238,21 +230,16 @@ In this code section, we use **.describe()** from Pandas to investigate the spre
 | max | 44.37 | 0.88 | 9878.76 | 1187.00 | 109.00 | 5.00 | 102.34 |
 
 <br>
-Based on this investigation, we see some *max* column values for several variables to be much higher than the *median* value.
+I noted that some max column values were much higher than the median values. This occurred for the distance_from_store, total_sales, and total_items columns. For example, the median distance_to_store was 1.645 miles, but the maximum was 44.37 miles.
 
-This is for columns *distance_from_store*, *total_sales*, and *total_items*
-
-For example, the median *distance_to_store* is 1.645 miles, but the maximum is over 44 miles!
-
-Because of this, we apply some outlier removal in order to facilitate generalisation across the full dataset.
-
-We do this using the "boxplot approach" where we remove any rows where the values within those columns are outside of the interquartile range multiplied by 2.
+Because of this, I removed outliers using the boxplot approach. This involved removing rows where the values were outside the interquartile range multiplied by 2.
 
 <br>
 ```python
 
 outlier_investigation = data_for_model.describe()
 outlier_columns = ["distance_from_store", "total_sales", "total_items"]
+outliers_count = 0
 
 # boxplot approach
 for column in outlier_columns:
@@ -265,28 +252,28 @@ for column in outlier_columns:
     max_border = upper_quartile + iqr_extended
     
     outliers = data_for_model[(data_for_model[column] < min_border) | (data_for_model[column] > max_border)].index
-    print(f"{len(outliers)} outliers detected in column {column}")
     
+    outliers_count += len(outliers)
     data_for_model.drop(outliers, inplace = True)
+    
+print(str(outliers_count)) + " outliers removed")
 
 ```
 
 <br>
-##### Split Out Data For Modelling
+##### Split Out Data For Modeling
 
-In the next code block we do two things, we firstly split our data into an **X** object which contains only the predictor variables, and a **y** object that contains only our dependent variable.
-
-Once we have done this, we split our data into training and test sets to ensure we can fairly validate the accuracy of the predictions on data that was not used in training.  In this case, we have allocated 80% of the data for training, and the remaining 20% for validation.
+I split out the data into independent (X) and dependent (y) data sets. I then split the data into training and test sets, allocating 80% of the data for training.
 
 <br>
 ```python
 
-# split data into X and y objects for modelling
+# split data into X and y
 X = data_for_model.drop(["customer_loyalty_score"], axis = 1)
 y = data_for_model["customer_loyalty_score"]
 
 # split out training & test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 13)
 
 ```
 
