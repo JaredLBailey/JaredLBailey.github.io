@@ -15,7 +15,7 @@ A grocery retailer hired a market research consultancy to append market level cu
     - [Results](#overview-results)
     - [Growth/Next Steps](#overview-growth)
 - [Data Overview](#data-overview)
-    - [Regression Modeling Table] (#regression-modeling-table)
+    - [Regression Modeling Table](#regression-modeling-table)
 - [Modelling Overview](#modelling-overview)
 - [Linear Regression](#linreg-title)
 - [Decision Tree](#regtree-title)
