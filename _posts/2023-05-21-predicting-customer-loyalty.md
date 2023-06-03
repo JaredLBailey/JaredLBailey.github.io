@@ -30,20 +30,20 @@ ___
 
 ### Context <a name="overview-context"></a>
 
-My aim is to accurately predict the *loyalty score* for customers not previously tagged. This will enable the grocery retailer in uderstanding customer loyalty for tracking, targeted marketed, and communication purposes.
+My aim is to accurately predict the loyalty score for customers not previously tagged. This will assist the grocery retailer in uderstanding customer loyalty for tracking, targeted marketed, and communication purposes.
 
-To predict loyalty score, I built a model to find relationships between customer metrics and loyalty score for those customers who were tagged. I then used this model to predict loyalty score for those customers not initially tagged.
+To predict loyalty score, I built several models to find relationships between customer metrics and loyalty score for those customers who were tagged. I then used these models to predict loyalty score for those customers not initially tagged.
 <br>
 <br>
 ### Actions <a name="overview-actions"></a>
 
-We firstly needed to compile the necessary data from tables in the database, gathering key customer metrics that may help predict *loyalty score*, appending on the dependent variable, and separating out those who did and did not have this dependent variable present.
+* Gather relevant data
+* Separate data into those with and without loyalty score
+* Model using 3 approaches
+    * Linear regresssion
+    * Decision Tree
+    * Random Forest
 
-As we are predicting a numeric output, we tested three regression modelling approaches, namely:
-
-* Linear Regression
-* Decision Tree
-* Random Forest
 <br>
 <br>
 
