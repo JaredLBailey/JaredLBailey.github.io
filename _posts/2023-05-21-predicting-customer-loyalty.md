@@ -15,6 +15,7 @@ A grocery retailer hired a market research consultancy to append market level cu
     - [Results](#overview-results)
     - [Growth/Next Steps](#overview-growth)
 - [Data Overview](#data-overview)
+    - [Regression Modeling Table] (#regression-modeling-table)
 - [Modelling Overview](#modelling-overview)
 - [Linear Regression](#linreg-title)
 - [Decision Tree](#regtree-title)
@@ -90,7 +91,7 @@ ___
 
 I ultimately predicted the customer loyalty score. As a reminder, this metric exists for half the customer base.
 
-The key variables hypothesised to predict the missing loyalty scores come from the the transactions, customer_details, and product_areas tables. I merged these tables together, creating a single dataset.
+The key variables hypothesised to predict the missing loyalty scores come from the customer_details, transactions, and product_areas tables. I merged these tables together, creating a single dataset.
 
 ```python
 
@@ -99,9 +100,9 @@ import pandas as pd
 import pickle
 
 # import required data tables
-loyalty_scores = ...
-customer_details = ...
-transactions = ...
+loyalty_scores = pd.read_csv(data/loyalty_scores.csv)
+customer_details = pd.read_csv(data/customer_details.csv)
+transactions = pd.read_csv(data/transactions.csv)
 
 # merge loyalty score data and customer details data, at customer level
 data_for_regression = pd.merge(customer_details, loyalty_scores, how = "left", on = "customer_id")
@@ -112,31 +113,31 @@ sales_summary = transactions.groupby("customer_id").agg({"sales_cost" : "sum",
                                                          "transaction_id" : "nunique",
                                                          "product_area_id" : "nunique"}).reset_index()
 
-# rename columns for clarity
+# rename columns
 sales_summary.columns = ["customer_id", "total_sales", "total_items", "transaction_count", "product_area_count"]
 
-# engineer an average basket value column for each customer
+# create average_basket_value column by customer
 sales_summary["average_basket_value"] = sales_summary["total_sales"] / sales_summary["transaction_count"]
 
 # merge the sales summary with the overall customer data
 data_for_regression = pd.merge(data_for_regression, sales_summary, how = "inner", on = "customer_id")
 
-# split out data for modelling (loyalty score is present)
-regression_modelling = data_for_regression.loc[data_for_regression["customer_loyalty_score"].notna()]
+# split out data for modeling (loyalty score is present)
+regression_modeling = data_for_regression.loc[data_for_regression["customer_loyalty_score"].notna()]
 
-# split out data for scoring post-modelling (loyalty score is missing)
+# split out data for scoring post-modeling (loyalty score is missing)
 regression_scoring = data_for_regression.loc[data_for_regression["customer_loyalty_score"].isna()]
 
 # for scoring set, drop the loyalty score column (as it is blank/redundant)
 regression_scoring.drop(["customer_loyalty_score"], axis = 1, inplace = True)
 
 # save our datasets for future use
-pickle.dump(regression_modelling, open("data/customer_loyalty_modelling.p", "wb"))
+pickle.dump(regression_modeling, open("data/customer_loyalty_modeling.p", "wb"))
 pickle.dump(regression_scoring, open("data/customer_loyalty_scoring.p", "wb"))
 
 ```
 <br>
-After this data pre-processing in Python, we have a dataset for modelling that contains the following fields...
+### Regression Modeling Table <a name="regression-modeling-table"></a>
 <br>
 <br>
 
