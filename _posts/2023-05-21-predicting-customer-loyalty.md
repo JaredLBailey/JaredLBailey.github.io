@@ -36,8 +36,10 @@ Loyalty score measures the percent of a customer's grocery money that is spent a
 * A customer has $10,000 this year for groceries, and spends $2,000 with my client. This customer has a loyalty score of 0.2.
 
 To predict loyalty score, I built several models to find relationships between customer metrics and loyalty score for those customers who were tagged. I then used these models to predict loyalty score for those customers not initially tagged.
+
 <br>
 <br>
+
 ### Actions <a name="overview-actions"></a>
 
 * Gather relevant data
@@ -46,8 +48,10 @@ To predict loyalty score, I built several models to find relationships between c
     * Linear regresssion
     * Decision Tree
     * Random Forest
+
 <br>
 <br>
+
 ### Results <a name="overview-results"></a>
 
 The Random Forest modeled displayed the highest accuracy in predicting loyalty score.
@@ -68,6 +72,7 @@ Since the grocery retailer indicated that accuracy outranked explainability in r
 
 <br>
 <br>
+
 ### Growth/Next Steps <a name="overview-growth"></a>
 
 Despite great acuracy scores, other techniques and models could be explored such as:
