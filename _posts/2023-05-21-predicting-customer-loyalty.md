@@ -30,7 +30,7 @@ ___
 
 ### Context <a name="overview-context"></a>
 
-My aim is to accurately predict the loyalty score for customers not previously tagged. This will assist the grocery retailer in uderstanding customer loyalty for tracking, targeted marketed, and communication purposes.
+My aim was to accurately predict the loyalty score for customers not previously tagged. This will assist the grocery retailer in uderstanding customer loyalty for tracking, targeted marketed, and communication purposes.
 
 To predict loyalty score, I built several models to find relationships between customer metrics and loyalty score for those customers who were tagged. I then used these models to predict loyalty score for those customers not initially tagged.
 <br>
@@ -49,30 +49,33 @@ To predict loyalty score, I built several models to find relationships between c
 
 ### Results <a name="overview-results"></a>
 
-Our testing found that the Random Forest had the highest predictive accuracy.
+The Random Forest modeled displayed the highest accuracy in predicting loyalty score.
 
 <br>
-**Metric 1: Adjusted R-Squared (Test Set)**
-
+#### Metric 1: Adjusted R-Squared (Test Set)
 * Random Forest = 0.955
 * Decision Tree = 0.886
 * Linear Regression = 0.754
 
 <br>
-**Metric 2: R-Squared (K-Fold Cross Validation, k = 4)**
-
+#### Metric 2: R-Squared (K-Fold Cross Validation, k = 4)
 * Random Forest = 0.925
 * Decision Tree = 0.871
 * Linear Regression = 0.853
 
-As the most important outcome for this project was predictive accuracy, rather than explicitly understanding weighted drivers of prediction, we chose the Random Forest as the model to use for making predictions on the customers who were missing the *loyalty score* metric.
+Since the grocery retailer indicated that accuracy outranked explainability in regards to importance, the random forest model was chosen to make final loyalty score predictions.
+
 <br>
 <br>
 ### Growth/Next Steps <a name="overview-growth"></a>
 
-While predictive accuracy was relatively high - other modelling approaches could be tested, especially those somewhat similar to Random Forest, for example XGBoost, LightGBM to see if even more accuracy could be gained.
+Despite great acuracy scores, other techniques and models could be explored such as:
+* Regularization
+* Feature engineering
+* Collection of additional variables
+* Boosted models
+* Neural networks
 
-From a data point of view, further variables could be collected, and further feature engineering could be undertaken to ensure that we have as much useful information available for predicting customer loyalty
 <br>
 <br>
 ### Key Definition  <a name="overview-definition"></a>
