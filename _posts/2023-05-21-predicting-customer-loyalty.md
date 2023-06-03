@@ -138,20 +138,19 @@ pickle.dump(regression_scoring, open("data/customer_loyalty_scoring.p", "wb"))
 ```
 <br>
 ### Regression Modeling Table <a name="regression-modeling-table"></a>
-<br>
-<br>
 
 | **Variable Name** | **Variable Type** | **Description** |
 |---|---|---|
-| loyalty_score | Dependent | The % of total grocery spend that each customer allocates to ABC Grocery vs. competitors |
-| distance_from_store | Independent | "The distance in miles from the customers home address, and the store" |
-| gender | Independent | The gender provided by the customer |
-| credit_score | Independent | The customers most recent credit score |
-| total_sales | Independent | Total spend by the customer in ABC Grocery within the latest 6 months |
-| total_items | Independent | Total products purchased by the customer in ABC Grocery within the latest 6 months |
-| transaction_count | Independent | Total unique transactions made by the customer in ABC Grocery within the latest 6 months |
-| product_area_count | Independent | The number of product areas within ABC Grocery the customers has shopped into within the latest 6 months |
-| average_basket_value | Independent | The average spend per transaction for the customer in ABC Grocery within the latest 6 months |
+| customer_id | ID | Unique customer identifier |
+| loyalty_score | Dependent | Percent of total grocery money each customer spent at my grocery retail client |
+| distance_from_store | Independent | Distance in miles from the customer's home to the store |
+| gender | Independent | Customer gender |
+| credit_score | Independent | Recent customer credit score |
+| total_sales | Independent | Amount spent at my grocery retail client within the last 6 months |
+| total_items | Independent | Number of products purchased at my grocery retail client within the last 6 months |
+| transaction_count | Independent | Number of unique transactions at my grocery retail client within the last 6 months |
+| product_area_count | Independent | Number of product areas at my grocery retail client that the customer purchased within the last 6 months |
+| average_basket_value | Independent | Average spent per transaction at my grocery retail client within the last 6 months |
 
 ___
 <br>
