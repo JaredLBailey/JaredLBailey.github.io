@@ -16,7 +16,7 @@ A grocery retailer hired a market research consultancy to append market level cu
     - [Growth/Next Steps](#overview-growth)
 - [Data Overview](#data-overview)
     - [Regression Modeling Table](#regression-modeling-table)
-- [Modelling Overview](#modelling-overview)
+- [Modeling Overview](#modeling-overview)
 - [Linear Regression](#linreg-title)
 - [Decision Tree](#regtree-title)
 - [Random Forest](#rf-title)
@@ -154,33 +154,23 @@ pickle.dump(regression_scoring, open("data/customer_loyalty_scoring.p", "wb"))
 
 ___
 <br>
-# Modelling Overview
+# Modeling Overview <a name="modeling-overview"></a>
 
-We will build a model that looks to accurately predict the “loyalty_score” metric for those customers that were able to be tagged, based upon the customer metrics listed above.
-
-If that can be achieved, we can use this model to predict the customer loyalty score for the customers that were unable to be tagged by the agency.
-
-As we are predicting a numeric output, we tested three regression modelling approaches, namely:
-
-* Linear Regression
-* Decision Tree
-* Random Forest
+Since I sought to predict a continuous numeric value, I built 3 regression models:
+* Linear regression
+* Decision tree
+* Random forest
 
 ___
 <br>
 # Linear Regression <a name="linreg-title"></a>
 
-We utlise the scikit-learn library within Python to model our data using Linear Regression. The code sections below are broken up into 4 key sections:
-
-* Data Import
-* Data Preprocessing
-* Model Training
-* Performance Assessment
-
 <br>
 ### Data Import <a name="linreg-import"></a>
 
-Since we saved our modelling data as a pickle file, we import it.  We ensure we remove the id column, and we also ensure our data is shuffled.
+* Import the pickle file containing the data
+* Remove the customer_id column
+* Shuffle the data
 
 ```python
 
