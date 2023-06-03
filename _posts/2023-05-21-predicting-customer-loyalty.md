@@ -43,10 +43,8 @@ To predict loyalty score, I built several models to find relationships between c
     * Linear regresssion
     * Decision Tree
     * Random Forest
-
 <br>
 <br>
-
 ### Results <a name="overview-results"></a>
 
 The Random Forest modeled displayed the highest accuracy in predicting loyalty score.
