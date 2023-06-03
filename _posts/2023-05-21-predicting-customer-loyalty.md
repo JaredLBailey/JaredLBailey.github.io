@@ -88,11 +88,9 @@ ___
 
 # Data Overview  <a name="data-overview"></a>
 
-We will be predicting the *loyalty_score* metric.  This metric exists (for half of the customer base) in the *loyalty_scores* table of the client database.
+I ultimately predicted the customer loyalty score. As a reminder, this metric exists for half the customer base.
 
-The key variables hypothesised to predict the missing loyalty scores will come from the client database, namely the *transactions* table, the *customer_details* table, and the *product_areas* table.
-
-Using pandas in Python, we merged these tables together for all customers, creating a single dataset that we can use for modelling.
+The key variables hypothesised to predict the missing loyalty scores come from the the transactions, customer_details, and product_areas tables. I merged these tables together, creating a single dataset.
 
 ```python
 
