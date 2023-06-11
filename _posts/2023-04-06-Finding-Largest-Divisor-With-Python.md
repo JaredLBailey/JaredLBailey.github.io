@@ -6,39 +6,43 @@ tags: [Python, Primes]
 ---
 
 # Overview
-In this post I'll create a function in Python that can quickly find all the prime numbers below a given value.  For example, if I pass the function a value of 100, then the function would find all the prime numbers below 100.
-
-<br/>
-
-# Definition
-A prime is a number that can only be divided wholly by itself and 1. 
-- 7 is a prime number as no other numbers apart from 1 or 7 divide cleanly into it
-- 8 is not a prime number as it can be divided by 1, 2, 4, and 8 without remainders
-
+In this post I'll create a function in Python that can quickly find the largest integer divisor in common between two whole numbers. For example, if I pass the function a value of 100 and 150, then the function would find the largest common divisor to be 50 (100/50 = 2, 150/50 = 3). No larger number can divide evenly into 100 and 150.
 
 <br/>
 
 # Code Explanation
 ```ruby
-def primes_finder(n):
+def largest_divisor_finder(value1, value2):
+    # find which value is smaller
+    value1 = 48
+    value2 = 72
+
+    if value1 < value2:
+        smaller = value1
+    else:
+        smaller = value2
     
-    # number range to be checked
-    number_range = set(range(2, n+1))
+    
+    # divisor range to be checked
+    divisors = set(range(2, smaller + 1))
 
-    # empty list to append discovered primes to
-    primes_list = []
-
+    # all whole numbers are divisible by at least 1
+    answer = 1
+    
     # iterate until list is empty
-    while number_range:
-        prime = number_range.pop()
-        primes_list.append(prime)
-        multiples = set(range(prime*2, n+1, prime))
-        number_range.difference_update(multiples)
-        
-    prime_count = len(primes_list)
-    largest_prime = max(primes_list)
-    
-    print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of which is {largest_prime}")
+    while divisors:
+        test_divisor = divisors.pop()
+        if value1 % test_divisor == 0 and value2 % test_divisor == 0:
+            answer = test_divisor
+        else:
+            print(divisors)
+            multiples_to_remove = set(range(test_divisor*2, smaller + 1, test_divisor))
+            divisors.difference_update(multiples_to_remove)
+            print(multiples_to_remove)
+            print(divisors)
+
+    print(answer)  
+    print(f"The largest integer divisor of the whole numbers {value1} and {value2} is {answer}.")
 ```
 
 ---
