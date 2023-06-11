@@ -2,7 +2,7 @@
 layout: post
 title: Finding the Largest Divisor with Python
 image: "/posts/primes_image.jpeg"
-tags: [Python, Division]
+tags: [Python, Division, Sets]
 ---
 
 # Overview
