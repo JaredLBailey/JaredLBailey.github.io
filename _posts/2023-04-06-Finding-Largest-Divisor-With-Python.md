@@ -17,11 +17,7 @@ def largest_divisor_finder(value1, value2):
     value1 = 48
     value2 = 72
 
-    if value1 < value2:
-        smaller = value1
-    else:
-        smaller = value2
-    
+    smaller = min(value1, value2)
     
     # divisor range to be checked
     divisors = set(range(2, smaller+1))
@@ -44,14 +40,14 @@ def largest_divisor_finder(value1, value2):
 ---
 
 ### Name the Function
-First I name the function largest_divisor_finder, and have that function take two arguments: value1 and value2. value1 and value2 are the two whole numbers which the user wishes to find a common divisor for.
+First I name the function largest_divisor_finder, and have that function take two arguments: value1 and value2. value1 and value2 are the two whole numbers which the user desires to find a common divisor for.
 ```ruby
 def largest_divisor_finder(value1, value2):
 ```
 
 <br/>
-### Example Number
-For an example, I will set value1 to 48 and value2 to 72. In this example I find the largest number that divides evenly into both numbers
+### Example Calculation
+For an example, I will set value1 to 48 and value2 to 72. In this example I will find the largest number that divides evenly into both numbers.
 ```ruby
 value1 = 48
 value2 = 72
@@ -63,11 +59,7 @@ largest_divisor_finder(value1, value2)
 ### Numbers to Search for Common Divisors
 Next I create a set of all the numbers I want to search through in order to find the largest common divisor. The smallest number (other than 1) that could potentially divide into both numbers is 2, so I begin the set at 2. Then I include each whole number from 2 to the smaller of value1 and value2 using the range function. I write smaller+1 as the range function is not inclusive of the ending number.
 ```ruby
-if value1 < value2:
-    smaller = value1
-else:
-    smaller = value2
-    
+smaller = min(value1, value2)
     
 # divisor range to be checked
 divisors = set(range(2, smaller+1))
@@ -85,7 +77,7 @@ while divisors:
 ```
 
 <br/>
-### Find and Store a Prime Number
+### Find and Test the Next Number from the Divisors Set
 The first action inside the loop is to remove the lowest number (2) from divisors. I set the variable test_divisor equal to this number (2).
 ```ruby
 test_divisor = divisors.pop()
@@ -100,23 +92,22 @@ print(divisors)
 Next I test to see if test_divisor divides evenly into value1 and value2. If so, then I update the answer to be test_advisor.
 ```ruby
 if value1 % test_divisor == 0 and value2 % test_divisor == 0:
-            answer = test_divisor
+    answer = test_divisor
 
 print(answer)
 >>> 2
 ```
 
 If not, then I remove all multiples of the test_divisor from the divisors set. This will shorten the number of times that the while loop executes.
-In this example, any number divisible by 2 (the current test_divisor) is removed from the divisor set.
-This concludes the first pass through the while loop.
+In this example, this first happens when the test_divisor is 5. Any number divisible by 5 is removed from the divisor set.
 ```ruby
 else:
     multiples_to_remove = set(range(test_divisor*2, smaller + 1, test_divisor))
     divisors.difference_update(multiples_to_remove)
 print(multiples_to_remove)
->>> {4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48}
+>>> {10,15,20,25,30,35,40,45}
 print(divisors)
->>> {3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47}
+>>> {6,7,8,9,11,12,13,14,16,17,18,19,21,22,23,24,26,27,28,29,31,32,33,34,36,37,38,39,41,42,43,44,46,47,48}
 ```
 
 <br/>
@@ -138,7 +129,7 @@ print(f"The largest integer divisor of the whole numbers {value1} and {value2} i
 <br/>
 Now I can pass any 2 positive integers to the function and watch the function do the heavy lifting.
 
-As an example I will pass a large numbers: 128,245 and 134,509,830.
+As an example I will pass the large numbers: 128,245 and 134,509,830.
 
 ```ruby
 largest_divisor_finder(value1=128245, value2=134509830)
@@ -146,4 +137,4 @@ largest_divisor_finder(value1=128245, value2=134509830)
 ```
 
 <br/>
-In a few short lines of code I created a tool for finding prime numbers with surprising speed and perfect accuracy.
+In a few short lines of code I created a tool for finding the largest integer divisor of two whole numbers that operates with speed and accuracy.
