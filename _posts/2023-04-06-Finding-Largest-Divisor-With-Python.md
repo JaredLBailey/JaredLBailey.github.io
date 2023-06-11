@@ -24,7 +24,7 @@ def largest_divisor_finder(value1, value2):
     
     
     # divisor range to be checked
-    divisors = set(range(2, smaller + 1))
+    divisors = set(range(2, smaller+1))
 
     # all whole numbers are divisible by at least 1
     answer = 1
@@ -35,136 +35,114 @@ def largest_divisor_finder(value1, value2):
         if value1 % test_divisor == 0 and value2 % test_divisor == 0:
             answer = test_divisor
         else:
-            print(divisors)
             multiples_to_remove = set(range(test_divisor*2, smaller + 1, test_divisor))
             divisors.difference_update(multiples_to_remove)
-            print(multiples_to_remove)
-            print(divisors)
 
-    print(answer)  
     print(f"The largest integer divisor of the whole numbers {value1} and {value2} is {answer}.")
 ```
 
 ---
 
 ### Name the Function
-First I name the function primes_finder, and have that function take one argument: n. n acts as the upper limit of the numbers that the function will search through.
+First I name the function largest_divisor_finder, and have that function take two arguments: value1 and value2. value1 and value2 are the two whole numbers which the user wishes to find a common divisor for.
 ```ruby
-def primes_finder(n):
+def largest_divisor_finder(value1, value2):
 ```
 
 <br/>
 ### Example Number
-For an example, I will set n to 20. In this example I find all prime numbers that are smaller than or equal to 20.
+For an example, I will set value1 to 48 and value2 to 72. In this example I find the largest number that divides evenly into both numbers
 ```ruby
-n = 20
-primes_finder(n)
+value1 = 48
+value2 = 72
+
+largest_divisor_finder(value1, value2)
 ```
 
 <br/>
-### Numbers to Search for Primes
-Next I create a set of all the numbers I want to search through in order to find the primes. The smallest true prime number is 2, so I begin the set at 2. Then I include each whole number from 2 to n using the range function. I write n+1 as the range function is not inclusive of the ending number.
+### Numbers to Search for Common Divisors
+Next I create a set of all the numbers I want to search through in order to find the largest common divisor. The smallest number (other than 1) that could potentially divide into both numbers is 2, so I begin the set at 2. Then I include each whole number from 2 to the smaller of value1 and value2 using the range function. I write smaller+1 as the range function is not inclusive of the ending number.
 ```ruby
-# number range to be checked
-number_range = set(range(2, n+1))
+if value1 < value2:
+    smaller = value1
+else:
+    smaller = value2
+    
+    
+# divisor range to be checked
+divisors = set(range(2, smaller+1))
 
-print(number_range)
->>> {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20}
+print(divisors)
+>>> {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48}
 ```
 
 <br/>
-### Keep Prime Numbers in a List
-I also create a place to track and store the prime numbers discovered.
-
-```ruby
-primes_list = []
-```
-
-<br/>
-### Loop through the Search List
-Next I create a while loop to find prime numbers. The while loop runs as long as there are numbers to check in number_range. In order to make sure this loop doesn't run forever, I will remove numbers from number_range during each pass through the loop.
+### Loop through the Divisors Set
+Next I create a while loop to find common divisors. The while loop runs as long as there are numbers to check in the divisors set. In order to make sure this loop doesn't run forever, I will remove numbers from divisors during each pass through the loop.
 ```ruby
 # iterate until list is empty
-while number_range:
+while divisors:
 ```
 
 <br/>
 ### Find and Store a Prime Number
-The first action inside the loop is to remove the lowest number (2) from number_range. I set the variable prime equal to this number (2).
+The first action inside the loop is to remove the lowest number (2) from divisors. I set the variable test_divisor equal to this number (2).
 ```ruby
-prime = number_range.pop()
+test_divisor = divisors.pop()
 
-print(prime)
+print(test_divisor)
 >>> 2
-print(number_range)
->>> {3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+print(divisors)
+>>> {3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48}
 ```
 
 <br/>
-Next I add this number to the list of prime numbers.
+Next I test to see if test_divisor divides evenly into value1 and value2. If so, then I update the answer to be test_advisor.
 ```ruby
-primes_list.append(prime)
+if value1 % test_divisor == 0 and value2 % test_divisor == 0:
+            answer = test_divisor
 
-print(primes_list)
->>> [2]
+print(answer)
+>>> 2
 ```
 
-<br/>
-### Remove Non-Primes from Numbers Being Searched
-Since I have the first prime number, I will use this number to find non-primes in number_range. This will shorten the number of times that the while loop executes.
-In this example, any number divisible by 2 is not a prime number. I find these non-prime numbers with the range function. This function finds all whole numbers starting at 4 and ending at 20, counting by 2.
+If not, then I remove all multiples of the test_divisor from the divisors set. This will shorten the number of times that the while loop executes.
+In this example, any number divisible by 2 (the current test_divisor) is removed from the divisor set.
+This concludes the first pass through the while loop.
 ```ruby
- multiples = set(range(prime*2, n+1, prime))
- 
- print(multiples)
- >>> {4,6,8,10,12,14,16,18,20}
+else:
+    multiples_to_remove = set(range(test_divisor*2, smaller + 1, test_divisor))
+    divisors.difference_update(multiples_to_remove)
+print(multiples_to_remove)
+>>> {4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48}
+print(divisors)
+>>> {3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47}
 ```
-
-<br/>
-Now that I have a set of non-prime numbers, I use this information to reduce number_range. This concludes the first pass through the while loop.
-```
-number_range.difference_update(multiples)
-
-print(number_range)
->>> {3,5,7,9,11,13,15,17,19}
-```      
 
 <br/>
 ### Finish the Loop
-I continue executing the loop until there are no more numbers to check in number_range. At this point, my prime_list will look like the following:
+I continue executing the loop until there are no more numbers to check in the divisors set. At this point, my answer will be the following:
 ```         
-print(prime_list)
->>> [2,3,5,7,11,13,17,19]
+print(answer)
+>>> 24
 ```
 
 <br/>
 ### Display the Results
-I count the prime numbers, and identify the largest one.
-```         
-prime_count = len(primes_list)
-largest_prime = max(primes_list)
-
-print(prime_count)
->>> 8
-print(largest_prime)
->>> 19
-```
-
-<br/>
-Finally I print some interesting findings: the number of primes that were found, and the largest prime in the list.
+Finally I print the findings: the largest integer that divides evenly into both 48 and 72.
 ``` 
-print(f"There are {prime_count} prime numbers between 1 and {n}, the largest of which is {largest_prime}")
->>> There are 8 prime numbers between 1 and 20, the largest of which is 19
+print(f"The largest integer divisor of the whole numbers {value1} and {value2} is {answer}.")
+>>> The largest integer divisor of the whole numbers 48 and 72 is 24.
 ``` 
 
 <br/>
-Now I can pass any positive integer to the function and it will do the heavy lifting.
+Now I can pass any 2 positive integers to the function and watch the function do the heavy lifting.
 
-As an example I will pass a large number: one million.
+As an example I will pass a large numbers: 128,245 and 134,509,830.
 
 ```ruby
-primes_finder(1000000)
->>> There are 78498 prime numbers between 1 and 1000000, the largest of which is 999983
+largest_divisor_finder(value1=128245, value2=134509830)
+>>> The largest integer divisor of the whole numbers 128245 and 134509830 is 65.
 ```
 
 <br/>
