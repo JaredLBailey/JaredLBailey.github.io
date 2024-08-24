@@ -17,6 +17,7 @@ This project extends beyond the playful realm of "Where's Waldo?" to address cri
 
 ![alt text](/img/posts/small-object-detection-applications.png "Small Object Detection Applications")
 
+___
 
 # Table of Contents
 
@@ -36,7 +37,7 @@ ___
 
 Data gathering for this project presented unique challenges due to the need to account for the imperfect conditions of real-world photographs taken with a cell phone. Many of the existing datasets I found online featured ideal conditions—perfect lighting, flat pages, and high resolution—which didn't accurately reflect the varied conditions one might encounter with a typical cell phone camera. To address this, I created my own dataset using my iPhone, capturing photos of full puzzle pages. Initially, this approach proved problematic because the model struggled with the low resolution of these images, particularly given the small size of Waldo. To improve performance, I refined my data collection strategy by focusing on single page photos, which I then divided into 640 by 640 pixel tiles with slight overlaps. This adjustment allowed the model to better handle the resolution and intricacies of the task, leading to more accurate and effective character detection.
 
----
+___
 
 # Modeling and Evaluation <a name="modeling-evaluation"></a>
 
@@ -44,7 +45,7 @@ For the modeling phase of this project, I utilized YOLOv8, Python, and the Ultra
 
 ![alt text](/img/posts/waldo-evaluation.png "Model Evaluation")
 
----
+___
 
 # Model Misses
 
@@ -54,11 +55,13 @@ For example, in the two photos on the left, the characters have hairstyles and l
 
 The top middle photo features an object with a shape and color similar to the wizard’s hat, which confused the model. The bottom middle photo is the wizard himself, whose recognition was hampered by heavy obstruction from surrounding elements. 
 
-The upper right photo, showing Woof, presented difficulties due to his small size and low pixel count, making accurate detection challenging. The lower right photo is actually a shirt sleeve that resembles Woof's tail, further complicating the model’s ability to distinguish between the character and non-character elements. 
+The lower right photo, showing Woof's tail, presented difficulties due to his small size and low pixel count, making accurate detection challenging. The upper right photo is actually a shirt sleeve that resembles Woof's tail, further complicating the model’s ability to distinguish between the character and non-character elements. 
 
 These misses underscore the need for continued refinement in object detection models to handle diverse and obstructed visual information effectively.
 
 ![alt text](/img/posts/waldo-model-miss.png "Model Miss")
+
+___
 
 ### Numbers to Search for Common Divisors
 Next I create a set of all the numbers I want to search through in order to find the largest common divisor. The smallest number (other than 1) that could potentially divide into both numbers is 2, so I begin the set at 2. Then I include each whole number from 2 to the smaller of value1 and value2 using the range function. I write smaller+1 as the range function is not inclusive of the ending number.
