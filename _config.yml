@@ -9,14 +9,14 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Jared Bailey
-description: "Hi I'm Jared, and I'm a Data Scientist.  My portfolio focuses on interesting projects I've undertaken, with a strong emphasis on business impact. Please feel free to reach out if you'd like to connect."
+description: "Hi I'm Jared, and I'm a AI specialist and aspiring robotics engineer.  My portfolio focuses on interesting projects I've undertaken, with a strong emphasis on real world impact. Please feel free to reach out if you'd like to connect."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # About Section
 subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
-location: "Chicago, IL"
+location: "Durham, NC"
 resume_url: /docs/Jared L Bailey Resume 202304.pdf
 avatar_image: /img/Jared Square.jpeg
 
