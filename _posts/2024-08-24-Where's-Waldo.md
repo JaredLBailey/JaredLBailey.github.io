@@ -18,8 +18,7 @@ The primary goal of this project was to create a practical tool that leverages m
 # Table of Contents
 
 - [Data Gathering](#data-gathering)
-    - [Regression Modeling Table](#regression-modeling-table)
-- [Modeling Overview](#modeling-overview)
+- [Modeling and Evaluation](#modeling-evaluation)
 - [Linear Regression](#linreg-title)
 - [Decision Tree](#regtree-title)
 - [Random Forest](#rf-title)
@@ -36,13 +35,12 @@ Data gathering for this project presented unique challenges due to the need to a
 
 ---
 
-### Name the Function
-First I name the function largest_divisor_finder, and have that function take two arguments: value1 and value2. value1 and value2 are the two whole numbers which the user desires to find a common divisor for.
-```ruby
-def largest_divisor_finder(value1, value2):
-```
+### Modeling and Evaluation <a name="modeling-evaluation"></a>
 
-<br/>
+For the modeling phase of this project, I utilized YOLOv8, Python, and the Ultralytics library to tackle the challenge of detecting all five characters simultaneously. I experimented with two distinct approaches to determine the most effective strategy for character identification. The first approach focused on detecting only the heads of the characters, under the assumption that the heads would be less obstructed in the photos despite being smaller in size. The second approach aimed to detect the full characters, which provided a larger target but was often hindered by obstructions and varying image conditions. By comparing these methods, I evaluated whether the advantage of larger size outweighed the difficulties posed by obstructions. Ultimately, the head-only model proved to be more successful, yielding superior results and more accurate detections. This approach balanced the trade-off between size and visibility, demonstrating that, in this case, focusing on less obstructed, though smaller, features led to better overall performance.
+
+---
+
 ### Example Calculation
 For an example, I will set value1 to 48 and value2 to 72. In this example I will find the largest number that divides evenly into both numbers.
 ```ruby
