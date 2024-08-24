@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Finding the Largest Divisor with Python
+title: Finding Waldo and His Friends with Computer Vision
 image: "/posts/wheres-waldo.jpeg"
-tags: [Python, Division, Sets]
+tags: [YOLO, Machine Learning, AI, Computer Vision, Python]
 ---
 
 # Overview
