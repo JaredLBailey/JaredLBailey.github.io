@@ -12,6 +12,20 @@ Welcome to my nostalgia project, where I delve into a fascinating task that blen
 
 <br/>
 
+# Table of Contents
+
+- [Data Overview](#data-overview)
+    - [Regression Modeling Table](#regression-modeling-table)
+- [Modeling Overview](#modeling-overview)
+- [Linear Regression](#linreg-title)
+- [Decision Tree](#regtree-title)
+- [Random Forest](#rf-title)
+- [Modeling Summary](#modelling-summary)
+- [Predicting Missing Loyalty Scores](#modelling-predictions)
+- [Growth & Next Steps](#growth-next-steps)
+
+___
+
 # Code Explanation
 ```ruby
 def largest_divisor_finder(value1, value2):
