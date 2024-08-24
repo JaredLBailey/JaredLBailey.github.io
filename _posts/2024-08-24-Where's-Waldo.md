@@ -13,8 +13,6 @@ The primary goal of this project was to create a practical tool that leverages m
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
 
-Repository: <a>https://github.com/JaredLBailey/wheres-waldo</a>
-
 <br/>
 
 # Table of Contents
