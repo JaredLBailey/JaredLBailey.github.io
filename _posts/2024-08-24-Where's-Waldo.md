@@ -6,11 +6,12 @@ tags: [YOLO, Machine Learning, AI, Computer Vision, Python]
 ---
 
 # Overview
+
+Welcome to my nostalgia project, where I delve into a fascinating task that blends childhood memories with cutting-edge technology. In this post, I’ll walk you through the creation of a machine learning model designed to tackle a unique challenge: finding Waldo and his four friends (Wenda, Wizard, Odlaw, and Woof) in the iconic "Where's Waldo?" series using YOLOv8. This project not only highlights the power of advanced object detection but also celebrates the playful challenge of spotting hidden characters in a sea of visual complexity. Join me as I explore the intricacies of training YOLOv8 for this whimsical quest and share insights into how modern machine learning can bring classic characters into the digital age.
+
 Application: https://huggingface.co/spaces/JaredBailey/WheresWaldo
 
 Repository: https://github.com/JaredLBailey/wheres-waldo
-
-Welcome to my nostalgia project, where I delve into a fascinating task that blends childhood memories with cutting-edge technology. In this post, I’ll walk you through the creation of a machine learning model designed to tackle a unique challenge: finding Waldo and his four friends (Wenda, Wizard, Odlaw, and Woof) in the iconic "Where's Waldo?" series using YOLOv8. This project not only highlights the power of advanced object detection but also celebrates the playful challenge of spotting hidden characters in a sea of visual complexity. Join me as I explore the intricacies of training YOLOv8 for this whimsical quest and share insights into how modern machine learning can bring classic characters into the digital age.
 
 <br/>
 
