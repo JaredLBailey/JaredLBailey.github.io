@@ -58,7 +58,7 @@ The upper right photo, showing Woof, presented difficulties due to his small siz
 
 These misses underscore the need for continued refinement in object detection models to handle diverse and obstructed visual information effectively.
 
-![alt text](/img/posts/waldo-evaluation.png "Model Evaluation")
+![alt text](/img/posts/waldo-model-miss.png "Model Miss")
 
 ### Numbers to Search for Common Divisors
 Next I create a set of all the numbers I want to search through in order to find the largest common divisor. The smallest number (other than 1) that could potentially divide into both numbers is 2, so I begin the set at 2. Then I include each whole number from 2 to the smaller of value1 and value2 using the range function. I write smaller+1 as the range function is not inclusive of the ending number.
