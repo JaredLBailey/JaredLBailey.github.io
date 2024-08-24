@@ -9,9 +9,11 @@ Welcome to my nostalgia project, where I delve into a fascinating task that blen
 
 The primary goal of this project was to create a practical tool that leverages machine learning to simplify the classic "Where's Waldo?" experience. By developing a YOLOv8-based model, I aimed to enable users to take a photo of a book page with their cell phone and have it automatically identify Waldo and his four friends in real time. This functionality not only enhances the interactive enjoyment of the "Where's Waldo?" series but also demonstrates how advanced object detection can be applied to everyday tasks. The vision was to make character identification effortless and immediate, turning a challenging visual puzzle into a seamlessly integrated digital experience.
 
-Application: https://huggingface.co/spaces/JaredBailey/WheresWaldo
+<a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Application</a>
 
-Repository: https://github.com/JaredLBailey/wheres-waldo
+<a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
+
+Repository: <a>https://github.com/JaredLBailey/wheres-waldo</a>
 
 <br/>
 
