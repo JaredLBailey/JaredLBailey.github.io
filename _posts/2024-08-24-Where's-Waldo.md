@@ -17,7 +17,7 @@ Repository: https://github.com/JaredLBailey/wheres-waldo
 
 # Table of Contents
 
-- [Data Overview](#data-overview)
+- [Data Gathering](#data-gathering)
     - [Regression Modeling Table](#regression-modeling-table)
 - [Modeling Overview](#modeling-overview)
 - [Linear Regression](#linreg-title)
@@ -29,32 +29,10 @@ Repository: https://github.com/JaredLBailey/wheres-waldo
 
 ___
 
-# Code Explanation <a name="data-overview"></a>
-```ruby
-def largest_divisor_finder(value1, value2):
-    # find which value is smaller
-    value1 = 48
-    value2 = 72
+# Data Gathering <a name="data-gathering"></a>
 
-    smaller = min(value1, value2)
-    
-    # divisor range to be checked
-    divisors = set(range(2, smaller+1))
 
-    # all whole numbers are divisible by at least 1
-    answer = 1
-    
-    # iterate until list is empty
-    while divisors:
-        test_divisor = divisors.pop()
-        if value1 % test_divisor == 0 and value2 % test_divisor == 0:
-            answer = test_divisor
-        else:
-            multiples_to_remove = set(range(test_divisor*2, smaller + 1, test_divisor))
-            divisors.difference_update(multiples_to_remove)
-
-    print(f"The largest integer divisor of the whole numbers {value1} and {value2} is {answer}.")
-```
+Data gathering for this project presented unique challenges due to the need to account for the imperfect conditions of real-world photographs taken with a cell phone. Many of the existing datasets I found online featured ideal conditions—perfect lighting, flat pages, and high resolution—which didn't accurately reflect the varied conditions one might encounter with a typical cell phone camera. To address this, I created my own dataset using my iPhone, capturing photos of full puzzle pages. Initially, this approach proved problematic because the model struggled with the low resolution of these images, particularly given the small size of Waldo. To improve performance, I refined my data collection strategy by focusing on single page photos, which I then divided into 640 by 640 pixel tiles with slight overlaps. This adjustment allowed the model to better handle the resolution and intricacies of the task, leading to more accurate and effective character detection.
 
 ---
 
