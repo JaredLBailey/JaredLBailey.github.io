@@ -38,7 +38,7 @@ Data gathering for this project presented unique challenges due to the need to a
 
 ---
 
-### Modeling and Evaluation <a name="modeling-evaluation"></a>
+# Modeling and Evaluation <a name="modeling-evaluation"></a>
 
 For the modeling phase of this project, I utilized YOLOv8, Python, and the Ultralytics library to tackle the challenge of detecting all five characters simultaneously. I experimented with two distinct approaches to determine the most effective strategy for character identification. The first approach focused on detecting only the heads of the characters, under the assumption that the heads would be less obstructed in the photos despite being smaller in size. The second approach aimed to detect the full characters, which provided a larger target but was often hindered by obstructions and varying image conditions. By comparing these methods, I evaluated whether the advantage of larger size outweighed the difficulties posed by obstructions. Ultimately, the head-only model proved to be more successful, yielding superior results and more accurate detections. This approach balanced the trade-off between size and visibility, demonstrating that, in this case, focusing on less obstructed, though smaller, features led to better overall performance.
 
@@ -46,16 +46,20 @@ For the modeling phase of this project, I utilized YOLOv8, Python, and the Ultra
 
 ---
 
-### Example Calculation
-For an example, I will set value1 to 48 and value2 to 72. In this example I will find the largest number that divides evenly into both numbers.
-```ruby
-value1 = 48
-value2 = 72
+# Model Misses
 
-largest_divisor_finder(value1, value2)
-```
+Model misses were an inevitable part of this project, highlighting the challenges inherent in object detection. 
 
-<br/>
+For example, in the two photos on the left, the characters have hairstyles and large eyes that resemble Waldo and Odlaw, leading the model to incorrectly identify them based on these features. Additionally, the lower character’s teeth were mistaken for Odlaw’s mustache. 
+
+The top middle photo features an object with a shape and color similar to the wizard’s hat, which confused the model. The bottom middle photo is the wizard himself, whose recognition was hampered by heavy obstruction from surrounding elements. 
+
+The upper right photo, showing Woof, presented difficulties due to his small size and low pixel count, making accurate detection challenging. The lower right photo is actually a shirt sleeve that resembles Woof's tail, further complicating the model’s ability to distinguish between the character and non-character elements. 
+
+These misses underscore the need for continued refinement in object detection models to handle diverse and obstructed visual information effectively.
+
+![alt text](/img/posts/waldo-evaluation.png "Model Evaluation")
+
 ### Numbers to Search for Common Divisors
 Next I create a set of all the numbers I want to search through in order to find the largest common divisor. The smallest number (other than 1) that could potentially divide into both numbers is 2, so I begin the set at 2. Then I include each whole number from 2 to the smaller of value1 and value2 using the range function. I write smaller+1 as the range function is not inclusive of the ending number.
 ```ruby
