@@ -9,6 +9,10 @@ Welcome to my nostalgia project, where I delve into a fascinating task that blen
 
 The primary goal of this project was to create a practical tool that leverages machine learning to simplify the classic "Where's Waldo?" experience. By developing a YOLOv8-based model, I aimed to enable users to take a photo of a book page with their cell phone and have it automatically identify Waldo and his four friends in real time. This functionality not only enhances the interactive enjoyment of the "Where's Waldo?" series but also demonstrates how advanced object detection can be applied to everyday tasks. The vision was to make character identification effortless and immediate, turning a challenging visual puzzle into a seamlessly integrated digital experience.
 
+This project extends beyond the playful realm of "Where's Waldo?" to address critical challenges in the field of small object detection, which is crucial for technologies like self-driving cars and drones. Detecting small or partially obscured objects in real-time is a common hurdle in these applications, where precision and speed are paramount. The techniques refined during this project, such as focusing on less obstructed features and managing varying image conditions, are directly applicable to these domains. For self-driving cars, this means improved detection of pedestrians, cyclists, and other small hazards, while for drones, it enhances the ability to identify and track small objects or obstacles in dynamic environments. By addressing the complexities of small object detection in a controlled setting, this project provides valuable insights and methodologies that can be adapted to improve the robustness and accuracy of object detection systems in more complex, real-world scenarios.
+
+
+
 <a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Application</a>
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
@@ -38,6 +42,8 @@ Data gathering for this project presented unique challenges due to the need to a
 ### Modeling and Evaluation <a name="modeling-evaluation"></a>
 
 For the modeling phase of this project, I utilized YOLOv8, Python, and the Ultralytics library to tackle the challenge of detecting all five characters simultaneously. I experimented with two distinct approaches to determine the most effective strategy for character identification. The first approach focused on detecting only the heads of the characters, under the assumption that the heads would be less obstructed in the photos despite being smaller in size. The second approach aimed to detect the full characters, which provided a larger target but was often hindered by obstructions and varying image conditions. By comparing these methods, I evaluated whether the advantage of larger size outweighed the difficulties posed by obstructions. Ultimately, the head-only model proved to be more successful, yielding superior results and more accurate detections. This approach balanced the trade-off between size and visibility, demonstrating that, in this case, focusing on less obstructed, though smaller, features led to better overall performance.
+
+![alt text](/img/posts/lin-reg-feature-selection-plot.png "Linear Regression Feature Selection Plot")
 
 ---
 
