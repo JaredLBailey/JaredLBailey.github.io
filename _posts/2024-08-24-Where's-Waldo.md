@@ -11,13 +11,12 @@ The primary goal of this project was to create a practical tool that leverages m
 
 This project extends beyond the playful realm of "Where's Waldo?" to address critical challenges in the field of small object detection, which is crucial for technologies like self-driving cars and drones. Detecting small or partially obscured objects in real-time is a common hurdle in these applications, where precision and speed are paramount. The techniques refined during this project, such as focusing on less obstructed features and managing varying image conditions, are directly applicable to these domains. For self-driving cars, this means improved detection of pedestrians, cyclists, and other small hazards, while for drones, it enhances the ability to identify and track small objects or obstacles in dynamic environments. By addressing the complexities of small object detection in a controlled setting, this project provides valuable insights and methodologies that can be adapted to improve the robustness and accuracy of object detection systems in more complex, real-world scenarios.
 
-![alt text](/img/posts/small-object-detection-applications.png "Small Object Detection Applications")
-
 <a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Application</a>
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
 
-<br/>
+![alt text](/img/posts/small-object-detection-applications.png "Small Object Detection Applications")
+
 
 # Table of Contents
 
