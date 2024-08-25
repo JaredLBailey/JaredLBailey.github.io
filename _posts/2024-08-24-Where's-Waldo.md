@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Finding Waldo and His Friends with Computer Vision
-image: "/posts/wheres-waldo.jpeg"
+image: "/posts/wheres-waldo.jpg"
 tags: [YOLO, Machine Learning, AI, Computer Vision, Python]
 ---
 
