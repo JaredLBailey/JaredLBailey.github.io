@@ -7,6 +7,10 @@ tags: [Robotics]
 
 Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test, leading to a complete rebuild. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
 
+<a href="https://www.duke-robotics.com" target="_blank">Duke Robotics Club</a>
+
+[![2024 Robotics Season Overview](https://img.youtube.com/vi/hP1Sr-XBpaE/maxresdefault.jpg)](https://www.youtube.com/watch?v=hP1Sr-XBpaE)
+
 <a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Interactive Application</a>
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
