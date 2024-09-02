@@ -5,7 +5,7 @@ image: "/posts/wheres-waldo.jpg"
 tags: [Robotics]
 ---
 
-Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test, leading to a complete rebuild. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
+Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test a few months before competition, leading to a complete rebuild of the electronics. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
 
 <a href="https://www.duke-robotics.com" target="_blank">Duke Robotics Club</a>
 
