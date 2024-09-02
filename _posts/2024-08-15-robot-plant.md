@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI Plant Maintenance
+title: Leaflink - AI Plant Maintenance
 image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
 tags: [Robotics]
 ---
 
 Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test a few months before competition, leading to a complete rebuild of the electronics. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
 
-<a href="https://www.duke-robotics.com" target="_blank">Duke Robotics Club Website</a>
+<a href="https://github.com/JaredLBailey/leaflink" target="_blank">Leaflink GitHub Repo</a>
 
 ### Video Overview
 [![2024 AI Plant Maitenance](https://img.youtube.com/vi/hP1Sr-XBpaE/maxresdefault.jpg)](https://www.youtube.com/watch?v=W6LuD98H4Ts)
