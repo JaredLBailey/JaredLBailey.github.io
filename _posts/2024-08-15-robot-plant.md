@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duke Robotics Club - Robot Submarine
+title: AI Plant Maintenance
 image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
 tags: [Robotics]
 ---
