@@ -16,14 +16,14 @@ ___
 
 # Table of Contents
 
-- [Navigating the Acoustics Challenges](#acoustics-challenges)
-- [A Setback and Rebuild](#setback-rebuild)
-  - [Model Misses](#model-misses)
-- [Learnings](#learnings)
+- [Can you Hear Me Now?: Navigating the Acoustics Challenges](#acoustics-challenges)
+- [A Setback and Rebuild: The Unexpected Challenge](#setback-rebuild)
+- [Diving into the Deep End: A Summer of Pool Tests](#pool-tests)
+- [Thankful](#thankful)
 
 ___
 
-# Navigating the Acoustics Challenges <a name="acoustics-challenges"></a>
+# Can you Hear Me Now?: Navigating the Acoustics Challenges <a name="acoustics-challenges"></a>
 
 
 Joining the Electrical team at Duke Robotics opened the door to an intriguing challenge: improving our robot’s acoustic navigation system. The core problem was that during competition, our robot had to autonomously locate a pinger submerged in a pool. This task proved to be more difficult than anticipated because the water environment distorted the acoustic signals, making it hard for the robot to clearly detect the pinger.
@@ -38,7 +38,7 @@ This approach not only had the promise of improving the robot’s accuracy in de
 
 ___
 
-# A Setback and Rebuild <a name="setback-rebuild"></a>
+# A Setback and Rebuild: The Unexpected Challenge <a name="setback-rebuild"></a>
 
 During a routine pool test, the robot was accidentally flooded. This unforeseen mishap forced us to put a halt on the acoustics project and shift our focus to a crucial rebuild of the robot’s electrical system. The flood had damaged several key components, leaving the entire electrical team with the monumental task of repairing and restoring the robot’s functions. Despite the setback, we had a sense of humor about the situation and played the Tintanic movie theme song throughout our next meeting.
 
@@ -48,27 +48,17 @@ The rebuild was a complex and time-consuming task. It took our team nearly two m
 
 ___
 
-### Model Misses <a name="model-misses"></a>
+# Diving into the Deep End: A Summer of Pool Tests <a name="pool-tests"></a>
 
-Model misses were an inevitable part of this project, highlighting the challenges inherent in object detection. 
+With the robot back in top shape, I eagerly volunteered to spend my summer immersed in pool tests. Each day, my responsibilities included building and setting up various obstacles in the pool, swimming alongside as the robot navigated them successfully. I also took on the crucial task of keeping the robot away from the pool’s walls and other swim lanes, managing its transportation to and from the pool, and rigorously checking its water-tightness before each test.
 
-For example, in the two photos on the left, the characters have hairstyles and large eyes that resemble Waldo and Odlaw, leading the model to incorrectly identify them based on these features. Additionally, the lower character’s teeth were mistaken for Odlaw’s mustache. 
+Aside from these manual duties, I provided valuable feedback to the Computer Science team about the robot's performance. This feedback loop was essential for fine-tuning the robot's behavior and improving its autonomous navigation capabilities. Additionally, I filmed underwater footage for the club's promotional videos, capturing the robot’s progress and our team's hard work.
 
-The top middle photo features an object with a shape and color similar to the wizard’s hat, which confused the model. The bottom middle photo is the wizard himself, whose recognition was hampered by heavy obstruction from surrounding elements. 
+The summer’s efforts bore fruit when, for the first time in years, we successfully completed an autonomous pre-trial competition run midway through the season. This milestone was a testament to the dedication of our team and the significant progress we had made.
 
-The lower right photo, showing Woof's tail, presented difficulties due to his small size and low pixel count, making accurate detection challenging. The upper right photo is actually a shirt sleeve that resembles Woof's tail, further complicating the model’s ability to distinguish between the character and non-character elements. 
+Among the many moments of that summer, one particularly memorable event stands out. One day, a fellow team member accidentally dropped a 40-pound weight into the 17-foot deep diving pool. The weight sank quickly to the bottom, and with a bit of determination, I took on the challenge of retrieving it. To everyone’s amazement, I swam down and brought the weight back up on my first try. The lifeguards watching from the poolside were visibly impressed, adding an unexpected highlight to our summer.
 
-These misses underscore the need for continued refinement in object detection models to handle diverse and obstructed visual information effectively.
+# Thankful <a name="thankful"></a>
 
-![alt text](/img/posts/waldo-model-miss.png "Model Miss")
-
-___
-
-# Learnings <a name="learnings"></a>
-
-This project provided valuable insights into the performance of YOLOv8 for detecting characters in the "Where's Waldo?" series, revealing important nuances in object detection. Different characters exhibited varying levels of precision and recall, influenced largely by their shapes and the nature of their surroundings. For instance, Woof’s tail was often unobstructed, which contributed to high precision, but Woof’s small size led to lower recall rates as the model struggled with detecting such small features.
-
-The project also demonstrated the capabilities and limitations of small object detection. The model effectively identified objects as small as 20x20 pixels, but background noise, imperfect photo conditions, and object obfuscation meant that achieving reliable results generally required objects to be around 50x50 pixels. This highlights the trade-offs involved in balancing object size and detection accuracy.
-
-Tiling images emerged as a crucial technique for this project, allowing for detailed analysis without rescaling, which could lead to loss of critical information. Although overlapping tiles by 40 pixels helped mitigate information loss, challenges persisted, such as cutting off faces at the edges of tiles. These experiences underscore the importance of fine-tuning both data preprocessing methods and model parameters to enhance detection performance in practical applications.
+This year's experience was more than just a series of technical tests; it was a season of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided and the season ahead.
 
