@@ -28,7 +28,7 @@ ___
 
 Joining the Electrical team at Duke Robotics opened the door to an intriguing challenge: improving our robot’s acoustic navigation system. The core problem was that during competition, our robot had to autonomously locate a pinger submerged in a pool. This task proved to be more difficult than anticipated because the water environment distorted the acoustic signals, making it hard for the robot to clearly detect the pinger.
 
-When I came on board, the acoustics project was already behind schedule, with two previous teams having tried and moved on to other areas. Our system at that time utilized three hydrophones positioned on the sides of the robot. The strategy was to determine the pinger’s direction by analyzing which hydrophone received the ping first, second, and third. We then hoped to use this data to identify the correct directional octant. The data was complex since pings come in waves. We isolated the true from false signals by honing in on when the sound wave eclipsed 5 standard deviations from the mean.
+When I came on board, the acoustics project was already behind schedule, with two previous teams having tried and moved on to other areas. Our system at that time utilized three hydrophones positioned on the sides of the robot. The strategy was to determine the pinger’s direction by analyzing which hydrophone received the ping first, second, and third. We then hoped to use this data to identify the correct directional octant. The data was complex since pings come in waves. We isolated the true from false signals by honing in on when the sound wave eclipsed 5 standard deviations from the mean (the upper and lower most horizontal red lines).
 
 ![alt text](/img/posts/Screenshot-2024-02-29-194412.png "Acoustics Data")
 
