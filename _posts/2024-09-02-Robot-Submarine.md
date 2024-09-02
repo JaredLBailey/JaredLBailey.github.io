@@ -50,7 +50,7 @@ ___
 
 # Diving into the Deep End: A Summer of Pool Tests <a name="pool-tests"></a>
 
-With the robot back in top shape, I eagerly volunteered to spend my summer immersed in pool tests. Each day, my responsibilities included building and setting up various obstacles in the pool, swimming alongside as the robot navigated them successfully. I also took on the crucial task of keeping the robot away from the pool’s walls and other swim lanes, managing its transportation to and from the pool, and rigorously checking its water-tightness before each test.
+With the robot back in top shape, I eagerly volunteered to spend my summer immersed in pool tests. Each day, my responsibilities included building and setting up various obstacles in the pool, as well as swimming alongside as the robot navigated them successfully. I also took on the crucial task of keeping the robot away from the pool’s walls and other swim lanes, managing its transportation to and from the pool, and rigorously checking its water-tightness before each test.
 
 Aside from these manual duties, I provided valuable feedback to the Computer Science team about the robot's performance. This feedback loop was essential for fine-tuning the robot's behavior and improving its autonomous navigation capabilities. Additionally, I filmed underwater footage for the club's promotional videos, capturing the robot’s progress and our team's hard work.
 
