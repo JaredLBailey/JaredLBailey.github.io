@@ -9,7 +9,7 @@ Being part of the Duke Robotics team throughout 2024 has been an extraordinary j
 
 <a href="https://www.duke-robotics.com" target="_blank">Duke Robotics Club Website</a>
 
-## 2023-2024 Season Video Highlights
+### 2023-2024 Season Video Highlights
 [![2024 Robotics Season Overview](https://img.youtube.com/vi/hP1Sr-XBpaE/maxresdefault.jpg)](https://www.youtube.com/watch?v=hP1Sr-XBpaE)
 
 ___
