@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leaflink - AI Plant Maintenance
-image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
+image: "/posts/Leaflink.png"
 tags: [Robotics]
 ---
 
