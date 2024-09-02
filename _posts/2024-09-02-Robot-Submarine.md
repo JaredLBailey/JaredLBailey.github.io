@@ -30,7 +30,7 @@ Joining the Electrical team at Duke Robotics opened the door to an intriguing ch
 
 When I came on board, the acoustics project was already behind schedule, with two previous teams having tried and moved on to other areas. Our system at that time utilized three hydrophones positioned on the sides of the robot. The strategy was to determine the pinger’s direction by analyzing which hydrophone received the ping first, second, and third. We then hoped to use this data to identify the correct directional octant. The data was complex since pings come in waves. We isolated the true from false signals by honing in on when the sound wave eclipsed 5 standard deviations from the mean.
 
-![alt text](/img/posts/waldo-model-miss.png "Model Miss")
+![alt text](/img/posts/Screenshot 2024-02-29 194412.png "Acoustics Data")
 
 My initial approach involved developing a neural network with another team member to analyze this data. Unfortunately, our model’s accuracy was only 60%, which wasn’t sufficient for reliable performance. A deeper dive into the data revealed two major issues: first, some data was corrupted by recordings taken outside the pool, and second, the side-mounted hydrophones were experiencing difficulties from the sound signal interaction with the robot’s structure.
 
