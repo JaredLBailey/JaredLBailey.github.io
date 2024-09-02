@@ -2,14 +2,10 @@
 layout: post
 title: Duke Robotics Club - Robot Submarine
 image: "/posts/wheres-waldo.jpg"
-tags: [YOLO, Machine Learning, AI, Computer Vision, Python]
+tags: [Robotics]
 ---
 
-Welcome to my nostalgia project, where I delve into a fascinating task that blends childhood memories with cutting-edge technology. In this post, I’ll walk you through the creation of a machine learning model designed to tackle a unique challenge: finding Waldo and his four friends (Wenda, Wizard, Odlaw, and Woof) in the iconic "Where's Waldo?" series using YOLOv8. This project not only highlights the power of advanced object detection but also celebrates the playful challenge of spotting hidden characters in a sea of visual complexity. Join me as I explore the intricacies of training YOLOv8 for this whimsical quest and share insights into how modern machine learning can bring classic characters into the digital age.
-
-The primary goal of this project was to create a practical tool that leverages machine learning to simplify the classic "Where's Waldo?" experience. By developing a YOLOv8-based model, I aimed to enable users to take a photo of a book page with their cell phone and have it automatically identify Waldo and his four friends in real time. This functionality not only enhances the interactive enjoyment of the "Where's Waldo?" series but also demonstrates how advanced object detection can be applied to everyday tasks. The vision was to make character identification effortless and immediate, turning a challenging visual puzzle into a seamlessly integrated digital experience.
-
-This project extends beyond the playful realm of "Where's Waldo?" to address critical challenges in the field of small object detection, which is crucial for technologies like self-driving cars and drones. Detecting small or partially obscured objects in real-time is a common hurdle in these applications, where precision and speed are paramount. The techniques refined during this project, such as focusing on less obstructed features and managing varying image conditions, are directly applicable to these domains. For self-driving cars, this means improved detection of pedestrians, cyclists, and other small hazards, while for drones, it enhances the ability to identify and track small objects or obstacles in dynamic environments. By addressing the complexities of small object detection in a controlled setting, this project provides valuable insights and methodologies that can be adapted to improve the robustness and accuracy of object detection systems in more complex, real-world scenarios.
+Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test, leading to a complete rebuild. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
 
 <a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Interactive Application</a>
 
