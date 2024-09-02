@@ -17,7 +17,7 @@ ___
 # Table of Contents
 
 - [Navigating the Acoustics Challenges](#acoustics-challenges)
-- [Modeling and Evaluation](#modeling-evaluation)
+- [A Setback and Rebuild](#setback-rebuild)
   - [Model Misses](#model-misses)
 - [Learnings](#learnings)
 
@@ -38,11 +38,15 @@ This approach not only had the promise of improving the robot’s accuracy in de
 
 ___
 
-# Modeling and Evaluation <a name="modeling-evaluation"></a>
+# A Setback and Rebuild <a name="setback-rebuild"></a>
 
-For the modeling phase of this project, I utilized YOLOv8, Python, and the Ultralytics library to tackle the challenge of detecting all five characters simultaneously. I experimented with two distinct approaches to determine the most effective strategy for character identification. The first approach focused on detecting only the heads of the characters, under the assumption that the heads would be less obstructed in the photos despite being smaller in size. The second approach aimed to detect the full characters, which provided a larger target but was often hindered by obstructions and varying image conditions. By comparing these methods, I evaluated whether the advantage of larger size outweighed the difficulties posed by obstructions. Ultimately, the head-only model proved to be more successful, yielding superior results and more accurate detections. This approach balanced the trade-off between size and visibility, demonstrating that, in this case, focusing on less obstructed, though smaller, features led to better overall performance.
+During a routine pool test, the robot was accidentally flooded. This unforeseen mishap forced us to put a halt on the acoustics project and shift our focus to a crucial rebuild of the robot’s electrical system. The flood had damaged several key components, leaving the entire electrical team with the monumental task of repairing and restoring the robot’s functions. Despite the setback, we had a sense of humor about the situation and played the Tintanic movie theme song throughout our next meeting.
 
-![alt text](/img/posts/waldo-evaluation.png "Model Evaluation")
+I threw myself into the rebuilding process, which involved extensive rewiring and testing. One of my key responsibilities was to address the issues with our Electronic Speed Controllers (ESCs) for the thrusters. As part of the team I rewired, soldered, and performed lots of tests. Once this task was complete I spent hours connecting wires, applying epoxy to seal connections, and organizing the wiring within the robot’s sealed capsule to maximize space and functionality.
+
+The rebuild was a complex and time-consuming task. It took our team nearly two months of hard work and dedication to complete. Despite the setbacks, the extensive effort paid off. Once the robot was reassembled and thoroughly tested, it was not only functional again but performed better than before.
+
+___
 
 ### Model Misses <a name="model-misses"></a>
 
