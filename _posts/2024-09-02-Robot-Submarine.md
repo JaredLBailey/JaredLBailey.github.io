@@ -11,27 +11,29 @@ Being part of the Duke Robotics team throughout 2024 has been an extraordinary j
 
 [![2024 Robotics Season Overview](https://img.youtube.com/vi/hP1Sr-XBpaE/maxresdefault.jpg)](https://www.youtube.com/watch?v=hP1Sr-XBpaE)
 
-<a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Interactive Application</a>
-
-<a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
-
-![alt text](/img/posts/small-object-detection-applications.png "Small Object Detection Applications")
-
 ___
 
 # Table of Contents
 
-- [Data Gathering](#data-gathering)
+- [Navigating the Acoustics Challenges](#acoustics-challenges)
 - [Modeling and Evaluation](#modeling-evaluation)
   - [Model Misses](#model-misses)
 - [Learnings](#learnings)
 
 ___
 
-# Data Gathering <a name="data-gathering"></a>
+# Navigating the Acoustics Challenges <a name="acoustics-challenges"></a>
 
 
-Data gathering for this project presented unique challenges due to the need to account for the imperfect conditions of real-world photographs taken with a cell phone. Many of the existing datasets I found online featured ideal conditions—perfect lighting, flat pages, and high resolution—which didn't accurately reflect the varied conditions one might encounter with a typical cell phone camera. To address this, I created my own dataset using my iPhone, capturing photos of full puzzle pages. Initially, this approach proved problematic because the model struggled with the low resolution of these images, particularly given the small size of Waldo. To improve performance, I refined my data collection strategy by focusing on single page photos, which I then divided into 640 by 640 pixel tiles with slight overlaps. This adjustment allowed the model to better handle the resolution and intricacies of the task, leading to more accurate and effective character detection.
+Joining the Electrical team at Duke Robotics opened the door to an intriguing challenge: improving our robot’s acoustic navigation system. The core problem was that during competition, our robot had to autonomously locate a pinger submerged in a pool. This task proved to be more difficult than anticipated because the water environment distorted the acoustic signals, making it hard for the robot to clearly detect the pinger.
+
+When I came on board, the acoustics project was already behind schedule, with two previous teams having tried and moved on to other areas. Our system at that time utilized three hydrophones positioned on the sides of the robot. The strategy was to determine the pinger’s direction by analyzing which hydrophone received the ping first, second, and third. We then hoped to use this data to identify the correct directional octant.
+
+My initial approach involved developing a neural network with another team member to analyze this data. Unfortunately, our model’s accuracy was only 60%, which wasn’t sufficient for reliable performance. A deeper dive into the data revealed two major issues: first, some data was corrupted by recordings taken outside the pool, and second, the side-mounted hydrophones were experiencing difficulties from the sound signal interaction with the robot’s structure.
+
+To address these issues, I proposed a new system featuring four hydrophones arranged in a square formation, with each hydrophone positioned just 2 inches apart. This new setup allowed us to place the hydrophones lower on the robot, reducing interference from the robot’s body and the thrusters. By utilizing this four-hydrophone array, we eliminated the need for complex neural network processing. Instead, we could direct the robot to move towards the hydrophone that detected the ping first, streamlining the navigation process.
+
+This approach not only had the promise of improving the robot’s accuracy in detecting the pinger but also brought us back on track with our project timeline. But just before we were able to test the new design, disaster struck.
 
 ___
 
