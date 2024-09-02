@@ -10,7 +10,7 @@ Being part of the Duke Robotics team throughout 2024 has been an extraordinary j
 <a href="https://github.com/JaredLBailey/leaflink" target="_blank">Leaflink GitHub Repo</a>
 
 ### Video Overview
-[![2024 AI Plant Maitenance](https://img.youtube.com/vi/hP1Sr-XBpaE/maxresdefault.jpg)](https://www.youtube.com/watch?v=W6LuD98H4Ts)
+[![Leaflink AI Plant Maitenance](https://img.youtube.com/vi/W6LuD98H4Ts/maxresdefault.jpg)](https://www.youtube.com/watch?v=W6LuD98H4Ts)
 
 ___
 
