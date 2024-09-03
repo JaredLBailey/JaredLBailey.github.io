@@ -2,10 +2,10 @@
 layout: post
 title: Leaflink - AI Plant Maintenance
 image: "/posts/Leaflink.png"
-tags: [Robotics]
+tags: [AI, IoT, LLMs]
 ---
 
-Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test a few months before competition, leading to a complete rebuild of the electronics. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
+In the realm of innovative tech solutions for everyday problems, our latest project, Leaflink, stands out as a testament to the fusion of artificial intelligence and plant care. Developed by a dedicated team, including myself, Leaflink represents a leap forward in how we interact with and maintain our green companions. Here’s a glimpse into how our AI-driven plant maintenance system works and what makes it unique.
 
 <a href="https://github.com/JaredLBailey/leaflink" target="_blank">Leaflink GitHub Repo</a>
 
