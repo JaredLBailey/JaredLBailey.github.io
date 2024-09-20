@@ -9,9 +9,6 @@ In my ongoing quest to combine AI with practical applications, I’ve embarked o
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">Version 1 - GitHub Repository</a>
 
-
-
-
 ___
 
 # Table of Contents
