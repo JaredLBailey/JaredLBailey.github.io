@@ -7,9 +7,7 @@ tags: [3D Printing, Computer Vision, Raspberry Pi, Docker, AWS]
 
 In my ongoing quest to combine AI with practical applications, I’ve embarked on v2 of a project that builds on the foundation of a team effort from my Deep Learning Applications class. The original team project (v1) used computer vision to identify whether an image contained a bird or a squirrel, with a Raspberry Pi triggering an ultrasonic sound to deter squirrels from a bird feeder. In this updated version, I individually aim to push the boundaries of what the project can achieve by introducing more advanced features and further refining the detection capabilities.
 
-<a href="https://huggingface.co/spaces/JaredBailey/WheresWaldo" target="_blank">Interactive Application</a>
-
-<a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
+<a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">Version 1 - GitHub Repository</a>
 
 ![alt text](/img/posts/Bird_2.jpg "Small Object Detection Applications")
 ![alt text](/img/posts/Bird_3.png "Small Object Detection Applications")
@@ -18,14 +16,14 @@ ___
 
 # Table of Contents
 
-- [Data Gathering](#data-gathering)
-- [Modeling and Evaluation](#modeling-evaluation)
+- [Version 1](#version-1)
+- [Version 2](#version-2)
   - [Model Misses](#model-misses)
 - [Learnings](#learnings)
 
 ___
 
-# Data Gathering <a name="data-gathering"></a>
+# Version 1 <a name="version-1"></a>
 
 
 Data gathering for this project presented unique challenges due to the need to account for the imperfect conditions of real-world photographs taken with a cell phone. Many of the existing datasets I found online featured ideal conditions—perfect lighting, flat pages, and high resolution—which didn't accurately reflect the varied conditions one might encounter with a typical cell phone camera. To address this, I created my own dataset using my iPhone, capturing photos of full puzzle pages. Initially, this approach proved problematic because the model struggled with the low resolution of these images, particularly given the small size of Waldo. To improve performance, I refined my data collection strategy by focusing on single page photos, which I then divided into 640 by 640 pixel tiles with slight overlaps. This adjustment allowed the model to better handle the resolution and intricacies of the task, leading to more accurate and effective character detection.
