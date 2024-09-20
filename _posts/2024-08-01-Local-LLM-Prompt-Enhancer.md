@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local LLM Prompt Enhancer
-image: "/posts/wheres-waldo.jpg"
+image: "/posts/enter_purpose.png"
 tags: [Local LLM, AI, Llamafile, Python, Rust, Streamlit]
 ---
 
@@ -10,7 +10,7 @@ I'm excited to introduce my latest project, which you can find on GitHub here:
 
 While this project involves creating a prompt enhancer using a local language model (amazing to run one on an older laptop CPU!), the primary goal wasn't to showcase advanced AI capabilities. Instead, I focused on immersing myself in the practical applications of Docker and DockerHub, GitHub Actions, Python testing, and Rust programming. This endeavor was less about AI technical prowess and more about leveraging these tools to enhance my development workflow and skill set.
 
-![alt text](/img/posts/small-object-detection-applications.png "Small Object Detection Applications")
+![alt text](/img/posts/enter_purpose.png "Local LLM Prompt Enhancer")
 
 ___
 
