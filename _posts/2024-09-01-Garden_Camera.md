@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Garden Pest Deterrent
+title: Ongoing - AI Garden Pest Deterrent
 image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
 tags: [Computer Vision, Raspberry Pi, Docker, AWS]
 ---
