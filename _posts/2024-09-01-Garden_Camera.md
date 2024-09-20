@@ -7,7 +7,7 @@ tags: [Fushion360, 3D Printing, Computer Vision, Raspberry Pi, Docker, AWS]
 
 In my ongoing quest to combine AI with practical applications, I’ve embarked on v2 of a project that builds on the foundation of a team effort from my Deep Learning Applications class. The original team project (v1) used computer vision to identify whether an image contained a bird or a squirrel, with a Raspberry Pi triggering an ultrasonic sound to deter squirrels from a bird feeder. In this updated version, I individually aim to push the boundaries of what the project can achieve by introducing more advanced features and further refining the detection capabilities.
 
-<a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">Version 1 - GitHub Repository</a>
+<a href="https://github.com/JaredLBailey/AIPI540-CV-Module-Project" target="_blank">Version 1 - GitHub Repository</a>
 
 ___
 
