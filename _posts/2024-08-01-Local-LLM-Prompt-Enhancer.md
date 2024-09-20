@@ -10,14 +10,18 @@ I'm excited to introduce my latest project, which you can find on GitHub here:
 
 While this project involves creating a prompt enhancer using a local language model (amazing to run one on an older laptop CPU!), the primary goal wasn't to showcase advanced AI capabilities. Instead, I focused on immersing myself in the practical applications of Docker and DockerHub, GitHub Actions, Python testing, and Rust programming. This endeavor was less about AI technical prowess and more about leveraging these tools to enhance my development workflow and skill set.
 
-![alt text](/img/posts/enter_purpose.png "Local LLM Prompt Enhancer")
-
 ___
 
 # Table of Contents
 
+- [Demonstration](#demonstration)
 - [Why This Project?](#why-this-project)
 - [Special Features](#special-features)
+
+___
+
+# Demonstration <a name="demonstration"></a>
+[![Watch a Demonstration Video](https://github.com/JaredBaileyDuke/prompt-enhancer-with-local-llm/blob/main/images/video_click.png)](https://www.youtube.com/watch?v=GeWhUzoXpB4)
 
 ___
 
