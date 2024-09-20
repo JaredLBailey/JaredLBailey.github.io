@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ongoing - AI Garden Pest Deterrent
-image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
+image: "/posts/bird_1.jpg"
 tags: [Computer Vision, Raspberry Pi, Docker, AWS]
 ---
 
@@ -15,7 +15,8 @@ This project extends beyond the playful realm of "Where's Waldo?" to address cri
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
 
-![alt text](/img/posts/small-object-detection-applications.png "Small Object Detection Applications")
+![alt text](/img/posts/bird_2.jpg "Small Object Detection Applications")
+![alt text](/img/posts/bird_3.png "Small Object Detection Applications")
 
 ___
 
