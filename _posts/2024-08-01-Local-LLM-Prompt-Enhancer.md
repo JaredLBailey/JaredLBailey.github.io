@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local LLM Prompt Enhancer
-image: "/posts/enter_purpose.png"
+image: "/posts/enter_purpose_large.png"
 tags: [Local LLM, AI, Llamafile, Python, Rust, Streamlit]
 ---
 
