@@ -14,13 +14,13 @@ ___
 
 # Table of Contents
 
-- [Demonstration](#demonstration)
+- [Demonstration Video](#demonstration-video)
 - [Why This Project?](#why-this-project)
 - [Special Features](#special-features)
 
 ___
 
-# Demonstration <a name="demonstration"></a>
+# Demonstration Video <a name="demonstration-video"></a>
 [![Watch a Demonstration Video](https://img.youtube.com/vi/GeWhUzoXpB4/maxresdefault.jpg)](https://www.youtube.com/watch?v=GeWhUzoXpB4)
 
 ___
