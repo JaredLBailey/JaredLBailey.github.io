@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toasty the Roastmaster
-image: "/posts/bear-roastmaster.jpg"
+image: "/posts/bear-roastmaster.png"
 tags: [Raspberry Pi, AI, IoT, LLMs, Voice Cloning]
 ---
 
