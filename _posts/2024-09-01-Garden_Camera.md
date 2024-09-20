@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ongoing - AI Garden Pest Deterrent
-image: "/posts/bird_1.jpg"
+image: "/posts/Bird_1.jpg"
 tags: [3D Printing, Computer Vision, Raspberry Pi, Docker, AWS]
 ---
 
@@ -11,8 +11,8 @@ In my ongoing quest to combine AI with practical applications, I’ve embarked o
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">GitHub Repository</a>
 
-![alt text](/img/posts/bird_2.jpg "Small Object Detection Applications")
-![alt text](/img/posts/bird_3.png "Small Object Detection Applications")
+![alt text](/img/posts/Bird_2.jpg "Small Object Detection Applications")
+![alt text](/img/posts/Bird_3.png "Small Object Detection Applications")
 
 ___
 
