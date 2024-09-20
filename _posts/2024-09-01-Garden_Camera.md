@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ongoing - AI Garden Pest Deterrent
-image: "/posts/Bird_1.jpg"
+image: "/posts/Squirrel_1.png"
 tags: [Fushion360, 3D Printing, Computer Vision, Raspberry Pi, Docker, AWS]
 ---
 
