@@ -22,8 +22,11 @@ ___
 
 # Demonstration <a name="demonstration"></a>
 <a href="https://www.youtube.com/watch?v=GeWhUzoXpB4" target="_blank">
-    <img src="/images/video_click.png" alt="Watch a Demonstration Video" style="width:100%;">
+    <img src="/images/video_click.png" alt="Watch a Demonstration Video">
   </a>
+
+___
+
 [![Watch a Demonstration Video](https://github.com/JaredLBailey/prompt-enhancer-with-local-llm/blob/main/images/video_click.png)](https://www.youtube.com/watch?v=GeWhUzoXpB4)
 
 ___
