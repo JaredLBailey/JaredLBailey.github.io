@@ -21,7 +21,7 @@ ___
 ___
 
 # Demonstration <a name="demonstration"></a>
-[![Watch a Demonstration Video](https://github.com/JaredBaileyDuke/prompt-enhancer-with-local-llm/blob/main/images/video_click.png)](https://www.youtube.com/watch?v=GeWhUzoXpB4)
+[![Watch a Demonstration Video](https://github.com/JaredLBailey/prompt-enhancer-with-local-llm/blob/main/images/video_click.png)](https://www.youtube.com/watch?v=GeWhUzoXpB4)
 
 ___
 
