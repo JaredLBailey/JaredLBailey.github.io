@@ -5,7 +5,7 @@ image: "/posts/bear-roastmaster.jpg"
 tags: [Raspberry Pi, AI, IoT, LLMs, Voice Cloning]
 ---
 
-For my Deep Learning Application class project, I decided to blend humor with cutting-edge AI by training a roastmaster bear powered by large language models (LLMs). The intersection of humor and AI presents a fascinating challenge—can a machine understand what makes a joke funny, and better yet, can it become the ultimate roastmaster?
+For my Deep Learning Application class project, I decided to blend humor with cutting-edge AI by building a roastmaster bear powered by large language models (LLMs). The intersection of humor and AI presents a fascinating challenge—can a machine understand what makes a joke funny, and better yet, can it become the ultimate roastmaster?
 
 ___
 
@@ -18,7 +18,7 @@ ___
 
 # Technical Pieces <a name="techincal-pieces"></a>
 
-Building the roastmaster bear required several key components, each contributing to the bear’s comedic performance. A microphone connected to a Raspberry Pi served as the input for user prompts, with speech-to-text technology converting spoken words into text for processing. To enhance the bear’s roasting capabilities, I employed prompt hacking techniques to bypass the safety restrictions built into LLMs, allowing for more creative (and cutting) responses. To give the bear a familiar voice, I used voice cloning technology to emulate a well-known hollywood bear, adding authenticity to the roast. The final punchline was delivered through a speaker, also controlled by the Raspberry Pi, bringing the roastmaster bear to life in full auditory glory.
+Building the roastmaster bear required several key components, each contributing to the bear’s comedic performance. A microphone connected to a Raspberry Pi served as the input for user prompts, with speech-to-text technology converting spoken words into text for processing. To enhance the bear’s roasting capabilities, I employed prompt hacking techniques to bypass the safety restrictions built into LLMs, allowing for more creative (and cutting) responses. To give the bear a familiar voice, I used voice cloning technology to emulate a well-known Hollywood bear, adding authenticity to the roast. The final punchline was delivered through a speaker, also controlled by the Raspberry Pi, bringing the roastmaster bear to life in full auditory glory.
 
 ___
 
