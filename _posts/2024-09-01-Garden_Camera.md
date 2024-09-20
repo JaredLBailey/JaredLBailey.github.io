@@ -31,13 +31,13 @@ In version 1, our team set out to create an automated system that could distingu
 
 ### The System <a name="system"></a>
 
-![alt text](/img/posts/Bird_2.jpg "Version 1 Build System")
+![alt text](/img/posts/Bird_3.jpg "Version 1 Build System")
 
 The system began with an IR sensor that detected movement, triggering a day and night sensitive camera to capture a photo. This image was then sent via API to the cloud, where a custom image classifier determined if the subject was a bird or a squirrel. If a squirrel was detected, a response message was sent back to a Raspberry Pi, which activated a relay switch plugged into a wall outlet. This powered AA batteries, which we converted to C batteries that ran a commercially available pest repellent to ward off the squirrels.
 
 ### Build in Progress <a name="build-in-progress"></a>
 
-![alt text](/img/posts/Bird_3.png "Jay Hard at Work")
+![alt text](/img/posts/Bird_2.png "Jay Hard at Work")
 
 For this project, I was assigned to handle the hardware. I designed and built the electronics system that powered the pest repellent, including wiring the relay and battery conversions. Meanwhile, my teammate Jay took on the task of building a balsa wood box to house and protect the electronics. You can see a photo of Jay hard at work on the enclosure, which completed the system’s design.
 
