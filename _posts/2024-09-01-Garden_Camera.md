@@ -9,14 +9,16 @@ In my ongoing quest to combine AI with practical applications, I’ve embarked o
 
 <a href="https://github.com/JaredLBailey/wheres-waldo" target="_blank">Version 1 - GitHub Repository</a>
 
-![alt text](/img/posts/Bird_2.jpg "Small Object Detection Applications")
-![alt text](/img/posts/Bird_3.png "Small Object Detection Applications")
+
+
 
 ___
 
 # Table of Contents
 
 - [Version 1](#version-1)
+  - [The System](#system)
+  - [Build in Progress](#build-in-progress)
 - [Version 2](#version-2)
   - [Model Misses](#model-misses)
 - [Learnings](#learnings)
@@ -25,8 +27,19 @@ ___
 
 # Version 1 <a name="version-1"></a>
 
+In version 1, our team set out to create an automated system that could distinguish between birds and squirrels to humanely deter the latter from bird feeders. 
 
-Data gathering for this project presented unique challenges due to the need to account for the imperfect conditions of real-world photographs taken with a cell phone. Many of the existing datasets I found online featured ideal conditions—perfect lighting, flat pages, and high resolution—which didn't accurately reflect the varied conditions one might encounter with a typical cell phone camera. To address this, I created my own dataset using my iPhone, capturing photos of full puzzle pages. Initially, this approach proved problematic because the model struggled with the low resolution of these images, particularly given the small size of Waldo. To improve performance, I refined my data collection strategy by focusing on single page photos, which I then divided into 640 by 640 pixel tiles with slight overlaps. This adjustment allowed the model to better handle the resolution and intricacies of the task, leading to more accurate and effective character detection.
+### The System <a name="system"></a>
+
+![alt text](/img/posts/Bird_2.jpg "Version 1 Build System")
+
+The system began with an IR sensor that detected movement, triggering a day and night sensitive camera to capture a photo. This image was then sent via API to the cloud, where a custom image classifier determined if the subject was a bird or a squirrel. If a squirrel was detected, a response message was sent back to a Raspberry Pi, which activated a relay switch plugged into a wall outlet. This powered AA batteries, which we converted to C batteries that ran a commercially available pest repellent to ward off the squirrels.
+
+### Build in Progress <a name="build-in-progress"></a>
+
+![alt text](/img/posts/Bird_3.png "Jay Hard at Work")
+
+For this project, I was assigned to handle the hardware. I designed and built the electronics system that powered the pest repellent, including wiring the relay and battery conversions. Meanwhile, my teammate Jay took on the task of building a balsa wood box to house and protect the electronics. You can see a photo of Jay hard at work on the enclosure, which completed the system’s design.
 
 ___
 
