@@ -15,7 +15,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # About Section
-subtitle: Artificial Intelligence, Edge Device & Robotics <span style="color:#f58506"> Portfolio </span>
+subtitle: AI, Edge Device & Robotics <span style="color:#f58506"> Portfolio </span>
 location: "Durham, NC"
 resume_url: /docs/Jared L Bailey Resume 20240930.pdf
 avatar_image: /img/Jared Square.jpeg
