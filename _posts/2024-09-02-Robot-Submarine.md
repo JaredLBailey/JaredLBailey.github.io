@@ -5,7 +5,7 @@ image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
 tags: [Robotics]
 ---
 
-Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test a few months before competition, leading to a complete rebuild of the electronics. In the following sections, I’ll delve into the details of my contributions and experiences with the team this year.
+Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test a few months before competition, leading to a complete rebuild of the electronics. In the following sections, I’ll delve into the details of my contributions and experiences with the team.
 
 <a href="https://www.duke-robotics.com" target="_blank">Duke Robotics Club Website</a>
 
@@ -16,14 +16,31 @@ ___
 
 # Table of Contents
 
-- [Can you Hear Me Now?: Navigating the Acoustics Challenges](#acoustics-challenges)
-- [A Setback and Rebuild: The Unexpected Challenge](#setback-rebuild)
-- [Diving into the Deep End: A Summer of Pool Tests](#pool-tests)
-- [Thankful](#thankful)
+- [Upcoming Year](#upcoming-year)
+  - [ROS 2 Migration](#ros2-migration)
+- [Last Year](#last-year)
+  - [Can you Hear Me Now?: Navigating the Acoustics Challenges](#acoustics-challenges)
+  - [A Setback and Rebuild: The Unexpected Challenge](#setback-rebuild)
+  - [Diving into the Deep End: A Summer of Pool Tests](#pool-tests)
+  - [Thankful](#thankful)
+
+# Upcoming Year <a name="upcoming-year"></a>
+
+For this upcoming year I've transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I'm currently working to update our Python code from ROS 1 to ROS 2. My main responsibility is transitioning the task planning code to ensure compatibility with ROS 2. To date I have moved and updated the computer vision node as part of this process.
 
 ___
 
-# Can you Hear Me Now?: Navigating the Acoustics Challenges <a name="acoustics-challenges"></a>
+## ROS 2 Migration <a name="ros2-migration"></a>
+
+Joining the Electrical tea
+
+___
+
+# Last Year <a name="last-year"></a>
+
+___
+
+## Can you Hear Me Now?: Navigating the Acoustics Challenges <a name="acoustics-challenges"></a>
 
 
 Joining the Electrical team at Duke Robotics opened the door to an intriguing challenge: improving our robot’s acoustic navigation system. The core problem was that during competition, our robot had to autonomously locate a pinger submerged in a pool. This task proved to be more difficult than anticipated because the water environment distorted the acoustic signals, making it hard for the robot to clearly detect the pinger.
@@ -40,7 +57,7 @@ This approach not only had the promise of improving the robot’s accuracy in de
 
 ___
 
-# A Setback and Rebuild: The Unexpected Challenge <a name="setback-rebuild"></a>
+## A Setback and Rebuild: The Unexpected Challenge <a name="setback-rebuild"></a>
 
 During a routine pool test, the robot was accidentally flooded. This unforeseen mishap forced us to put a halt on the acoustics project and shift our focus to a crucial rebuild of the robot’s electrical system. The flood had damaged several key components, leaving the entire electrical team with the monumental task of repairing and restoring the robot’s functions. Despite the setback, we had a sense of humor about the situation and played the Tintanic movie theme song throughout our next meeting.
 
@@ -50,7 +67,7 @@ The rebuild was a complex and time-consuming task. It took our team nearly two m
 
 ___
 
-# Diving into the Deep End: A Summer of Pool Tests <a name="pool-tests"></a>
+## Diving into the Deep End: A Summer of Pool Tests <a name="pool-tests"></a>
 
 With the robot back in top shape, I eagerly volunteered to spend my summer immersed in pool tests. Each day, my responsibilities included building and setting up various obstacles in the pool, as well as swimming alongside as the robot navigated them successfully. I also took on the crucial task of keeping the robot away from the pool’s walls and other swim lanes, managing its transportation to and from the pool, and rigorously checking its water-tightness before each test.
 
@@ -62,7 +79,7 @@ Among the many moments of that summer, one particularly memorable event stands o
 
 ___
 
-# Thankful <a name="thankful"></a>
+## Thankful <a name="thankful"></a>
 
 This year's experience was more than just a series of technical tests; it was a season of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided and the season ahead.
 
