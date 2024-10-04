@@ -26,13 +26,11 @@ ___
 
 # Upcoming Year <a name="upcoming-year"></a>
 
-For this upcoming year I've transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I'm currently working to update our Python code from ROS 1 to ROS 2. My main responsibility is transitioning the task planning code to ensure compatibility with ROS 2. To date I have moved and updated the computer vision node as part of this process.
-
 ___
 
 ## ROS 2 Migration <a name="ros2-migration"></a>
 
-Joining the Electrical tea
+For this upcoming year I've transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I'm currently working to update our Python code from ROS 1 to ROS 2. My main responsibility is transitioning the task planning code to ensure compatibility with ROS 2. To date I have moved and updated the computer vision node as part of this process.
 
 ___
 
