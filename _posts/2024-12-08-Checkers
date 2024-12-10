@@ -5,7 +5,7 @@ image: "/posts/Leaflink.png"
 tags: [Arm, Animatronics, CV, AI]
 ---
 
-As a final group project, my team and I created an autonomous robot to play checkers against a human play, or even itself. This robot features several enhancemnts that I word heavily on, such as:
+As a final group project, my team created an autonomous robot to play checkers against a human play, or even itself. This robot features several enhancemnts that I word heavily on, such as:
 - Computer vision code that allows the camera to be moved varying distances from the board, as well as rotated
 - Animatronics that work in tandem with a voice clone of our class TA
 - A custom built checkers game that features 5 game modes
@@ -20,10 +20,22 @@ ___
 
 # Table of Contents
 
+- [Computer Vision](#cv)
 - [Animatronics](#animatronics)
+- [Checkers Game](#checkers)
+- [Electromagnet](#electromagnet)
 
 ___
 
+# Computer Vision <a name="cv"></a>
+asdf
+
 # Animatronics <a name="animatronics"></a>
 https://github.com/JaredLBailey/JaredLBailey.github.io/blob/master/img/posts/Eyes-0.gif
+
+# Checkers Game <a name="checkers"></a>
+asdf
+
+# Electromagnet <a name="electromagnet"></a>
+asdf
 
