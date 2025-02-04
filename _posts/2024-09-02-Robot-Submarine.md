@@ -24,13 +24,15 @@ ___
   - [Diving into the Deep End: A Summer of Pool Tests](#pool-tests)
   - [Thankful](#thankful)
 
-# Upcoming Year <a name="upcoming-year"></a>
+# This Year <a name="upcoming-year"></a>
 
 ___
 
 ### ROS 2 Migration <a name="ros2-migration"></a>
 
-For this upcoming year I've transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I'm currently working to update our Python code from ROS 1 to ROS 2. My main responsibility is transitioning the task planning code to ensure compatibility with ROS 2. To date I have moved and updated the computer vision node as part of this process.
+For this year I've transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I worked to update our Python and C++ code from ROS 1 to ROS 2. This involved a ton of updates and testing to the 50,000+ lines of code in our repository. I spent most of my time in the task planning and utilities sections of our code base, but did do some branching out to other areas as called for (sonar, CV, etc.). And once this was done, I spent a couple weeks linting.
+
+Now I've moved to testing the ROS 2 code using a Jetson Orin Nano on a mock electrical circuit assembled by the Electrical team. This included setting up the Nano.
 
 ___
 
