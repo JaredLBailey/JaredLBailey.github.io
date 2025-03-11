@@ -9,7 +9,9 @@ Civil engineering projects generate vast amounts of data, from construction deta
 By doing so, the chatbot can safely showcase its capabilities to the public while securely handling real-world civil engineering data on the back end.
 
 ## How It Works
+
 ![Music Example](https://raw.githubusercontent.com/JaredLBailey/JaredLBailey.github.io/master/img/posts/music-example.gif)
+
 At its core, the SQL Chatbot Agent three critical tasks:
 
 1. Natural Language Understanding: The chatbot parses user questions expressed in everyday language.
