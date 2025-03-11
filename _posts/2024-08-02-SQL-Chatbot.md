@@ -1,7 +1,7 @@
 # Novel Data Interaction in Civil Engineering using a SQL Chatbot
 My client had difficulty unlocking insights from complex civil engineering data. My latest project is designed to bridge the gap between raw civil engineering data and user-friendly query interfaces. Leveraging the power of OpenAI, LangChain, and additional tools such as Google Search, this chatbot transforms natural language queries into precise SQL commands, providing clear answers along with the underlying reasoning and code.
 
-![Music Example](https://raw.githubusercontent.com/JaredLBailey/JaredLBailey.github.io/master/img/posts/Eyes-0.gif)
+![Music Example](https://raw.githubusercontent.com/JaredLBailey/JaredLBailey.github.io/master/img/posts/music-example.gif)
 
 ## The Challenge: Accessing Sensitive Civil Engineering Data for the Non-Coding User
 Civil engineering projects generate vast amounts of data, from construction details to project timelines and financial metrics. However, given the sensitive nature of this information, providing direct public access isn’t always feasible. To overcome this hurdle, the project employs a dual-data strategy:
