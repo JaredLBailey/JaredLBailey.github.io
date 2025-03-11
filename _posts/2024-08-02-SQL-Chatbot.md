@@ -10,14 +10,14 @@ My client had difficulty unlocking insights from complex civil engineering data.
 
 [See the code here](https://github.com/JaredBaileyDuke/sql-agent)
 
-## The Challenge: Accessing Sensitive Civil Engineering Data for the Non-Coding User
+# The Challenge: Accessing Sensitive Civil Engineering Data for the Non-Coding User
 Civil engineering projects generate vast amounts of data, from construction details to project timelines and financial metrics. However, given the sensitive nature of this information, providing direct public access isn’t always feasible. To overcome this hurdle, the project employs a dual-data strategy:
 
 ### Private Data: Contains confidential civil engineering project details.
 ### Public Data: Uses a sample music database as a stand-in for demonstration purposes.
 By doing so, the chatbot can safely showcase its capabilities to the public while securely handling real-world civil engineering data on the back end.
 
-## How It Works
+# How It Works
 
 ![Music Example](https://raw.githubusercontent.com/JaredLBailey/JaredLBailey.github.io/master/img/posts/music-example.gif)
 
@@ -32,14 +32,14 @@ For example, users can ask:
 - “Which employee (first and last name) sold the most albums, and how many were sold?”
 These queries, although framed in a musical context for public demos, demonstrate the agent’s potential when applied to civil engineering data.
 
-## Tech Stack and Tools
+# Tech Stack and Tools
 The project harnesses a blend of modern technologies:
 - OpenAI: Powers the natural language understanding, enabling the chatbot to interpret and convert user questions.
 - LangChain: Facilitates the chaining of language model outputs with SQL query generation, ensuring a seamless translation from natural language to SQL.
 - Google Search (via SerpAPI): Augments the chatbot’s capabilities by providing external context when needed.
 - SQLite Sample Database: For the public-facing demonstration, a sample database from SQLite Tutorial is used, ensuring an interactive and familiar experience.
 
-## Looking Ahead
+# Looking Ahead
 This project is still evolving, particularly as we tailor it to the unique needs of our civil engineering client. Future iterations will likely include more sophisticated data analysis features and improved integration with secure, private datasets.
 
 The SQL Chatbot is a testament to how modern AI tools can democratize access to complex data, transforming intricate SQL queries into a conversational experience. Whether you’re a civil engineering professional or simply curious about the intersection of AI and data management, this project opens up exciting possibilities for the future of data interaction.
