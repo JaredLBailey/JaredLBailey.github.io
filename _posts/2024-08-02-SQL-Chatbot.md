@@ -5,7 +5,7 @@ image: "/posts/music-example.gif"
 tags: [AI, SQL, Agents]
 ---
 
-# Novel Data Interaction using a SQL Chatbot
+# Overview
 My client had difficulty unlocking insights from complex civil engineering data. My latest project is designed to bridge the gap between raw civil engineering data and user-friendly query interfaces. Leveraging the power of OpenAI, LangChain, and additional tools such as Google Search, this chatbot transforms natural language queries into precise SQL commands, providing clear answers along with the underlying reasoning and code.
 
 See the code here: https://github.com/JaredBaileyDuke/sql-agent
