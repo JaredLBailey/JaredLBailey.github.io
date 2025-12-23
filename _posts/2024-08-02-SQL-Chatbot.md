@@ -6,7 +6,7 @@ tags: [AI, SQL, Agents]
 ---
 
 # Overview
-My client had difficulty unlocking insights from complex civil engineering data. My latest project is designed to bridge the gap between raw civil engineering data and user-friendly query interfaces. Leveraging the power of OpenAI, LangChain, and additional tools such as Google Search, this chatbot transforms natural language queries into precise SQL commands, providing clear answers along with the underlying reasoning and code.
+My client had difficulty unlocking insights from complex civil engineering data. This was due to users not being fluent in SQL, which is the case for management in many industries. In order to get insights, management needs to ask specialized teams to fetch desired information, often with large lag times between initial requests and responses. To combat this difficulty I designed a user friendly query interface. Leveraging the power of OpenAI, LangChain, and additional tools such as Google Search, my chatbot transforms natural language queries into precise SQL commands, providing clear responses along with the underlying reasoning and code.
 
 [See the code here](https://github.com/JaredBaileyDuke/sql-agent)
 
