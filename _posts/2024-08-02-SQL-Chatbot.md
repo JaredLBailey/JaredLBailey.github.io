@@ -10,8 +10,6 @@ My client had difficulty unlocking insights from complex databases. This was due
 
 Note: A sample music database is used to publically showcase this tool in order to not expose client data.
 
-___
-
 [See the code here](https://github.com/JaredBaileyDuke/sql-agent)
 
 ___
@@ -25,15 +23,14 @@ ___
 
 ![Music Example](https://raw.githubusercontent.com/JaredLBailey/JaredLBailey.github.io/master/img/posts/music-example.gif)
 
-At its core, the SQL Chatbot Agent is comprised of multiple critical subtasks:
-
+**At its core, the SQL Chatbot Agent is comprised of multiple critical subtasks:**
 1. Natural Language Understanding: The chatbot parses user questions expressed in everyday language.
 2. Agent: Decides whether the question can be answered from the database, or if a call to Google Search would provide an answer.
 3. RAG: The agent references the known database structure (including table joins) in order to better process the next steps.
 4. SQL Generation: The agent translates these queries into SQL commands that are executed against the database.
 5. Transparent Results: Not only does the system return the final answer, but it also provides insight into the reasoning and the code that generated the result. This empowers users with full visibility into the query process.
 
-For example, users can ask:
+**For example, users can ask:**
 - “How many customers purchased AC/DC albums?”
 - “Which employee (first and last name) sold the most albums, and how many were sold?”
 These queries, although framed in a musical context for public demos, demonstrate the agent’s potential when applied to other data.
@@ -41,7 +38,7 @@ These queries, although framed in a musical context for public demos, demonstrat
 ___
 
 # Tech Stack and Tools
-The project harnesses a blend of modern technologies:
+**The project harnesses a blend of modern technologies:**
 - OpenAI: Powers the natural language understanding, enabling the chatbot to interpret and convert user questions.
 - LangChain: Facilitates the chaining of language model outputs with SQL query generation, ensuring a seamless translation from natural language to SQL.
 - Google Search (via SerpAPI): Augments the chatbot’s capabilities by providing external context when needed.
