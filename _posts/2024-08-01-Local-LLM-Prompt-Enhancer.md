@@ -37,6 +37,7 @@ and the model.
 
 ## CI workflow: formatting, linting, tests, build
 I implemented a GitHub Actions pipeline to enforce quality gates. The pipeline included formatting (consistent codebase), linting (static checks), python tests (behavior validation), and a docker build (ensures the image stays shippable). This is the core of my project. The repo is structured so changes are caught early and releases stay reproducible.
+
 ___
 
 # Special Features <a name="special-features"></a>
