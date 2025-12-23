@@ -28,7 +28,7 @@ In version 1, our team set out to create an automated system that could distingu
 
 ![alt text](/img/posts/Bird_3.png "Version 1 Build System")
 
-The system began with an IR sensor that detected movement, triggering a day and night sensitive camera to capture a photo. This image was then sent via API to the cloud, where a custom image classifier determined if the subject was a bird or a squirrel. If a squirrel was detected, a response message was sent back to a Raspberry Pi, which activated a relay switch plugged into a wall outlet. This powered AA batteries, which we converted to fit a C battery container. The batteries ran a commercially available pest repellent to ward off the squirrels.
+The system began with an IR sensor that detected movement, triggering a day and night sensitive camera to capture a photo. This image was then sent via API to the cloud, where a custom image classifier determined if the subject was a bird or a squirrel. If a squirrel was detected, a response message was sent back to a Raspberry Pi, which activated a relay switch plugged into a wall outlet. This powered AA batteries, which we converted to fit into a C battery container. The batteries ran a commercially available pest repellent to ward off the squirrels.
 
 ### Build in Progress <a name="build-in-progress"></a>
 
@@ -40,9 +40,9 @@ ___
 
 # Version 2 <a name="version-2"></a>
 
-For version 2 of this project, I decided to go solo with my team’s blessing, aiming to enhance the system for practical use in gardens. I streamlined the hardware and software, reducing the system’s complexity while expanding its functionality. To achieve a more polished and durable design, I learned Fusion360 and used it to create a custom 3D-printed case for the electronics, which not only improved the system's appearance but also made it more weather-resistant.
+For version 2 of this project, I decided to go solo with my team’s blessing, aiming to enhance the system for practical use in gardens. I streamlined the hardware and software, reducing the system’s complexity while expanding its functionality. To achieve a more polished and durable design, I learned Fusion and used it to create a custom 3D printed case for the electronics, which not only improved the system's appearance but also made it more weather resistant.
 
-The key upgrade for version 2 is a 12-animal object detection model hosted in the cloud, allowing for more precise identification of garden intruders. In addition to improving the detection capabilities, I also wired a waterproof ultrasonic speaker to ensure the system can function outdoors in various conditions. Below, you’ll find photos of the 3D-printed case, both from Fusion360 and in real life, showcasing the physical evolution of the project.
+The key upgrade for version 2 is a 12 animal object detection model hosted in the cloud, allowing for more precise identification of garden intruders. In addition to improving the detection capabilities, I also wired a waterproof ultrasonic speaker to ensure the system can function outdoors in various conditions. Below, you’ll find photos of the 3D printed case, both from Fusion and in real life, showcasing the physical evolution of the project.
 
 ![alt text](/img/posts/Bird_1.jpg "3D Print")
 ![alt text](/img/posts/Bird_4.png "Fushion360")
