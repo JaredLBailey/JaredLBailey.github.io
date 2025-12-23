@@ -5,7 +5,7 @@ image: "/posts/Leaflink.png"
 tags: [AI, IoT, LLMs]
 ---
 
-In the realm of innovative tech solutions for everyday problems, our latest project, Leaflink, stands out as a testament to the fusion of artificial intelligence and plant care. Developed by a dedicated team, including myself, Leaflink represents a leap forward in how we interact with and maintain our green companions. Here’s a glimpse into how our AI-driven plant maintenance system works and what makes it unique.
+In the realm of innovative tech solutions for everyday problems, my latest group project (Leaflink) stands out as a testament to the fusion of artificial intelligence and plant care. Leaflink represents a leap forward in how we interact with and maintain our green companions. Here’s a glimpse into how our AI driven plant maintenance system works and what makes it unique.
 
 <a href="https://github.com/JaredLBailey/leaflink" target="_blank">Leaflink GitHub Repo</a>
 
@@ -17,11 +17,8 @@ ___
 # Table of Contents
 
 - [The Brains Behind Leaflink: Raspberry Pi](#raspberry-pi)
-- [Smart Light Management](#light)
-- [Environmental Monitoring](#environment)
-- [Soil Moisture and Watering System](#water)
-- [Automated Feeding](#food)
-- [Master and Subordinate LLMs](#llms)
+- [Sensors](#sensors)
+- [Master and Subordinate Agents](#agents)
 - [Voice Interaction](#voice)
 - [Technology in Plant Care](#tech)
 
@@ -31,25 +28,19 @@ ___
 
 At the heart of Leaflink is a Raspberry Pi, which serves as the central processing unit of the entire system. This compact yet powerful device orchestrates all the sensors and actuators, ensuring seamless interaction between various components and effective management of the plant’s environment.
 
-# Smart Light Management <a name="light"></a>
+# Sensors <a name="sensors"></a>
 
-Plants need the right amount of light to thrive. Leaflink addresses this need with a light sensor. When the sensor detects that light levels are too low, it triggers LED lights encircling the plant, mimicking natural sunlight to ensure optimal growth conditions.
+Maintaining the ideal environment for plant growth is crucial. Leaflink uses a temperature and humidity sensor to continuously monitor and log these conditions. To provide actionable insights, we incorporated a LangChain agent that performs sophisticated graphing, statistical analysis, and predictive modeling. This allows users to anticipate environmental changes and adjust care routines proactively.
 
-# Environmental Monitoring <a name="environment"></a>
+Plants need the right amount of light to thrive. Leaflink addresses this need with a light sensor. When the sensor detects that light levels are too low during datime hours, the system triggers LED lights encircling the plant, mimicking natural sunlight to ensure optimal growth conditions.
 
-Maintaining the ideal environment for plant growth is crucial. Leaflink uses s temperature and humidity sensor to continuously monitor and log these conditions. To provide actionable insights, we incorporated a LangChain agent that performs sophisticated graphing, statistical analysis, and predictive modeling. This allows users to anticipate environmental changes and adjust care routines proactively.
-
-# Soil Moisture and Watering System <a name="water"></a>
-
-The system includes a soil moisture sensor that detects when the soil is too dry. When moisture levels drop below a certain threshold, Leaflink activates a motorized water pump to deliver water, ensuring your plant always has the right hydration.
-
-# Automated Feeding <a name="food"></a>
+The system includes a soil moisture sensor that detects when the soil is too dry. When moisture levels drop below a predetermined threshold, Leaflink activates a motorized water pump to deliver water. This system ensures your plant always has the right hydration.
 
 In addition to watering, Leaflink manages plant nutrition through a motorized plant feeder controlled by a servo motor. This feature ensures that your plant receives regular, measured doses of nutrients, promoting robust growth and vitality.
 
-# Master and Subordinate LLMs <a name="llms"></a>
+# Master and Subordinate Agents <a name="agents"></a>
 
-Leaflink employs a master large language model (LLM) to coordinate various lower-level LLMs. These subordinate models handle specific tasks such as searching the internet for plant care tips, generating graphs and statistics, and performing retrieval-augmented generation (RAG) lookups for detailed plant information. The master LLM also manages motor controls and interprets voice commands, translating them into JSON directives to operate the system’s components efficiently.
+Leaflink employs a master agent to coordinate various lower-level agents. These subordinate agents handle specific tasks such as searching the internet for plant care tips, generating graphs and statistics, and performing retrieval augmented generation (RAG) lookups for detailed plant information. The master agent manages motor controls and interprets voice commands, translating them into JSON directives to operate the system’s components efficiently.
 
 # Voice Interaction <a name="voice"></a>
 
@@ -57,4 +48,4 @@ Interacting with Leaflink is as simple as speaking to it. We’ve integrated a s
 
 # Technology in Plant Care <a name="tech"></a>
 
-Leaflink is more than just a plant maintenance tool; it represents an advancement in how technology can enhance our interaction with nature. By combining AI, IoT, and voice technology, we’ve created a system that not only simplifies plant care but also makes it more interactive and enjoyable. We’re excited about the potential of Leaflink and look forward to seeing how it evolves.
+Leaflink is more than just a plant maintenance tool. This project represents an advancement in how technology can enhance our interaction with everyday objects. By combining AI, IoT, and voice technology, we’ve created a system that not only simplifies plant care but also makes it more interactive and enjoyable. We’re excited about the potential of Leaflink and look forward to seeing how it evolves.
