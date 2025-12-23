@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Jared Bailey
-description: "Hi I'm Jared, and I'm a AI specialist aspiring to use the latest technology in physical products such as edge devices and robotic systems. My portfolio focuses on interesting projects I've undertaken, with a strong emphasis on real world impact. Please feel free to reach out if you'd like to connect."
+description: "Hi, I’m Jared. I’m an AI specialist working at the intersection of AI, edge computing, and robotics. This portfolio features projects I’ve undertaken and continue to build on. Feel free to reach out if you’d like to connect."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -23,7 +23,7 @@ avatar_image: /img/Jared Square.jpeg
 #-------------------------------
 # Contact links
 linkedln: "https://www.linkedin.com/in/jared-l-bailey-mba-cpcu-are/" # Add your linkedln handle
-github: "https://github.com/JaredLBailey"  # Add your github handle
+github: "https://github.com/JaredLBaileyDuke"  # Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
@@ -51,5 +51,6 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
