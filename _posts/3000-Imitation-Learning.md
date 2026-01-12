@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Homage to the Mechanical Turk
+title: Creative Tool Use
 image: "/posts/RobotArm_0.jpg"
-tags: [Arm, Animatronics, CV, AI]
+tags: [Imitation Learning, State Machine Framework, Creative Tool Use, Robot Learning]
 ---
 
-As a group project, my team created an autonomous robot to play checkers against a human opponent or even itself. This robot features several enhancemnts that I worked heavily on.
-- Computer vision code to log board state, and even allow the camera to be moved varying distances from the board or rotated
-- Animatronics that work in tandem with a voice clone of our class TA
-- A custom built checkers game that features 5 game modes, and integrates with the robot arm movement
-- An electromagent that picks up and drops pieces on command
-- Voice commands for robot arm movement
+This project explores creative tool use in robotics: training a robot arm to both position and cut a food item using a single tool - a pair of scissors mounted on a custom end effector.
+
+Traditionally, a robot would solve this by swapping tools: pick-and-place to reposition the object, then switch to a cutting tool. That process adds time, complexity, and failure points. Here, the robot instead treats the scissors as a multi-purpose tool to:
+- Position: guide and align the food item using both scissor blades
+- Cut: execute the final slicing motion once aligned
+
+To make the full workflow autonomous and robust, I built a State Machine Framework (SMF) and trained two custom YOLO classification models to verify completion between subtasks. When a failure is detected, the SMF automatically retries earlier states to recover and continue.
 
 ### Additional Details
-- <a href="https://github.com/JaredBaileyDuke/checkers-bot" target="_blank">Checkers Robot GitHub Repo</a>
-- <a href="https://docs.google.com/document/d/10xn5eTtT8dCTDdlVrdTq22X1PhowyuRzMgsAVY1DUzs/edit?usp=sharing" target="_blank">Research Paper</a>
-- <a href="https://docs.google.com/document/d/1FMohz3AauILTVf_g_xqXghDPm8sRMKJ1lJ5e8vT5N2g/edit?tab=t.0" target="_blank">Write Up</a>
+- <a href="https://github.com/JaredBaileyDuke/creative-tool-use/" target="_blank">Creative Tool Use GitHub Repo</a>
 
 ### Video Preview - Robot Plays Against Itself
 [![Checkers Robot](https://img.youtube.com/vi/Y9SKYIrPti8/sddefault.jpg)](https://www.youtube.com/watch?v=Y9SKYIrPti8&t)
