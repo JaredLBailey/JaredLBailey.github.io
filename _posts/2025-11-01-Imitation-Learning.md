@@ -5,6 +5,8 @@ image: "/posts/RobotArm_0.jpg"
 tags: [Imitation Learning, State Machine Framework, Creative Tool Use, Robot Learning]
 ---
 
+# Page in Progress, Please Excuse the Mess
+
 This project explores creative tool use in robotics: training a robot arm to both position and cut a food item using a single tool - a pair of scissors mounted on a custom end effector.
 
 Traditionally, a robot would solve this by swapping tools: pick-and-place to reposition the object, then switch to a cutting tool. That process adds time, complexity, and failure points. Here, the robot instead treats the scissors as a multi-purpose tool to:
