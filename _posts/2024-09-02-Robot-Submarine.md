@@ -65,6 +65,8 @@ ___
 
 ### PID Control: Movement Beyond Theory <a name="pid-control"></a>
 
+![alt text](/img/posts/drive_straight.gif)
+
 I once again spent my summer at the pool, this time with our club’s newest underwater robot, Crush. I was trying to make the robot do the one thing it absolutely had to do: move through the water reliably.
 
 Because of setbacks throughout the school year, we entered the summer without having properly tested Crush in the pool. The gap between “built” and “ready” became obvious immediately. At the start of the summer, Crush couldn’t move as directed. It wasn’t even able to travel one meter forward in a predictable way. It drifted, rocked, and behaved more like a floating science project than a navigation capable robot.
