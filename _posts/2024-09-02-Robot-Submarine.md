@@ -16,26 +16,36 @@ ___
 
 # Table of Contents
 
+- [Third Year](#third-year)
+  - [Attacking the Difficult: Back to Acoustics](#acoustics-v2)
 - [Second Year](#second-year)
-  - [ROS 2 Migration](#ros2-migration)
-  - [PID Control](#pid-control)
+  - [ROS 2 Migration: Modernizing the Stack](#ros2-migration)
+  - [PID Control: Movement Beyond Theory](#pid-control)
 - [First Year](#last-year)
   - [Can you Hear Me Now?: Navigating the Acoustics Challenges](#acoustics-challenges)
   - [A Setback and Rebuild: The Unexpected Challenge](#setback-rebuild)
   - [Diving into the Deep End: A Summer of Pool Tests](#pool-tests)
-  - [Thankful](#thankful)
+- [Thankful](#thankful)
+
+# Third Year <a name="third-year"></a>
+
+___
+
+### Attacking the Difficult: Back to Acoustics
+
+___
 
 # Second Year <a name="second-year"></a>
 
 ___
 
-### ROS 2 Migration <a name="ros2-migration"></a>
+### ROS 2 Migration: Modernizing the Stack <a name="ros2-migration"></a>
 
 For my second year I transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I worked to update our Python and C++ code from ROS 1 to ROS 2. This involved a ton of updates and testing to the 50,000+ lines of code in our repository. I spent most of my time in the task planning and utilities sections of our code base, but did do some branching out to other areas as called for (sonar, CV, etc.). And once this was done, I spent a couple weeks linting. Upon completion of the code transition I've moved to testing the ROS 2 code using a Jetson Orin Nano on a mock electrical circuit assembled by the Electrical team. This wasn't the glory work, but gave me a much deeper understanding the robot.
 
 ___
 
-### PID Control <a name="pid-control"></a>
+### PID Control: Movement Beyond Theory <a name="pid-control"></a>
 
 I once again spent my summer at the pool, this time with our club’s newest underwater robot, Crush. I was trying to make the robot do the one thing it absolutely had to do: move through the water reliably.
 
@@ -98,7 +108,7 @@ Among the many moments of that summer, one particularly memorable event stands o
 
 ___
 
-### Thankful <a name="thankful"></a>
+# Thankful <a name="thankful"></a>
 
-My experience was more than just a series of technical tests; it was a time of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided to work alongside so many dedicated students.
+My experience was more than just a series of technical tests; it was a time of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided to work alongside so many dedicated students. Robotics is learned and performed much better in teams.
 
