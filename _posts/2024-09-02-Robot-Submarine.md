@@ -81,5 +81,5 @@ ___
 
 ### Thankful <a name="thankful"></a>
 
-This year's experience was more than just a series of technical tests; it was a season of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided and the season ahead.
+My experience was more than just a series of technical tests; it was a time of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided to work alongside so many dedicated students.
 
