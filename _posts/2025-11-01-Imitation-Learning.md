@@ -60,7 +60,7 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 
 ## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
 
-![alt text](/img/posts/CV_0.jpg "Computer Vision")
+![alt text](/img/posts/pick_and_place_overview.gif)
 
 This stage moved onto the LeRobot SO-101 leader–follower system and focused on building a clean imitation learning workflow using:
 - leader teleoperation for demonstrations
