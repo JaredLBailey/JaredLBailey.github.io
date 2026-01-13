@@ -33,6 +33,24 @@ ___
 
 ### Attacking the Difficult: Back to Acoustics
 
+After the emergency rebuild in my first year (when a capsule flood forced us to drop everything and get the robot operational again) I decided to return to the one project I still considered unfinished: acoustics.
+
+For years this problem had quietly haunted the club. In theory, the robot should be able to localize an underwater pinger by listening with hydrophones and comparing when the signal reaches each sensor. In practice, our robot simply couldn’t find it. Multiple teams had tried, and nothing had produced a reliable solution. So this year we made a deliberate choice: start from scratch.
+
+I began on the hardware side by building a fresh test setup and wiring a circuit to amplify the hydrophone signal. The goal was simple: confirm we could reliably see the pinger signal before getting fancy with filtering and algorithms. That first milestone mattered, and it worked. With a clean amplification stage, we finally had a signal we could test and iterate on with confidence.
+
+From there, we split the problem the right way. While I and others worked through hardware filtering to reduce noise before the signal ever hit our processing pipeline, other team members focused on software filtering to clean up what remained. Once both sides were moving forward, we scaled up to the real test: running all four hydrophones at once.
+
+That’s when we uncovered the kind of issue that makes robotics both painful and honest: the problem wasn’t only signal processing.
+
+During multi-hydrophone testing, we kept seeing inconsistent “time of arrival” differences. After digging deeper, we realized the hydrophones had wires of different lengths. The cables had been cut years ago, and because the information was never documented or passed down, prior teams didn’t even know it was a factor. But wire length matters: different cable lengths introduce different delays, and those delays directly contaminate the timing differences we were using to determine which hydrophone heard the ping first. In other words, the robot wasn’t just bad at acoustics, it was being fed corrupted timing.
+
+At that point, I took a different approach: instead of assuming perfect timing and fighting physics with ideal math, I tried to learn the mapping from messy signals to direction. I built a neural network to predict which signal arrived first. Since four hydrophones create redundant information, I designed the model to use three inputs: each input represented the difference in arrival time relative to a single reference hydrophone. With that setup, the network could estimate the cardinal direction of the pinger with roughly 70% accuracy. Although not perfect, it was reliable after hearing multiple pings.
+
+Meanwhile, one of my teammates translated our breadboard design into a proper PCB. The PCB integrates connections for all four hydrophones, turning our fragile test setup into something repeatable, testable, and ready to iterate on as a system.
+
+This project reminded me why I like the hardest problems: progress comes from refusing to accept the first explanation. Sometimes the obstacle is an algorithm. Sometimes it’s a circuit. And sometimes it’s a piece of missing history that silently breaks everything downstream.
+
 ___
 
 # Second Year <a name="second-year"></a>
