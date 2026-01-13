@@ -29,7 +29,7 @@ ___
 # System Design <a name="system-design"></a>
 
 ![alt text](/img/posts/final_deployment.gif)
-#### Push Only Subtask
+#### Push Only Subtask Example Above
 
 At a high level, the system is built around three ideas:
 
