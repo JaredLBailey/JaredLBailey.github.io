@@ -78,7 +78,7 @@ With a sterile setup and an intentionally overfit training run, the robot perfor
 
 ## Phase 3 — Final Deployment (Creative Scissors Pipeline)
 
-![alt text](/img/posts/CV_0.jpg "Computer Vision")
+![alt text](/img/posts/scissor_CAD.gif)
 
 This stage integrated everything into a functioning multi-step system: position + cut a food item using scissors on the SO-101.
 
@@ -94,11 +94,11 @@ ___
 The pipeline is orchestrated using a simple, modular state machine that makes the system resilient.
 
 ## State flow
-- ROBOT MOVE → push the item toward the target region
-- YOLO LOCATION → verify item is in a valid location (else repeat MOVE)
-- ROBOT CUT → attempt cutting action
-- YOLO CUT → verify cut succeeded (else return to LOCATION/MOVE)
-- ROBOT HOME → return arm to home
+- ROBOT MOVE - push the item toward the target region
+- YOLO LOCATION - verify item is in a valid location (else repeat MOVE)
+- ROBOT CUT - attempt cutting action
+- YOLO CUT - verify cut succeeded (else return to LOCATION/MOVE)
+- ROBOT HOME - return arm to home
 
 Time limits were added per state to prevent infinite failure loops.
 
