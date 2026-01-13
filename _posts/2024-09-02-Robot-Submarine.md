@@ -79,7 +79,7 @@ Even after tuning PID values, we still weren’t getting the behavior we wanted.
 
 Then the summer threw us one of the worst surprises you can get in robotics: a small fire. We halted immediately. As the only team member with electrical experience, I took point on the repair: replacing the fuse, swapping burned wiring, and methodically testing the system before we returned to full operation. That recovery mattered not just because we kept going, but because we kept going safely and confidently.
 
-![alt text](/img/posts/drive_straight.gif)
+![alt text](/img/posts/double_barrel_roll.gif)
 
 To round out our testing, we had Crush perform 2 barrel rolls, a task that earns extra points at competition. Crush did an amazing job, even outperforming the club's previous robot.
 
