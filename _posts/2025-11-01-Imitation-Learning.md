@@ -15,7 +15,7 @@ Traditionally, a robot would solve this by swapping tools: pick-and-place to rep
 
 To make the full workflow autonomous and robust, I built a State Machine Framework (SMF) and trained two custom YOLO classification models to verify completion between subtasks. When a failure is detected, the SMF automatically retries earlier states to recover and continue.
 
-### Additional Details
+### Full Project Details and Code
 - <a href="https://github.com/JaredBaileyDuke/creative-tool-use/" target="_blank">Creative Tool Use GitHub Repo</a>
 
 ### Video Preview - Robot Plays Against Itself
