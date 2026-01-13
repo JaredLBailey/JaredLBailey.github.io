@@ -27,6 +27,7 @@ ___
 ___
 
 # System Design <a name="system-design"></a>
+
 ![alt text](/img/posts/final_deployment.gif)
 
 At a high level, the system is built around three ideas:
