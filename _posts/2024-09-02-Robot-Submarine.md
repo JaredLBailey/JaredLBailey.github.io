@@ -79,6 +79,10 @@ Even after tuning PID values, we still weren’t getting the behavior we wanted.
 
 Then the summer threw us one of the worst surprises you can get in robotics: a small fire. We halted immediately. As the only team member with electrical experience, I took point on the repair: replacing the fuse, swapping burned wiring, and methodically testing the system before we returned to full operation. That recovery mattered not just because we kept going, but because we kept going safely and confidently.
 
+![alt text](/img/posts/drive_straight.gif)
+
+To round out our testing, we had Crush perform 2 barrel rolls, a task that earns extra points at competition. Crush did an amazing job, even outperforming the club's previous robot.
+
 By the time competition arrived, Crush wasn’t just working, it was dependable. Our new robot successfully navigated the entire pool course, and the Duke team finished in the finals (top 7 out of 40+ teams) for the first time in the club’s history.
 
 For me, that summer was a reminder of what real robotics looks like: control theory, physical design, wiring, troubleshooting, and iteration all happening in the messy real world. Crush didn’t improve because we found one magic setting. It improved because we treated the robot as a full system, and we refused to stop at good enough.
