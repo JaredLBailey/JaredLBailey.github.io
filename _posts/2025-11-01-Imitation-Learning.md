@@ -91,12 +91,9 @@ The subtask performed as follows:
 ___
 
 # State Machine Framework (SMF) <a name="SMF"></a>
-
-![alt text](/img/posts/CV_0.jpg "Computer Vision")
-
 The pipeline is orchestrated using a simple, modular state machine that makes the system resilient.
 
-State flow
+## State flow
 - ROBOT MOVE → push the item toward the target region
 - YOLO LOCATION → verify item is in a valid location (else repeat MOVE)
 - ROBOT CUT → attempt cutting action
