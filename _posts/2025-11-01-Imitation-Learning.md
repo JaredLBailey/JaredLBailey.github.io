@@ -49,7 +49,7 @@ ___
 # Project Phases <a name="project-phases"></a>
 ## Phase 1 — Initial Exploration (Franka Research 3)
 
-![alt text](/img/posts/CV_0.jpg "Computer Vision")
+![alt text](/img/posts/scissors_closeup.gif)
 
 This phase was about feasibility: can a robot operate a one-degree-of-freedom tool (scissors, pliers, can opener) as part of an imitation-learning pipeline?
 
