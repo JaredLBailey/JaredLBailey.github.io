@@ -10,7 +10,7 @@ tags: [Imitation Learning, State Machine Framework, Creative Tool Use, Robot Lea
 This project explores creative tool use in robotics: training a robot arm to both position and cut a food item using a single tool - a pair of scissors mounted on a custom end effector.
 
 Traditionally, a robot would solve this by swapping tools: pick-and-place to reposition the object, then switch to a cutting tool. That process adds time, complexity, and failure points. Here, the robot instead treats the scissors as a multi-purpose tool to:
-- Position: guide and align the food item using both scissor blades
+- Position: guide and orient the food item using both scissor blades
 - Cut: execute the final slicing motion once aligned
 
 To make the full workflow autonomous and robust, I built a State Machine Framework (SMF) and trained two custom YOLO classification models to verify completion between subtasks. When a failure is detected, the SMF automatically retries earlier states to recover and continue.
@@ -18,18 +18,72 @@ To make the full workflow autonomous and robust, I built a State Machine Framewo
 ### Full Project Details and Code
 - <a href="https://github.com/JaredBaileyDuke/creative-tool-use/" target="_blank">Creative Tool Use GitHub Repo</a>
 
-### Video Preview - Robot Plays Against Itself
-[![Checkers Robot](https://img.youtube.com/vi/Y9SKYIrPti8/sddefault.jpg)](https://www.youtube.com/watch?v=Y9SKYIrPti8&t)
-
 ___
 
 # Table of Contents
 
-- [Computer Vision](#cv)
-- [Animatronics & Voice Clone](#animatronics)
+- [System Design](#system-design)
+- [Project Phases](#project-phases)
 - [Checkers Game](#checkers)
 
 ___
+
+# System Design <a name="system-design"></a>
+
+At a high level, the system is built around three ideas:
+1) One tool, two roles
+The scissors act as both:
+- a manipulation surface (pushing/guiding with blades)
+- a cutting mechanism (closing motion once aligned)
+2) Task decomposition into stable subtasks
+Rather than training one policy to “do everything,” the pipeline breaks the job into reliable subtasks, each with its own data + policy.
+3) Autonomous verification + recovery
+Instead of relying on a human to say “yep, that worked,” the pipeline uses YOLO classification to check progress and automatically retry when things go wrong.
+
+___
+
+# Project Phases <a name="project-phases"></a>
+## Phase 1 — Initial Exploration (Franka Research 3)
+This phase was about feasibility: can a robot operate a one-degree-of-freedom tool (scissors, pliers, can opener) as part of an imitation-learning pipeline?
+
+I designed a modified snap-click end effector to mount a standard pair of scissors to the robot wrist. The mount needed to:
+- align cleanly to the wrist connector
+- hold the scissors in place while allowing rotation in the handle holes
+- allow the arm’s finger motion to open/close the handles
+
+## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
+This stage moved onto the LeRobot SO-101 leader–follower system and focused on building a clean imitation learning workflow using:
+- leader teleoperation for demonstrations
+- ACT (Action Chunking Transformer) policies for learning
+- synchronized multi-camera observations
+
+The robot repeatedly followed a trajectory that looked right but missed the grasp by just enough to fail. That pointed to a core truth: Data quality beat model choice. This required several changes:
+- improved camera angles (less occlusion, more task visibility)
+- stabilized mounts (less shake / blur)
+- better lighting (less glare and shadow)
+- higher-contrast objects (for easier viewing)
+- less variation in data collection (help convergence)
+- more episodes (increase examples to learn from) 
+
+With a sterile setup and an intentionally overfit training run, the robot performed consistent pick-and-place.
+
+## Phase 3 — Final Deployment (Creative Scissors Pipeline)
+This stage integrated everything into a functioning multi-step system: position + cut a food item using scissors on the SO-101.
+
+Custom Scissors End Effector
+
+The snap-click scissors mount performed well at full size, but at smaller scale snap connections became mechanically unreliable. I solved this practically with superglue + color-matched duct tape, keeping the tool stable for repeated runs.
+
+Subtask performance
+
+Push-only: reliable linear pushing, occasional rolling due to the object
+
+Cutting: consistent once inside a defined target region; occasional “over-eager” repeated cuts
+
+
+
+
+
 
 # Computer Vision <a name="cv"></a>
 ![alt text](/img/posts/CV_0.jpg "Computer Vision")
