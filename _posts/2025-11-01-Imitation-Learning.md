@@ -32,15 +32,15 @@ ___
 
 At a high level, the system is built around three ideas:
 
-1) One tool, two roles
+## 1) One tool, two roles
 The scissors act as both:
 - a manipulation surface (pushing/guiding with blades)
 - a cutting mechanism (closing motion once aligned)
 
-2) Task decomposition into stable subtasks
+## 2) Task decomposition into stable subtasks
 Rather than training one policy to “do everything,” the pipeline breaks the job into reliable subtasks, each with its own data + policy.
 
-3) Autonomous verification + recovery
+## 3) Autonomous verification + recovery
 Instead of relying on a human to say “yep, that worked,” the pipeline uses YOLO classification to check progress and automatically retry when things go wrong.
 
 ___
