@@ -16,27 +16,46 @@ ___
 
 # Table of Contents
 
-- [Upcoming Year](#upcoming-year)
+- [Second Year](#second-year)
   - [ROS 2 Migration](#ros2-migration)
-- [Last Year](#last-year)
+  - [PID Control](#pid-control)
+- [First Year](#last-year)
   - [Can you Hear Me Now?: Navigating the Acoustics Challenges](#acoustics-challenges)
   - [A Setback and Rebuild: The Unexpected Challenge](#setback-rebuild)
   - [Diving into the Deep End: A Summer of Pool Tests](#pool-tests)
   - [Thankful](#thankful)
 
-# This Year <a name="upcoming-year"></a>
+# Second Year <a name="second-year"></a>
 
 ___
 
 ### ROS 2 Migration <a name="ros2-migration"></a>
 
-For this year I've transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I worked to update our Python and C++ code from ROS 1 to ROS 2. This involved a ton of updates and testing to the 50,000+ lines of code in our repository. I spent most of my time in the task planning and utilities sections of our code base, but did do some branching out to other areas as called for (sonar, CV, etc.). And once this was done, I spent a couple weeks linting.
-
-Now I've moved to testing the ROS 2 code using a Jetson Orin Nano on a mock electrical circuit assembled by the Electrical team. This included setting up the Nano.
+For my second year I transitioned from the Electrical Team to the Computer Science Team. As ROS 1 is set to be depricated in 2025, I worked to update our Python and C++ code from ROS 1 to ROS 2. This involved a ton of updates and testing to the 50,000+ lines of code in our repository. I spent most of my time in the task planning and utilities sections of our code base, but did do some branching out to other areas as called for (sonar, CV, etc.). And once this was done, I spent a couple weeks linting. Upon completion of the code transition I've moved to testing the ROS 2 code using a Jetson Orin Nano on a mock electrical circuit assembled by the Electrical team. This wasn't the glory work, but gave me a much deeper understanding the robot.
 
 ___
 
-# Last Year <a name="last-year"></a>
+### PID Control <a name="pid-control"></a>
+
+I once again spent my summer at the pool, this time with our club’s newest underwater robot, Crush. I was trying to make the robot do the one thing it absolutely had to do: move through the water reliably.
+
+Because of setbacks throughout the school year, we entered the summer without having properly tested Crush in the pool. The gap between “built” and “ready” became obvious immediately. At the start of the summer, Crush couldn’t move as directed. It wasn’t even able to travel one meter forward in a predictable way. It drifted, rocked, and behaved more like a floating science project than a navigation capable robot.
+
+A small team of four ran the summer testing, and I was the only member with any background in PID control. Early on, I taught the team how we would approach position control across the robot’s x, y, and z axes, and how to think about tuning: what a stable response should look like, how to interpret overshoot and oscillation, and how to make changes systematically instead of guessing.
+
+My background outside of robotics ended up mattering too. I grew up boating, and that intuition carried over quickly. One of our major improvements wasn’t a PID tweak at all, but a baseline setup problem: the robot’s stable-state thruster power was set too high. We dialed it in so the robot would settle about one meter underwater, but we quickly found that “near zero” power also created problems with drift. By slightly increasing stable thruster power, we gained noticeably better consistency and control.
+
+Even after tuning PID values, we still weren’t getting the behavior we wanted. That’s when I stepped back and looked at the system more physically than mathematically. The robot’s weight distribution was concentrated near the center, which caused rocking and unstable movement. Instead of continuing to force stability through control gains, I redistributed our buoyancy blocks outward, shifting the robot’s buoyancy profile so it naturally resisted roll and pitch. The difference was immediate: Crush became dramatically more stable and began moving cleanly through the pool. One of our key validation runs was a zig-zag traversal from end to end of a lap lane, a practical test of navigation and repeatability which Crush executed with ease.
+
+Then the summer threw us one of the worst surprises you can get in robotics: a small fire. We halted immediately. As the only team member with electrical experience, I took point on the repair: replacing the fuse, swapping burned wiring, and methodically testing the system before we returned to full operation. That recovery mattered not just because we kept going, but because we kept going safely and confidently.
+
+By the time competition arrived, Crush wasn’t just working, it was dependable. Our new robot successfully navigated the entire pool course, and the Duke team finished in the finals (top 7 out of 40+ teams) for the first time in the club’s history.
+
+For me, that summer was a reminder of what real robotics looks like: control theory, physical design, wiring, troubleshooting, and iteration all happening in the messy real world. Crush didn’t improve because we found one magic setting. It improved because we treated the robot as a full system, and we refused to stop at good enough.
+
+___
+
+# First Year <a name="first-year"></a>
 
 ___
 
