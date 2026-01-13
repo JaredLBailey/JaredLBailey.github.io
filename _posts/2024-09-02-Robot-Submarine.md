@@ -5,7 +5,7 @@ image: "/posts/cropped-Master_Robosub_AllDaysAllTeams-26-scaled-1.jpg"
 tags: [Robotics]
 ---
 
-Being part of the Duke Robotics team throughout 2024 has been an extraordinary journey filled with excitement and challenges. This year we achieved a remarkable 8th place (out of 41 teams) at the international competition, our highest ranking in 15 years. We also faced an unexpected setback when our robot was flooded during a pool test a few months before competition, leading to a complete rebuild of the electronics. In the following sections, I’ll delve into the details of my contributions and experiences with the team.
+This post is a behind the scenes look at how different parts of our autonomous submarine went from works on paper to works in the pool. It covers the unglamorous parts: debugging, rebuilding, and iterating. It also covers the breakthroughs that actually moved performance forward such as rebuilding electronics after a flood, getting real motion with PID and buoyancy changes, modernizing a large ROS codebase, and returning to the long running acoustics problem with a fresh start. The sections below are organized by year and focus on the specific problems I owned, the decisions we made, and the results we earned (making finals with a top 7 finish at competition).
 
 <a href="https://www.duke-robotics.com" target="_blank">Duke Robotics Club Website</a>
 
@@ -122,11 +122,11 @@ Aside from these manual duties, I provided valuable feedback to the Computer Sci
 
 The summer’s efforts bore fruit when, for the first time in years, we successfully completed an autonomous pre-trial competition run midway through the season. This milestone was a testament to the dedication of our team and the significant progress we had made.
 
-Among the many moments of that summer, one particularly memorable event stands out. One day, a fellow team member accidentally dropped a 40-pound weight into the 17-foot deep diving pool. The weight sank quickly to the bottom, and with a bit of determination, I took on the challenge of retrieving it. To everyone’s amazement, I swam down and brought the weight back up on my first try. The lifeguards watching from the poolside were visibly impressed, adding an unexpected highlight to our summer.
+Among the many moments of that summer, one particularly memorable event stands out. One day, a fellow team member accidentally dropped a 40 pound weight into the 17 foot deep diving pool. The weight sank quickly to the bottom, and with a bit of determination, I took on the challenge of retrieving it. To everyone’s amazement, I swam down and brought the weight back up on my first try. The lifeguards watching from the poolside were visibly impressed, adding an unexpected highlight to our summer.
 
 ___
 
 # Thankful <a name="thankful"></a>
 
-My experience was more than just a series of technical tests; it was a time of camaraderie, problem-solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided to work alongside so many dedicated students. Robotics is learned and performed much better in teams.
+My experience was more than just a series of technical tests; it was a time of camaraderie, problem solving, and personal achievement. The hard work and dedication not only advanced our robot’s capabilities but also deepened my connection with the team and the project. I am grateful for the opportunities provided to work alongside so many dedicated students. Robotics is learned and performed much better in teams.
 
