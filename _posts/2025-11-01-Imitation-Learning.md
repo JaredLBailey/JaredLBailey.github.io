@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Page in Progress - Creative Tool Use
-image: "/posts/RobotArm_0.jpg"
+image: "/posts/scissor_cut_imitation_learning.gif"
 tags: [Imitation Learning, State Machine Framework, Creative Tool Use, Robot Learning]
 ---
 
