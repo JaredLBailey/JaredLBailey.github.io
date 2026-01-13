@@ -75,7 +75,7 @@ The robot repeatedly followed a trajectory that looked right but missed the gras
 - less variation in data collection (help convergence)
 - more episodes (increase examples to learn from) 
 
-With a sterile setup and an intentionally overfit training run, the robot performed consistent pick-and-place.
+With a sterile setup and an intentionally overfit training run, the robot performed better on the pick-and-place task. This gave me confidence to proceed to using scissors.
 
 ## Phase 3 — Final Deployment (Creative Scissors Pipeline)
 
