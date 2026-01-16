@@ -60,11 +60,15 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 
 ![alt text](/img/posts/scissors_closeup.gif)
 
-| Pliers | Screw Driver | Can Top Opener |
-|------------------|------------------|-----------------------------|
-| ![pliers gif](../assets/gif/pliers.gif) | ![pliers gif](../assets/gif/pliers.gif) | ![bottle top opener gif](../assets/gif/bottle_top_opener.gif) |
+| Pliers | Can Top Opener |
+|------------------|-----------------------------|
+| ![pliers gif](/img/posts/gif/pliers.gif) | ![bottle top opener gif](/img/posts/gif/bottle_top_opener.gif) |
 
-Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver.
+| Screw Driver | Bungee Cord Insertion Holes |
+|------------------|-----------------------------|
+| ![pliers gif](/img/posts/gif/pliers.gif) | ![bottle top opener gif](/img/posts/gif/bottle_top_opener.gif) |
+
+Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
 
 ## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
 
