@@ -62,11 +62,11 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 
 ### Additional Tools
 
-| Pliers | Screw Driver | Can Top Opener |
+| Pliers | Screwdriver | Can Top Opener |
 |:------------------:|:------------------:|:-----------------------------:|
 | ![pliers gif](/img/posts/pliers.gif) | ![screwdriver gif](/img/posts/screwdriver.gif) | ![bottle top opener gif](/img/posts/bottle_top_opener.gif) |
 
-Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
+Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screwdriver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
 
 | Hammer | Tool Interface | Single Segment | Cutaway View |
 |:------------------:|:------------------:|:------------------:|:-----------------------------:|
