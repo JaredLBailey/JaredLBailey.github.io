@@ -58,6 +58,10 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 - hold the scissors in place while allowing rotation in the handle holes
 - allow the arm’s finger motion to open/close the handles
 
+![alt text](/img/posts/scissors_closeup.gif)
+
+Additional tool interfaces were explored, such as the use of rod-based tools.
+
 ## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
 
 ![alt text](/img/posts/pick_and_place_overview.gif)
