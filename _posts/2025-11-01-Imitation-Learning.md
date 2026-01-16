@@ -68,9 +68,9 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 
 Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
 
-| Single Segment | Cutaway View |
-|------------------|-----------------------------|
-| ![bungee cord holes](/img/posts/bungee_cord_holes.png) | ![cinch cutaway view](/img/posts/inner_cut.png) |
+| Hammer | Tool Interface | Single Segment | Cutaway View |
+|------------------|------------------|------------------|-----------------------------|
+| ![hammer](/img/posts/Hammer.jpg) | ![rod tool interface](/img/posts/Rod_based_tool_interface.png) | ![bungee cord holes](/img/posts/bungee_cord_holes.png) | ![cinch cutaway view](/img/posts/inner_cut.png) |
 
 ## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
 
