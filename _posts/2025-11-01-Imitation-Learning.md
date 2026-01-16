@@ -51,7 +51,7 @@ ___
 
 ![alt text](/img/posts/scissors_closeup.gif)
 
-This phase was about feasibility: can a robot operate a one-degree-of-freedom tool (scissors, pliers, can opener) as part of an imitation-learning pipeline?
+This phase was about feasibility: can a robot operate a one-degree-of-freedom tool (scissors) as part of an imitation-learning pipeline?
 
 I designed a modified snap-click end effector to mount a standard pair of scissors to the robot wrist. The mount needed to:
 - align cleanly to the wrist connector
@@ -60,7 +60,11 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 
 ![alt text](/img/posts/scissors_closeup.gif)
 
-Additional tool interfaces were explored, such as the use of rod-based tools.
+| Pliers | Screw Driver | Can Top Opener |
+|------------------|------------------|-----------------------------|
+| ![pliers gif](../assets/gif/pliers.gif) | ![pliers gif](../assets/gif/pliers.gif) | ![bottle top opener gif](../assets/gif/bottle_top_opener.gif) |
+
+Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver.
 
 ## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
 
