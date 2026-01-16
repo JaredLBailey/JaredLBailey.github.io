@@ -49,6 +49,8 @@ ___
 # Project Phases <a name="project-phases"></a>
 ## Phase 1 — Initial Exploration (Franka Research 3)
 
+### Scissors
+
 ![alt text](/img/posts/scissors_closeup.gif)
 
 This phase was about feasibility: can a robot operate a one-degree-of-freedom tool (scissors) as part of an imitation-learning pipeline?
@@ -58,15 +60,17 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 - hold the scissors in place while allowing rotation in the handle holes
 - allow the arm’s finger motion to open/close the handles
 
+### Additional Tools
+
 | Pliers | Screw Driver | Can Top Opener |
 |------------------|------------------|-----------------------------|
 | ![pliers gif](/img/posts/pliers.gif) |  | ![bottle top opener gif](/img/posts/bottle_top_opener.gif) |
 
-| Segment Drawing of Tool Grasping Mechanism | Cutaway View of Bungee Cord Cinch Hole |
+Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
+
+| Single Segment | Cutaway View |
 |------------------|-----------------------------|
 | ![bungee cord holes](/img/posts/bungee_cord_holes.png) | ![cinch cutaway view](/img/posts/inner_cut.png) |
-
-Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
 
 ## Phase 2 — Pick and Place Exploration (SO-101 + LeRobot)
 
