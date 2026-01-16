@@ -58,15 +58,13 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 - hold the scissors in place while allowing rotation in the handle holes
 - allow the arm’s finger motion to open/close the handles
 
-![alt text](/img/posts/scissors_closeup.gif)
+| Pliers | Screw Driver | Can Top Opener |
+|------------------|------------------|-----------------------------|
+| ![pliers gif](/img/posts/pliers.gif) |  | ![bottle top opener gif](/img/posts/bottle_top_opener.gif) |
 
-| Pliers | Can Top Opener |
+| Segment Drawing of Tool Grasping Mechanism | Cutaway View of Bungee Cord Cinch Hole |
 |------------------|-----------------------------|
-| ![pliers gif](/img/posts/gif/pliers.gif) | ![bottle top opener gif](/img/posts/gif/bottle_top_opener.gif) |
-
-| Screw Driver | Bungee Cord Insertion Holes |
-|------------------|-----------------------------|
-| ![pliers gif](/img/posts/gif/pliers.gif) | ![bottle top opener gif](/img/posts/gif/bottle_top_opener.gif) |
+| ![bungee cord holes](/img/posts/bungee_cord_holes.png) | ![cinch cutaway view](/img/posts/inner_cut.png) |
 
 Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screw driver. These mechanisms made use of sinchable bungee cords, allowing the user to swap tools in and out.
 
