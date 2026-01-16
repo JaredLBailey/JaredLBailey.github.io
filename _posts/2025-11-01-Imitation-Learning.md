@@ -5,7 +5,7 @@ image: "/posts/scissor_cut_imitation_learning.gif"
 tags: [Imitation Learning, State Machine Framework, Creative Tool Use]
 ---
 
-This project explores creative tool use in robotics through an imitation learning policy. Specifically, I trained a robot arm to both position and cut a food item using a single one degree of freedom tool - a pair of scissors mounted on a custom end effector. The object being cut was positioned and oriented at vairous starting locations, requiring the robot policy to handle the variation.
+This project explores creative tool use in robotics through an imitation learning policy. Specifically, I trained a robot arm to both position and cut a food item using a single one degree of freedom tool - a pair of scissors mounted on a custom end effector. The object being cut was positioned and oriented at various starting locations, requiring the robot policy to handle the variation.
 
 Traditionally, a robot would solve this by swapping tools: pick-and-place to reposition the object, then switch to a cutting tool. That process adds time, complexity, and failure points. Here, the robot instead treats the scissors as a multi-purpose tool to:
 - Position: guide and orient the food item using both scissor blades
