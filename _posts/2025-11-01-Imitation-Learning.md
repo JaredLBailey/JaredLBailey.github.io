@@ -106,6 +106,9 @@ The subtask performed as follows:
 ___
 
 # State Machine Framework (SMF) <a name="SMF"></a>
+
+![alt text](/img/posts/successful_cut.gif)
+
 The pipeline is orchestrated using a simple, modular state machine that makes the system resilient.
 
 ## State flow
