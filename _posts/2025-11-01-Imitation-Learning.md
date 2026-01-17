@@ -62,7 +62,7 @@ I designed a modified snap-click end effector to mount a standard pair of scisso
 
 ### Additional Tools
 
-Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screwdriver. These mechanisms made use of cinchable bungee cords, allowing the user to swap multiple tools of various shapes and sizes in and out at a moment's notice. Design inspiration was taken from the [functionalhand®](https://functionalhand.com/), an adaptive tool holder for people with physical hand disabilities.
+Additional tool interfaces were explored for pliers, a can opener, and rod-based tools like a screwdriver. These mechanisms made use of cinchable bungee cords, allowing the user to swap multiple tools of various shapes and sizes in and out at a moment's notice. Design inspiration was taken from the [functionalhand®](https://functionalhand.com/){:target=\"_blank\" rel=\"noopener noreferrer\"}.", an adaptive tool holder for people with physical hand disabilities.
 
 | Pliers | Screwdriver | Can Top Opener |
 |:------------------:|:------------------:|:-----------------------------:|
