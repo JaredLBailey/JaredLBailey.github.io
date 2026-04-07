@@ -5,7 +5,9 @@ image: "/posts/glamour_1_1.jpg"
 tags: [Design & Build, Simulation, Reinforcement Learning]
 ---
 
-![alt text](/img/posts/glamour_1_5.jpg "Finished Robot")
+<p align="center">
+  <img src="/img/posts/glamour_1_5.jpg" alt="Finished Robot" title="Finished Robot" width="400">
+</p>
 
 For my Robot Studio class project, I designed and built a bipedal flamingo from the ground up. In developing its Duke centric appearance, I incorporated feathers, along with painted eyes and a beak, to give the robot a distinctive visual identity. While the project is technically ambitious, I also wanted it to communicate personality and creativity through its design.
 
