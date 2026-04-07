@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Walking Bipedal Robot
+title: Bipedal Flamingo Robot
 image: "/posts/glamour_1_1.jpg"
 tags: [Design & Build, Simulation, Reinforcement Learning]
 ---
