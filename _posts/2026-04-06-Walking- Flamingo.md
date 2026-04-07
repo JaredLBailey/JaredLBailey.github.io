@@ -5,7 +5,7 @@ image: "/posts/glamour_1_1.jpg"
 tags: [Design & Build, Simulation, Reinforcement Learning]
 ---
 
-![alt text](/img/posts/glamour_1_5.jpg "Paint the Robot")
+![alt text](/img/posts/glamour_1_5.jpg "Finished Robot")
 
 For my Robot Studio class project, I designed and built a bipedal flamingo from the ground up. In developing its Duke centric appearance, I incorporated feathers, along with painted eyes and a beak, to give the robot a distinctive visual identity. While the project is technically ambitious, I also wanted it to communicate personality and creativity through its design.
 
@@ -35,6 +35,7 @@ ___
 
 # Movement & Simulation <a name="simulation"></a>
 
+## Leg Movement Video
 [![Watch the flamingo robot legs video](https://img.youtube.com/vi/Cuv5p7rcel4/hqdefault.jpg)](https://youtu.be/Cuv5p7rcel4)
 
 Before focusing on full-body locomotion, I began by exploring the robot’s leg mechanics in isolation. This included testing the initial range of motion and farthest practical extensions of the legs, as well as manually operating both legs while they were still separate from the main body and supported in my hands. These early experiments helped me better understand the robot’s movement limits, joint behavior, and overall mechanical complexity. They also reinforced that, because the legs are such a complex system, effective walking behavior will need to be developed carefully through simulation before being transferred to the physical robot.
@@ -43,6 +44,8 @@ I am currently exploring locomotion through simulation in PyBullet before advanc
 
 # AI Video <a name="ai-video"></a>
 
-https://youtube.com/shorts/V0wq_how2O0
+## AI Concept Video
+[![Watch the flamingo robot concept video](https://img.youtube.com/vi/V0wq_how2O0/hqdefault.jpg)](https://youtube.com/shorts/V0wq_how2O0)
+
 
 I am also including an AI generated video depicting the robot walking. This video is intended as a conceptual demonstration of the project’s direction rather than documentation of the robot’s present physical capabilities. Including it helps illustrate the longer-term vision for the platform.
