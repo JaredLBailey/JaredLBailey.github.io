@@ -16,8 +16,8 @@ ___
 # Table of Contents
 
 - [Technical Pieces](#techincal-pieces)
-- [Simulation](#simulation)
-- [AI Video](#ai-video)
+- [Movement & Simulation](#simulation)
+- [AI Concept Video](#ai-video)
 
 ___
 
@@ -54,9 +54,8 @@ Before focusing on full-body locomotion, I began by exploring the robot’s leg 
 
 I am currently exploring locomotion through simulation in PyBullet before advancing to more consistent walking behavior on the physical robot. This stage is particularly important because the robot uses ball feet, which introduce additional challenges in balance, stability, and control. By developing and testing walking strategies in simulation first, I can evaluate control approaches more efficiently and reduce risk before transferring those ideas to the physical platform.
 
-# AI Video <a name="ai-video"></a>
+# AI Concept Video <a name="ai-video"></a>
 
-## AI Concept Video
 <p align="center">
   <a href="https://youtube.com/shorts/V0wq_how2O0">
     <img src="https://img.youtube.com/vi/V0wq_how2O0/hqdefault.jpg" alt="Watch the flamingo robot concept video" width="400">
