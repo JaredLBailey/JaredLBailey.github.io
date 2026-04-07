@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Walking Bipedal Robot
-image: "/posts/glamour_1_1.jpg"
+image: "/posts/glamour_1_5.jpg"
 tags: [Design & Build, Simulation, Reinforcement Learning]
 ---
 
