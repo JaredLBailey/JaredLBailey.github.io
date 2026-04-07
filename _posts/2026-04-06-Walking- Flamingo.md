@@ -33,10 +33,16 @@ The robot’s hardware includes a Raspberry Pi 4B, an IMU sensor, eight LX-16A m
 
 ___
 
-# Simulation <a name="simulation"></a>
+# Movement & Simulation <a name="simulation"></a>
+
+[![Watch the flamingo robot legs video](https://img.youtube.com/vi/Cuv5p7rcel4/hqdefault.jpg)](https://youtu.be/Cuv5p7rcel4)
+
+Before focusing on full-body locomotion, I began by exploring the robot’s leg mechanics in isolation. This included testing the initial range of motion and farthest practical extensions of the legs, as well as manually operating both legs while they were still separate from the main body and supported in my hands. These early experiments helped me better understand the robot’s movement limits, joint behavior, and overall mechanical complexity. They also reinforced that, because the legs are such a complex system, effective walking behavior will need to be developed carefully through simulation before being transferred to the physical robot.
 
 I am currently exploring locomotion through simulation in PyBullet before advancing to more consistent walking behavior on the physical robot. This stage is particularly important because the robot uses ball feet, which introduce additional challenges in balance, stability, and control. By developing and testing walking strategies in simulation first, I can evaluate control approaches more efficiently and reduce risk before transferring those ideas to the physical platform.
 
 # AI Video <a name="ai-video"></a>
+
+https://youtube.com/shorts/V0wq_how2O0
 
 I am also including an AI generated video depicting the robot walking. This video is intended as a conceptual demonstration of the project’s direction rather than documentation of the robot’s present physical capabilities. Including it helps illustrate the longer-term vision for the platform.
