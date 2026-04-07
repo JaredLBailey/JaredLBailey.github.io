@@ -5,8 +5,6 @@ image: "/posts/bear-roastmaster.png"
 tags: [Reinforcement Learning, Design & Build]
 ---
 
-For my Deep Learning Application class project, I decided to blend humor with cutting-edge AI by building a roastmaster bear powered by large language models (LLMs). The intersection of humor and AI presents a fascinating challenge: can a machine understand what makes a joke funny, and better yet, can it become the ultimate roastmaster?
-
 For my Robot Studio class project, I designed and built a bipedal flamingo from the ground up. In developing its Duke centric appearance, I incorporated feathers, along with painted eyes and a beak, to give the robot a distinctive visual identity. While the project is technically ambitious, I also wanted it to communicate personality and creativity through its design.
 
 ___
