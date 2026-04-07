@@ -21,7 +21,7 @@ ___
 
 # Technical Pieces <a name="techincal-pieces"></a>
 
-![alt text](/img/posts/glamour_1_24.png "Acrylic Top")
+![alt text](/img/posts/glamour_1_24.jpg "Acrylic Top")
 
 Standing nearly three feet tall, the robot was developed with both transparency and maintainability in mind. A laser cut acrylic top exposes the internal electronics, allowing viewers to see the computational systems that power the robot. I also designed the platform to be modular, making it easier to replace damaged components, refine individual subsystems, and incorporate future upgrades without requiring a complete redesign.
 
