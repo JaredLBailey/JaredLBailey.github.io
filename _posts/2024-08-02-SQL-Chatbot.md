@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Novel Data Interaction using a SQL Chatbot
+title: Data Interaction with a SQL Chatbot
 image: "/posts/music-example.gif"
 tags: [AI, SQL, Agents]
 ---
