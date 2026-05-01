@@ -12,7 +12,7 @@ tags: [Design & Build, Simulation, Reinforcement Learning]
 For my Robot Studio class project, I designed and built a bipedal flamingo from the ground up. In developing its Duke centric appearance, I incorporated feathers, along with painted eyes and a beak, to give the robot a distinctive visual identity. While the project is technically ambitious, I also wanted it to communicate personality and creativity through its design.
 
 ### Video Highlights
-[![Flamingo Bipedal Robot](https://www.youtube.com/watch?v=qqInVzerBGY/maxresdefault.jpg)](https://www.youtube.com/watch?v=qqInVzerBGY)
+[![Flamingo Bipedal Robot](https://img.youtube.com/vi/qqInVzerBGY/maxresdefault.jpg)](https://www.youtube.com/watch?v=qqInVzerBGY)
 
 ___
 
